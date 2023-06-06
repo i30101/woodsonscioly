@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* -------------------- BIG NAVBAR STYLES -------------------- */
+#navbar-big {
+    padding: 25px 35px 35px 35px;
+
+    width: 200px;
+    height: 100%;
+    
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: #8EBDFF; */
+    background-color: #343434;
+    overflow-x: hidden;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#navbar-big-main {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+
+
+
+
+/* -------------------- SMALL NAVBAR STYLES -------------------- */
+.navbar {
+    /* background-color: #8EBDFF; */
+    background-color: #343434;
+    padding: 12px !important;
+}
+
+#navbar-small-main, .nav-link {
+    color: white !important;
+}
+
+#toggler-icon {
+    color: white !important;
+    font-size: 30px;
+    border: none !important
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------- MAIN BODY STYLES -------------------- */
+#main {
+    padding: 50px;
+}
+
+.main-heading {
+    margin-bottom: 20px;
+    padding: 10px;
+    
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.subheading {
+    margin: 20px 0;
+    padding: 10px;
+
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+
+.main-image {
+    width: 600px;
+}
+
+hr {
+    margin: 0 200px 20px 200px !important;
+
+}
+
+
+/* -------------------- FOOTER STYLES -------------------- */
+#footer-sub {
+    margin: 0 !important;
+    padding: 50px 0 0 0  !important;
+}
+
+#footer-items {
+    padding: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+/* Medium or larger */
+@media (min-width: 768px) {
+    #main {
+        margin-left: 200px;
+        width: calc(100vw - 217px);
+        max-width: none;
+    }
+
+    .nav-link {
+        padding: 2px 0 !important;
+    }
+}
+
+
+/* Small or smaller */
+@media (max-width: 767px) {
+    #main {
+        padding: 20px;
+
+        margin: 0;
+        max-width: none;
+    }
+
+    
+}
