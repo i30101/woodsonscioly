@@ -154,6 +154,18 @@
     margin: 10px 0;
 }
 
+.bio-box {
+    margin-bottom: 50px;
+}
+
+.bio-image {
+    width: 40%;
+}
+
+.bio-text-box {
+    margin-bottom: 10px;
+}
+
 hr {
     margin: 20px 0 20px 0 !important;
 
@@ -199,9 +211,11 @@ hr {
     .fancy-column, .quote-box {
         margin: 0 2% 0 2% !important;
         width: 29.33% !important;
-    
     }
 
+    .bio-box {
+        padding: 20px !important;
+    }
 }
 
 
@@ -212,5 +226,9 @@ hr {
 
         margin: 0;
         max-width: none;
+    }
+
+    .bio-box {
+        padding: 0;
     }
 }
