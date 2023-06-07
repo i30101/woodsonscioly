@@ -1,0 +1,54 @@
+.fancy-column, .quote-box {
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+#events-column {
+    background-image: linear-gradient(to bottom right, #60efff, #3f89ff);
+}
+
+#preparation-column {
+    background-image: linear-gradient(to bottom right, #ffa83e, #ff2d8c);
+}
+
+#competition-column{
+    background-image: linear-gradient(to bottom right, #57ebde, #aefb2a);
+}
+
+.quote-box {
+    background-color: lightgray;
+    margin-bottom: 20px !important;
+}
+
+.quote-box:hover {
+    background-image: linear-gradient(to bottom right, #9bafd9, #4266af);
+}
+
+.quote-mark {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.quote-top {
+    position: relative;
+    top: 25px;
+}
+
+.quote-bottom {
+    position: relative;
+    top: -10px;
+    max-width: none;
+    text-align: right;
+}
+
+
+.body-icon {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    font-size: 60px !important;
+    text-align: center !important;
+}

@@ -34,10 +34,45 @@
 
 #navbar-big-main {
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
+#navbar-big-icon {
+    margin-bottom: 20px;
 
+    width: 100%;
+
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    transform: rotate(40deg);
+}
+
+.navbar-footer {
+    margin-top: calc(100vh - 530px);
+    
+    color: white;
+    font-size: 12px;
+}
+
+.navbar-link-container {
+    margin-bottom: 10px;
+}
+
+.navbar-action-icon, .navbar-action-icon:active, .navbar-action-icon:hover {
+    margin-right: 10px;
+    font-size: 15px;
+    color: white !important;
+}
+
+#mail-icon {
+    position: relative;
+    top: 6px !important;
+    font-size: 22px;
+    font-weight: 300;
+
+}
 
 
 
@@ -77,7 +112,7 @@
 }
 
 .main-heading {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
     
     font-size: 30px;
@@ -86,25 +121,45 @@
 }
 
 .subheading {
-    margin: 20px 0;
+    margin-top: 60px;
     padding: 10px;
 
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
 }
 
+.subsubheading {
+    padding: 10px;
 
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
 
+.text-box {
+    margin-top: 20px !important;
+    padding: 5px;
+    
+    font-size: 16px;
+}
+
+.body-column {
+    padding: 20px !important;
+    max-width: 100%;
+}
 
 .main-image {
     width: 600px;
+    margin: 10px 0;
 }
 
 hr {
-    margin: 0 200px 20px 200px !important;
+    margin: 20px 0 20px 0 !important;
 
 }
+
+
 
 
 /* -------------------- FOOTER STYLES -------------------- */
@@ -140,6 +195,13 @@ hr {
     .nav-link {
         padding: 2px 0 !important;
     }
+
+    .fancy-column, .quote-box {
+        margin: 0 2% 60px 2% !important;
+        width: 29.33% !important;
+    
+    }
+
 }
 
 
@@ -151,6 +213,4 @@ hr {
         margin: 0;
         max-width: none;
     }
-
-    
 }
