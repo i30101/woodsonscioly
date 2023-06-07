@@ -16,9 +16,15 @@
     background-image: linear-gradient(to bottom right, #57ebde, #aefb2a);
 }
 
+.quote-container {
+    margin: 0 !important;
+    padding: 0;
+}
+
 .quote-box {
     background-color: lightgray;
-    margin-bottom: 20px !important;
+    margin-bottom: 40px !important;
+    padding: 12px !important;
 }
 
 .quote-box:hover {
