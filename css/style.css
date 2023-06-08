@@ -15,7 +15,6 @@
     z-index: 1;
     top: 0;
     left: 0;
-    /* background-color: #8EBDFF; */
     background-color: #343434;
     overflow-x: hidden;
 }
@@ -54,10 +53,12 @@
     
     color: white;
     font-size: 12px;
+    text-align: center;
 }
 
 .navbar-link-container {
     margin-bottom: 10px;
+    padding-left: 12px;
 }
 
 .navbar-action-icon, .navbar-action-icon:active, .navbar-action-icon:hover {
@@ -85,6 +86,7 @@
 
 #navbar-small-main, .nav-link {
     color: white !important;
+    text-align: center;
 }
 
 #toggler-icon {
@@ -97,7 +99,14 @@
     border: none !important;
 }
 
+#navbar-small-icon {
+    margin-right: 20px;
 
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    transform: rotate(40deg);
+}
 
 
 
@@ -111,11 +120,42 @@
     padding: 50px;
 }
 
+.main-image {
+    width: 600px;
+    margin: 10px 0;
+}
+
+.text-box {
+    margin-bottom: 10px !important;
+    padding: 5px;
+    font-size: 16px;
+}
+
+hr {
+    margin: 20px 0 20px 0 !important;
+}
+
+.body-icon {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    font-size: 60px !important;
+    text-align: center !important;
+}
+
+
+
+
+
+
+/* -------------------- HEADINGS -------------------- */
 .main-heading {
     margin-bottom: 10px;
     padding: 10px;
     
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 800;
     text-align: center;
 }
@@ -137,46 +177,41 @@
     text-align: center;
 }
 
-.text-box {
-    margin-top: 20px !important;
-    padding: 5px;
-    
-    font-size: 16px;
-}
 
-.body-column {
-    padding: 20px !important;
-    max-width: 100%;
-}
 
-.main-image {
-    width: 600px;
-    margin: 10px 0;
-}
 
+
+
+/* -------------------- BOX STYLES -------------------- */
 .bio-box {
     margin-bottom: 50px;
 }
 
 .bio-image {
     width: 40%;
+    margin-bottom: 10px;
 }
 
 .bio-text-box {
     margin-bottom: 10px;
 }
 
-hr {
-    margin: 20px 0 20px 0 !important;
+.fancy-box-container {
+    margin: 10px 0 0 0 !important;
+    padding: 0;
+}
 
+.fancy-box {
+    padding: 20px !important;
+    border-radius: 8px;
+    margin-bottom: 40px !important;
 }
 
 
 
-
 /* -------------------- FOOTER STYLES -------------------- */
-#footer-sub {
-    margin: 0 !important;
+#main-footer {
+    margin: 100px 0 0 0 !important;
     padding: 50px 0 0 0  !important;
 }
 
@@ -208,13 +243,17 @@ hr {
         padding: 2px 0 !important;
     }
 
-    .fancy-column, .quote-box {
-        margin: 0 2% 0 2% !important;
+    .fancy-box, .contact-button {
+        margin: 0 2% 4% 2% !important;
         width: 29.33% !important;
     }
 
     .bio-box {
         padding: 20px !important;
+    }
+
+    #babs {
+        margin: 0 35.28% 4% 35.28% !important;
     }
 }
 

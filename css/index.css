@@ -1,29 +1,42 @@
-.fancy-column, .quote-box {
-    height: 100%;
-    border-radius: 8px;
-    margin-bottom: 50px;
-}
+/* -------------------- WHAT IS SCIOLY -------------------- */
 
-#events-column {
+#events-box {
     background-image: linear-gradient(to bottom right, #60efff, #3f89ff);
 }
 
-#preparation-column {
+#preparation-box {
     background-image: linear-gradient(to bottom right, #ffa83e, #ff2d8c);
 }
 
-#competition-column{
+#competition-box {
     background-image: linear-gradient(to bottom right, #57ebde, #aefb2a);
 }
 
-.quote-container {
-    margin: 0 !important;
-    padding: 0;
+
+/* -------------------- WHY COMPETE -------------------- */
+#medals-box {
+    /* background-image: linear-gradient(to bottom right, #fff95b, #ff930f); */
+    background-image: linear-gradient(to bottom right, #60efff, #3f89ff);
 }
 
+#traveling-box {
+    /* background-image: linear-gradient(to bottom right, #40c9ff, #e81cff); */
+    background-image: linear-gradient(to bottom right, #ffa83e, #ff2d8c);
+}
+
+#fun-box {
+    /* background-image: linear-gradient(to bottom right, #e9b7ce, #d3f3f1); */
+    background-image: linear-gradient(to bottom right, #57ebde, #aefb2a);
+}
+
+.why-bullet {
+    margin-bottom: 10px !important;
+}
+
+
+/* -------------------- QUOTES -------------------- */
 .quote-box {
     background-color: lightgray;
-    margin-bottom: 40px !important;
     padding: 12px !important;
 }
 
@@ -31,30 +44,12 @@
     background-image: linear-gradient(to bottom right, #9bafd9, #4266af);
 }
 
-.quote-mark {
-    font-size: 40px;
-    font-weight: 900;
-}
-
-.quote-top {
-    position: relative;
-    top: 25px;
-}
-
-.quote-bottom {
-    position: relative;
-    top: -10px;
-    max-width: none;
-    text-align: right;
-}
-
-
-.body-icon {
-    margin: 0;
+.quote-box-container {
+    margin: 0 !important;
     padding: 0;
+}
 
-    width: 100%;
 
-    font-size: 60px !important;
-    text-align: center !important;
+#first-quote-container {
+    margin-top: 10px !important;
 }
