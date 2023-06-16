@@ -1,7 +1,5 @@
 /* -------------------- INTRO -------------------- */
 #intro {
-    /* margin-bottom: 100px; */
-
     text-align: center;
 }
 
@@ -11,8 +9,8 @@
 }
 
 #canvas-overlay {
-    position: absolute;
     color: white;
+    position: absolute;
 }
 
 #intro-subheading {
@@ -22,6 +20,7 @@
 #intro-heading {
     font-size: 60px;
     font-weight: 800;
+    line-height: 100%;
 }
 
 #intro-details {
@@ -40,6 +39,15 @@
     background-color: white !important;
     color: black;
 }
+
+.small-br {
+    height: 10px;
+}
+
+.large-br {
+    height: 30px;
+}
+
 
 
 #main {

@@ -6,10 +6,11 @@
 // get canvas
 const canvas = document.getElementById("canvas");
 
-const dotRadius = 130;
-const dotColor = "#2e2e2e";
-const lineWidth = 1;
-const canvasColor = "black";
+let numDots = 100;
+let dotRadius = 130;
+let dotColor = "#2e2e2e";
+let lineWidth = 1;
+let canvasColor = "black";
 
 const ctx = canvas.getContext("2d");
 ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -30,6 +31,8 @@ if(window.innerWidth > 767) {
 }else {
     canvas.width = window.innerWidth - 17;
     canvas.height = window.innerHeight - 65;
+    numDots = 50;
+    dotRadius = 100;
 }
 
 
@@ -102,7 +105,7 @@ class Point {
 
 // create and store points
 let points = [];
-for(let i = 0; i < 100; i++) {
+for(let i = 0; i < numDots; i++) {
     points.push(new Point());
 }
 
@@ -118,3 +121,9 @@ function animateAll() {
 }
 
 animateAll();
+
+
+
+  window.addEventListener('resize', function() {
+    location.reload();
+});

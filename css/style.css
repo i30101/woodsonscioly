@@ -16,7 +16,6 @@
     top: 0;
     left: 0;
     background-color: #343434;
-    background-color: black;
     overflow-x: hidden;
 }
 
@@ -217,67 +216,4 @@ hr {
 
 #footer-items {
     padding: 0 !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------- MEDIA QUERIES -------------------- */
-
-/* Medium or larger */
-@media (min-width: 768px) {
-    #main, #intro {
-        margin-left: 200px !important;
-        width: calc(100vw - 217px) !important;
-        max-width: none;
-    }
-
-    .nav-link {
-        padding: 2px 0 !important;
-    }
-
-    .fancy-box, .contact-button {
-        margin: 0 2% 4% 2% !important;
-        width: 29.33% !important;
-    }
-
-    .bio-box {
-        padding: 20px !important;
-    }
-
-    #babs {
-        margin: 0 35.28% 4% 35.28% !important;
-    }
-
-    #canvas-overlay {
-        left: 200px !important;
-        width: calc(100vw - 217px);
-        top: 40vh;
-    }
-}
-
-
-/* Small or smaller */
-@media (max-width: 767px) {
-    #main {
-        padding: 20px;
-
-        margin: 0;
-        max-width: none;
-    }
-
-    .bio-box {
-        padding: 0;
-    }
-
-    #canvas-overlay {
-        top: calc(40vh - 65px);
-    }
 }
