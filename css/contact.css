@@ -1,5 +1,4 @@
 .contact-button {
-    /* margin: 0 2% 4% 2% !important; */
     padding: 25px 0 20px 0;
     
     color: black;
@@ -8,15 +7,18 @@
     background-color: lightgray;
 }
 
+
 .contact-button:visited, .contact-button:active, .contact-button:focus {
     color: black;
     text-decoration: none;
 }
 
+
 .contact-button:hover {
     color: black;
     background-image: linear-gradient(to bottom right, #fff95b, #ff930f);
 }
+
 
 .contact-at-symbol {
     margin: 0;
@@ -28,10 +30,12 @@
     padding-top: 16px;
 }
 
+
 .contact-name {
     font-weight: 800;
     font-size: 18px;
 }
+
 
 .contact-position {
     font-weight: 600;
@@ -39,14 +43,22 @@
     font-size: 14px;
 }
 
+
 .contact-email {
     font-size: 14px;
 }
+
 
 .col-10 {
     padding: 0 !important;
 }
 
+
 #insta-contact {
     padding-top: 10px !important;
+}
+
+
+.contact-point {
+    margin: auto;
 }

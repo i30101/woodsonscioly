@@ -6,7 +6,7 @@
 
 /* -------------------- BIG NAVBAR STYLES -------------------- */
 #navbar-big {
-    padding: 25px 35px 35px 35px;
+    padding: 35px 35px 35px 35px;
 
     width: 200px;
     height: 100%;
@@ -16,6 +16,7 @@
     top: 0;
     left: 0;
     background-color: #343434;
+    background-color: black;
     overflow-x: hidden;
 }
 
@@ -33,7 +34,7 @@
 
 #navbar-big-main {
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -79,7 +80,6 @@
 
 /* -------------------- SMALL NAVBAR STYLES -------------------- */
 .navbar {
-    /* background-color: #8EBDFF; */
     background-color: #343434;
     padding: 12px !important;
 }
@@ -233,9 +233,9 @@ hr {
 
 /* Medium or larger */
 @media (min-width: 768px) {
-    #main {
-        margin-left: 200px;
-        width: calc(100vw - 217px);
+    #main, #intro {
+        margin-left: 200px !important;
+        width: calc(100vw - 217px) !important;
         max-width: none;
     }
 
@@ -255,6 +255,12 @@ hr {
     #babs {
         margin: 0 35.28% 4% 35.28% !important;
     }
+
+    #canvas-overlay {
+        left: 200px !important;
+        width: calc(100vw - 217px);
+        top: 40vh;
+    }
 }
 
 
@@ -269,5 +275,9 @@ hr {
 
     .bio-box {
         padding: 0;
+    }
+
+    #canvas-overlay {
+        top: calc(40vh - 65px);
     }
 }

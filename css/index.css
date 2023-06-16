@@ -1,3 +1,52 @@
+/* -------------------- INTRO -------------------- */
+#intro {
+    /* margin-bottom: 100px; */
+
+    text-align: center;
+}
+
+#canvas {
+    margin: 0;
+    padding: 0;
+}
+
+#canvas-overlay {
+    position: absolute;
+    color: white;
+}
+
+#intro-subheading {
+    font-size: 25px;
+}
+
+#intro-heading {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+#intro-details {
+    font-size: 20px;
+}
+
+#intro-link, #intro-link:active {
+    padding: 15px;
+    border: 2px solid white;
+    transition: background-color 0.5s ease;
+    color: white;
+    text-decoration: none;
+}
+
+#intro-link:hover {
+    background-color: white !important;
+    color: black;
+}
+
+
+#main {
+    padding-top: 25px !important;
+}
+
+
 /* -------------------- WHAT IS SCIOLY -------------------- */
 
 #events-box {

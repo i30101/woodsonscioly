@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -39,8 +40,7 @@
         
         <div class="navbar-footer">
             <div class="navbar-link-container">
-                <!-- <a href="mailto:wtwscienceolympiad@gmail.com" class="navbar-action-icon"><span class="material-symbols-outlined" id="mail-icon">mail</span></i></a> -->
-                <a href="https://www.instagram.com/wtwscienceolympiad/" class="navbar-action-icon"><i class="bi bi-envelope-at"></i></a>
+                <a href="mailto:wtwscienceolympiad@gmail.com" class="navbar-action-icon"><i class="bi bi-envelope-at"></i></a>
                 <a href="https://www.instagram.com/wtwscienceolympiad/" class="navbar-action-icon"><i class="bi bi-instagram"></i></a>
                 <a href="https://www.github.com/i30101/woodsonscioly" class="navbar-action-icon"><i class="bi bi-github"></i></a>
             </div>
@@ -72,6 +72,19 @@
     </nav>
 
 
+    <!-- -------------------- INTRO -------------------- -->
+    <div id="intro" class="d-flex justify-content-center align-items-center">
+        <canvas id="canvas"></canvas>
+        <div id="canvas-overlay" class="justify-content-center align-items-center">
+            <div id="intro-subheading">Welcome to</div>
+            <div id="intro-heading">Woodson Science Olympiad</div>
+            <div id="intro-details">Pioneers in science, engineering, and inter-disciplinary investigation</div>
+            <br><br>
+            <a href="#main" id="intro-link">Learn More</a>
+        </div>
+    </div>
+
+
     <!-- -------------------- MAIN CONTENT -------------------- -->
     <div class="row" id="main">
         <!-- Whitespace -->
@@ -79,9 +92,7 @@
         
         <!-- Main content -->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
-            <div class="main-heading">Woodson Science Olympiad</div>
-            <!-- <img src="./images/states-group.jpg" class="img-fluid rounded mx-auto d-block main-image"> -->
-            <!-- <hr/> -->
+
 
             <div class="subheading">About Us</div>
             <div class="container text-box">
@@ -171,6 +182,7 @@
         <div class="col-lg-1 d-none d-lg-block main-whitespace"></div>
     </div>
 
+    <script src="./js/live-background.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
