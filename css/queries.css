@@ -31,6 +31,12 @@
         width: calc(100vw - 217px);
         top: 40vh;
     }
+
+    #carousel {
+        width: 60%;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
 }
 
 
@@ -65,5 +71,9 @@
 
     .navbar-expanded + .canvas-overlay {
         margin-top: 65px;
+    }
+
+    #carousel {
+        width: 100%;
     }
 }

@@ -4,6 +4,7 @@
  */
 
 // get canvas
+
 const canvas = document.getElementById("canvas");
 
 let numDots = 100;
@@ -23,13 +24,19 @@ function clearCanvas() {
 }
 
 
+// initial window refresh
+window.onload = function() {
+    if (!window.location.href.includes("?refreshed")) {
+        window.location.href += "?refreshed";
+    }
+};
 
 // adjust script parameters to match viewable window
-if(window.innerWidth > 767) {
+if (window.innerWidth > 767) {
     canvas.width = window.innerWidth - 217;
     canvas.height = window.innerHeight;
-}else {
-    canvas.width = window.innerWidth - 17;
+} else {
+    canvas.width = window.innerWidth;
     canvas.height = window.innerHeight - 65;
     numDots = 50;
     dotRadius = 100;
@@ -69,29 +76,29 @@ class Point {
         this.dy = -this.dy;
     }
 
-    
+
     // collision behavior and line drawing
     updateGraphics() {
         // collision with wall
-        if(this.x + this.dx > canvas.width - this.radius || this.x + this.dx < this.radius) {
+        if (this.x + this.dx > canvas.width - this.radius || this.x + this.dx < this.radius) {
             this.reverseDirection();
         }
-        if(this.y + this.dy > canvas.height - this.radius || this.y + this.dy < this.radius) {
+        if (this.y + this.dy > canvas.height - this.radius || this.y + this.dy < this.radius) {
             this.reverseDirection();
         }
 
         // collision with other points and line drawing
-        for(let point of points) {
-            if(point === this) continue;
+        for (let point of points) {
+            if (point === this) continue;
             let distance = Math.sqrt(Math.pow((point.x - this.x), 2) + Math.pow((point.y - this.y), 2));
-            if(distance < dotRadius) {
+            if (distance < dotRadius) {
                 ctx.strokeStyle = dotColor;
                 ctx.lineWidth = lineWidth * (dotRadius - distance) / dotRadius;
                 ctx.moveTo(this.x, this.y);
                 ctx.lineTo(point.x, point.y);
                 ctx.stroke();
             }
-            if(distance < this.radius + point.radius) {
+            if (distance < this.radius + point.radius) {
                 this.reverseDirection();
                 break;
             }
@@ -105,7 +112,7 @@ class Point {
 
 // create and store points
 let points = [];
-for(let i = 0; i < numDots; i++) {
+for (let i = 0; i < numDots; i++) {
     points.push(new Point());
 }
 
@@ -120,10 +127,6 @@ function animateAll() {
     requestAnimationFrame(animateAll);
 }
 
+
+
 animateAll();
-
-
-
-  window.addEventListener('resize', function() {
-    location.reload();
-});

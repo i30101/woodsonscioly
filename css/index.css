@@ -9,6 +9,7 @@
 }
 
 #canvas-overlay {
+    padding: 0 !important;
     color: white;
     position: absolute;
 }
