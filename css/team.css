@@ -35,3 +35,19 @@ table {
     padding-top: 20px;
     margin: 0 !important;
 }
+
+.accordion-body {
+    padding: 0 !important;
+}
+
+.accomplishments-section {
+    padding: 20px;
+}
+
+.accomplishments-title {
+    font-weight: 800;
+}
+
+.competition-name {
+    text-decoration: underline;
+}
