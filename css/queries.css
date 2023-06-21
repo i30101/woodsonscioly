@@ -5,7 +5,7 @@
 @media (min-width: 768px) {
     #main, #intro {
         margin-left: 200px !important;
-        width: calc(100vw - 217px) !important;
+        width: calc(100vw - 216px) !important;
         max-width: none;
     }
 
@@ -42,8 +42,12 @@
 
 /* Small or smaller */
 @media (max-width: 767px) {
+    body {
+        margin-left: 0px !important;
+    }
+
     #main {
-        padding: 20px;
+        padding: 20px 5px 50px 5px;
 
         margin: 0;
         max-width: none;

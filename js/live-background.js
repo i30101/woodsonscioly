@@ -36,7 +36,8 @@ if (window.innerWidth > 767) {
     canvas.width = window.innerWidth - 217;
     canvas.height = window.innerHeight;
 } else {
-    canvas.width = window.innerWidth;
+    console.log(window.innerWidth);
+    canvas.width = window.innerWidth - 10;
     canvas.height = window.innerHeight - 65;
     numDots = 50;
     dotRadius = 100;
