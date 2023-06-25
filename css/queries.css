@@ -5,7 +5,7 @@
 @media (min-width: 768px) {
     #main, #intro {
         margin-left: 200px !important;
-        width: calc(100vw - 216px) !important;
+        width: calc(100vw - 217px) !important;
         max-width: none;
     }
 

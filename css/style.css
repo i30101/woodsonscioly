@@ -3,6 +3,11 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+body {
+    background-color: black;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /* -------------------- BIG NAVBAR STYLES -------------------- */
 #navbar-big {

@@ -26,11 +26,13 @@ function clearCanvas() {
 
 // initial window refresh
 window.onload = function() {
-    if (!window.location.href.includes("?refreshed")) {
-        window.location.href += "?refreshed";
+    if (!localStorage.getItem('hasLoadedOnce')) {
+        localStorage.setItem('hasLoadedOnce', true);
+        location.reload();
+    } else {
+        localStorage.removeItem('hasLoadedOnce');
     }
 };
-
 // adjust script parameters to match viewable window
 if (window.innerWidth > 767) {
     canvas.width = window.innerWidth - 217;
