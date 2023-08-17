@@ -1,0 +1,21 @@
+.bio-section {
+    margin-bottom: 60px;
+}
+
+.bio-name {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.bio-image-container {
+    max-width: 100%;
+}
+
+.bio-image {
+    max-width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 1;
+    margin-bottom: 10px;
+}

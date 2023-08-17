@@ -50,4 +50,8 @@
     #intro-title {
         font-size: 40px;
     }
+
+    .bio-image-container {
+        padding: 10px 60px 10px 60px;
+    }
 }

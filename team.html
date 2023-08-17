@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/queries.css">
+    <link rel="stylesheet" href="./css/team.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,11 +39,11 @@
                     <div class="nav-decor" id="decor-2"></div>
                 </li>
                 <li class="nav-item big-nav-item" id="big-3">
-                    <a class="nav-link" href="tryouts.html">Tryouts</a>
+                    <a class="nav-link disabled" href="tryouts.html">Tryouts</a>
                     <div class="nav-decor" id="decor-3"></div>
                 </li>
                 <li class="nav-item big-nav-item" id="big-4">
-                    <a class="nav-link" href="contribute.html">Contribute</a>
+                    <a class="nav-link disabled" href="contribute.html">Contribute</a>
                     <div class="nav-decor" id="decor-4"></div>
                 </li>
             </ul>
@@ -63,8 +64,8 @@
                     <li class="nav-item"><a class="nav-link nav-link-small" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link nav-link-small" href="team.html">The Team</a></li>
                     <li class="nav-item"><a class="nav-link nav-link-small" href="leadership.html">Leadership</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-small" href="tryouts.html">Tryouts</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-small" href="contribute.html">Contribute</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-small disabled" href="tryouts.html">Tryouts</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-small disabled" href="contribute.html">Contribute</a></li>
                 </ul>
             </div>
         </div>
@@ -80,7 +81,148 @@
 
     <!-- ---------------- MAIN BODY ---------------- -->
     <div id="main">
+        <div class="main-section">
+            <div class="section-title">Gallery</div>
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="./gallery/fairfax-0.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/fairfax-1.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/fairfax-2.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/heyday-0.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/heyday-1.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/intramural.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/showcase-0.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/showcase-1.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/showcase-2.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/showcase-3.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/showcase-4.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/showcase-5.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/showcase-6.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/showcase-7.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/showcase-outside.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/princeton-0.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/princeton-1.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/princeton-2.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/princeton-3.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/princeton-4.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/princeton-5.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/princeton-6.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/states-0.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/states-1.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/states-2.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/states-3.jpg" class="rounded carousel-image"></div>
+                    <div class="carousel-item"><img src="./gallery/states-4.jpg" class="rounded carousel-image"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> 
+        </div>
+
         
+        <div class="main-section">
+            <div class="section-title">Past Teams</div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button onclick="getTeam('2023')" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#team2023" aria-expanded="false" aria-controls="team2023">2023 Team</button>
+                    </h2>
+                    <div id="team2023" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="table2023"></div>
+                        <div class="accomplishments-section">
+                            <div class="accomplishments-title">Season Accomplishments</div>
+                            <div class="competition">
+                                <span class="competition-name">Georgia Invitational:</span>
+                                <ul>
+                                    <li>Astronomy (3rd)</li>
+                                    <li>Fermi Questions (5th)</li>
+                                    <li>Forensics (5th)</li>
+                                    <li>Forestry (2th)</li>
+                                    <li>It's About Time (6th)</li>
+                                    <li>WiFi Lab (6th)</li>
+                                </ul>
+                            </div>
+                            <div class="competition">
+                                <span class="competition-name">Fairfax Invitational (4th):</span>
+                                <ul>
+                                    <li>Anatomy (5th)</li>
+                                    <li>Bridge (1st)</li>
+                                    <li>Eexperimental Design (2nd)</li>
+                                    <li>Flight (1st, 2nd)</li>
+                                    <li>Forensics (2nd, 3rd)</li>
+                                    <li>Forestry (2nd)</li>
+                                    <li>Remote Sensing (1st)</li>
+                                    <li>WiFi Lab (5th)</li>
+                                    <li>WIDI (4th)</li>
+                                </ul>
+                            </div>
+                            <div class="competition">
+                                <span class="competition-name">Princeton Invitational:</span>
+                                <ul>
+                                    <li>Forestry (5th)</li>
+                                    <li>It's About Time (2nd)</li>
+                                    <li>WiFi Lab (2nd)</li>
+                                </ul>
+                            </div>
+                            <div class="competition">
+                                <span class="competition-name">Regionals (3rd):</span>
+                                <ul>
+                                    <li>Anatomy (6th)</li>
+                                    <li>Bridge (4th)</li>
+                                    <li>Chem Lab (6th)</li>
+                                    <li>Detector Building (2nd)</li>
+                                    <li>Disease Detectives (5th)</li>
+                                    <li>Dynamic Planet (4th, 6th)</li>
+                                    <li>Environmental Chemistry (3rd)</li>
+                                    <li>Experimental Design (3rd, 5th)</li>
+                                    <li>Fermi Questions (4th)</li>
+                                    <li>Forensics (1st)</li>
+                                    <li>Forestry (2nd)</li>
+                                    <li>It's About Time (2nd)</li>
+                                    <li>Rocks and Minerals (3rd)</li>
+                                    <li>Scrambler (2nd)</li>
+                                    <li>Trajectory (2nd)</li>
+                                    <li>WIDI (4th, 5th)</li>
+                                    <li>WiFi Lab (2nd)</li>
+                                </ul>
+                            </div>
+                            <div class="competition">
+                                <span class="competition-name">States (4th):</span>
+                                <ul>
+                                    <li>Codebusters (5th)</li>
+                                    <li>Detector Building (2nd)</li>
+                                    <li>Disease Detectives (5th)</li>
+                                    <li>Environmental Chemistry (5th)</li>
+                                    <li>Fermi Questions (2nd)</li>
+                                    <li>Flight (4th)</li>
+                                    <li>Forensics (3rd)</li>
+                                    <li>Forestry (1st)</li>
+                                    <li>Green Generation (2nd)</li>
+                                    <li>It's About Time (3rd)</li>
+                                    <li>Remote Sensing (6th)</li>
+                                    <li>WIDI (6th)</li>
+                                    <li>Botany (3rd)</li>
+                                    <li>Solar Power (4th)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button onclick="getTeam('2022')" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#team2022" aria-expanded="false" aria-controls="team2022">2022 Team</button>
+                    </h2>
+                    <div id="team2022" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="table2022"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="py-3 my-4" id="footer-main">
@@ -103,6 +245,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/animate.js"></script>
+    <script src="./js/team.js"></script>
 
 </body>
 

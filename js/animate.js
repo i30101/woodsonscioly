@@ -45,17 +45,17 @@ $(document).ready(function() {
         $('#decor-2').css('width', '');
     });
 
-    $('#big-3').hover(function() {
-        $('#decor-3').css('width', '40px');
-    }, function() {
-        $('#decor-3').css('width', '');
-    });
+    // $('#big-3').hover(function() {
+    //     $('#decor-3').css('width', '40px');
+    // }, function() {
+    //     $('#decor-3').css('width', '');
+    // });
 
-    $('#big-4').hover(function() {
-        $('#decor-4').css('width', '40px');
-    }, function() {
-        $('#decor-4').css('width', '');
-    });
+    // $('#big-4').hover(function() {
+    //     $('#decor-4').css('width', '40px');
+    // }, function() {
+    //     $('#decor-4').css('width', '');
+    // });
     
 });
 
