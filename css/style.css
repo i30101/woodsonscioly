@@ -1,10 +1,6 @@
 * {
     box-sizing: border-box;
-    /* font-family: 'DM Sans', sans-serif; */
-    /* font-family: 'Open Sans', sans-serif; */
-    /* font-family: 'Rubik', sans-serif; */
     font-family: 'Karla', sans-serif;
-    /* font-family: 'Manrope', sans-serif; */
 }
 
 body {
@@ -142,10 +138,6 @@ body {
 }
 
 .inline-link, .inline-link:hover, .inline-link:active {
-    /* color: #4a4e69; */
-    /* color: #9a8c98; */
-    /* color: #6320ff; */
-    /* color: #9b5de5; */
     color: #6060af;
     font-weight: 800;
     text-decoration: none;
