@@ -83,6 +83,10 @@ body {
     text-decoration: underline;
 }
 
+#navbar-small-icon {
+    transform: rotate(35deg) !important;
+}
+
 
 
 /* ---------------- INTRO STYLES ---------------- */
