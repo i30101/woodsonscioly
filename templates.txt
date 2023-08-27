@@ -1,4 +1,0 @@
-decent bootstrap templates:
-https://themes.getbootstrap.com/preview/?theme_id=19860
-https://themes.getbootstrap.com/preview/?theme_id=45617
-https://themes.getbootstrap.com/preview/?theme_id=1679
