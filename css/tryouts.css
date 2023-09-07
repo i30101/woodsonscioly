@@ -1,3 +1,30 @@
 .tryout-step {
     margin-bottom: 20px;
 }
+
+.resource-box {
+    background-color: lightgray;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom right, #8e91a8, #5f637e);
+}
+
+
+.resource-box, .resource-box:hover {
+    text-decoration: none;
+}
+
+
+.resource-box:hover {
+    /* background-image: linear-gradient(to bottom right, #8e91a8, #5f637e); */
+    /* color: white; */
+    text-decoration: underline;
+    color: white;
+}

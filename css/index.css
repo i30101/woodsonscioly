@@ -83,6 +83,7 @@
 
 .quote-box:hover {
     background-image: linear-gradient(to bottom right, #8e91a8, #5f637e);
+    color: rgb(231, 231, 231);
 }
 
 
