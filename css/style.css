@@ -63,6 +63,14 @@ body {
     transition: width 0.3s ease;
 }
 
+#big-4 > a {
+    color: gray !important;
+}
+
+#big-4 > .nav-decor {
+    background-color: gray;
+}
+
 
 
 
