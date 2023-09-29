@@ -51,3 +51,8 @@ table {
 .competition-name {
     text-decoration: underline;
 }
+
+.alternates {
+    text-align: center;
+    margin-top: 15px;
+}
