@@ -1,5 +1,9 @@
     // team names
-let teams = ["States", "Regionals 1", "Regionals 2"];
+let teamNames = {
+    "2024": ["Team Europa", "Team Callisto", "Team Io"],
+    "2023": ["States", "Regionals 1", "Regionals 2"],
+    "2022": ["States", "Regionals 1", "Regionals 2"]
+};
 
 
 
@@ -29,7 +33,7 @@ function getTeam(teamParam) {
     let output = "<br><table class='table'>";
 
     output += "<thead><tr>";
-    teams.forEach(team => output += `<th scope='col'>${team}</th>`);
+    teamNames[teamParam].forEach(team => output += `<th scope='col'>${team}</th>`);
     output += "</tr></thead>";
 
     output += "<tbody>";
