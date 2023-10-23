@@ -17,6 +17,13 @@ let test1 = [
     ["Aristocrat",      1,    "Hope your brain cells are still intact. Take a “break” and solve an aristocrat!",     "SKKAMGEXP HA PAAPTI, HCIMI SMI STQALH ITIFIX QETTEAX BIABTI EX PIAMPES SXG IEPCHN LED JETTEAX JMSEX KITTL BIM BIMLAX. E YAXGIM CAY QSXN JMSEX KITTL SMI BMILIXH EX PIAMPES.<br><img src='images/break.png'"],
     ["Porta",           1,    "I feel like I've been neglecting porta, so here's another one! It's a random unpopular opinion about kpop that I found on Reddit. Key is KPOP.",     "BOPL GYUK ZULV WYGU IHAM AMUG VPGN QEVU VEYU MZHK RALP UPGR KHI"],
     ["Fractionated Morse",          1,    "Don't solve this fractionated morse about reverse psychology. It probably doesn't start with “WE HA” and ends with “RKS”.",     "V T Q H I B M Y P M U U O U U G F P N L S M N R Z W P V O G K Q I C M B Q U W O H S M G K U W C V Q H H F O B Y O H S M B U L S O Q I O G B T S G B U L F O B W D W N G F P V W M G F Q C"],
+    ["Aristocrat",    1,  "Hi Morgan, love you. I totally am not running out of things to say for these aristo test texts.", "VEC JYL PVEUL JFEDPSEN DJDLYU WEMSNO JKENO? VEDLZXKKH JNFYLC JOYLLF PE TL PVL CSPNLUU.<br><img src='images/morgan-love.png'>"],
+    ["Cryptarithm",    1,  "Here's a cryptarithm, because why suffer alone when you can suffer together?", "<img src='cryptarithm.png'>"],
+    ["Aristocrat",    1,  "I can't think of anymore quotes for aristocrats, so here are some cringe pick up lines instead~", "TAK LFC T OTZUBUTS? UD'Q DGK QDATSZKQD DGUSZ, YCD KHKAL DUOK U NFFJ TD LFC, KHKALFSK KNQK PUQTRRKTAQ.<br><img src='images/pickup.png'>"],
+    ["Hill Cipher",    1,  "I'm currently procrastinating my history homework, so here's a history related quote so that I feel somewhat productive. Encryption key is BANK.", "HNMCLVOASYIAAACCAGPTAATXAYSSMOSIAIEEEKTLWASUOATBOCEOSCAGBFTZAYPNSYEE"],
+    ["Patristocrat",    1,  "Patristocrat pick up line ;-; Here's a hint though, it starts with “I WISH I'D\"", "PUPZM PVJIP VXKEF IRRFW RPKWR KZHPF WHFPW MPLMZ HMKKT SFHIN ZFQKN IWVPG FLKRH MFXPZ REQIW VPUIW RRKYW KUITT ISKNR PR<br><img src='images/patristopickup.png'>"],
+    ["Aristocrat",    1,  "One last pick up line, or is it?", "PZE ULZF, J NBI B HJXUEH QJLS MSBIP RZ OZ, GER PZE'MS DZ NZR JR CEDR QSVR TP TJLI.<br><img src='images/last-pickup.png'>"],
+    // ["",    1,  "", ""],
 ];
 
 let notStarted = true;
