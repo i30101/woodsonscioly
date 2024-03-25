@@ -63,14 +63,6 @@ body {
     transition: width 0.3s ease;
 }
 
-#big-4 > a {
-    color: gray !important;
-}
-
-#big-4 > .nav-decor {
-    background-color: gray;
-}
-
 
 
 
@@ -146,7 +138,6 @@ body {
 }
 
 .inline-link, .inline-link:hover, .inline-link:active {
-    /* color: #3a3a81; */
     font-weight: 800;
     text-decoration: none;
 }
