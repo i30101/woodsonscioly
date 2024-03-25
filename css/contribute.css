@@ -1,0 +1,14 @@
+.coming-soon {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#coming-soon-title {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#okta-image {
+    max-width: 50%;
+    margin: 0 25%;
+}
