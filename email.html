@@ -15,9 +15,8 @@
         }
 
         body {
-            /* background-color: #1d3557; */
-            background-color: rgb(26, 48, 235);
-            /* color: #222; */
+            background-color: #1d3557;
+            text-align: center;
         }
 
         img {
@@ -26,36 +25,31 @@
         }
 
         #main-column {
-            /* background-color: white; */
-            text-align: center;
-        }
-
-        #main-content {
             background-color: white;
-            border-radius: 25px;
-            /* padding: 20px; */
-            min-height: 400px;
+            margin-bottom: 50px;
         }
 
         #full-logo {
             object-fit: cover;
             width: 300px;
         }
-        #main-title {
-            font-size: 40px;
-            font-weight: 600;
-            padding-top: 80px;
-            padding-bottom: 40px;
-        }
 
         #first-image {
-            max-width: 60%;
+            margin-bottom: -4px;
         }
 
-        #first-caption {
-            font-size: 16px;
-            padding: 30px 60px 30px 60px;
-            color: gray;
+        .heading {
+            font-size: 25px;
+            color: #1d3557;
+            font-weight: 600;
+            padding-top: 30px;
+        }
+
+        .subheading {
+            font-size: 20px;
+            font-weight: 600;
+            color: #5b5b5b;
+            padding-top: 15px;
         }
 
         .section-heading {
@@ -63,107 +57,112 @@
             font-weight: 600;
         }
 
-        .text {
+        .text-box {
             color: rgba(0, 0, 0, 0.9);
-            padding: 20px 40px 20px 40px;
+            padding: 15px 10px 50px 10px;
             font-size: 14px;
         }
+
+
+
+        #upcoming-dates {
+            text-align: left;
+        }
+
+
+
 
         .contact-container {
             display: flex;
             justify-content: space-between;
             max-width: 100%;
+            padding-top: 30px;
         }
 
         .contact-box {
             flex: 1;
             padding: 20px;
-            font-size: 20px;
+            font-size: 15px;
         }
 
         .contact-box:hover, .contact-box:active, .contact-box {
             color: white;
             text-decoration: none;
-            padding: 50px 0;
+            padding: 30px 0;
         }
 
-        .contact-icon {
-            max-width: 40px;
-        }
-
-        #instagram {
-            background-color: rgb(193, 53, 132);
-        }
-
-        #mail {
-            background-color: rgb(99, 134, 224);
-        }
-
-        #website {
-            background-color: rgb(123, 200, 255);
-        }
-
-
-
-        #ending-title {
-            font-size: 30px;
-            color: rgb(26, 48, 235);
-            font-weight: 600;
-            padding: 50px 0;
-        }
-        
-        #ending-logo {
-            max-width: 100px;
-            margin: 50px 0;
-        }
+        .contact-icon { max-width: 30px; }
+        #instagram { background-color: rgb(193, 53, 132); }
+        #mail { background-color: rgb(99, 134, 224); }
+        #website { background-color: rgb(123, 200, 255); }
 
         /* ---------------- MEDIUM AND LARGER ---------------- */
         @media (min-width: 768px) {
             #main-column {
-                width: 60%;
-                margin-right: 20%;
-                margin-left: 20%;
+                width: 30%;
+                margin-right: 35%;
+                margin-left: 35%;
             }
         }
-
 
         /* ---------------- SMALL AND SMALLER ---------------- */
         @media (max-width: 767px) {
             #main-column {
-                width: 80%;
-                margin-right: 10%;
-                margin-left: 10%;
+                width: 90%;
+                margin-right: 5%;
+                margin-left: 5%;
             }
         }
     </style>
 </head>
 <body>
+    <img id="full-logo" src="https://woodsonscioly.org/logo/full-white.png" alt="Full Logo">
     <div id="main-column">
-        <img id="full-logo" src="https://woodsonscioly.org/logo/full-white.png" alt="Full Logo">
-        <div id="main-content">
-            <div id="main-title">June 2024 Newsletter</div>
-            <img id="first-image" src="https://woodsonscioly.org/assets/newsletters/June%202024/regTeam.jpg" alt="2024 Regionals Team Photo">
-            <div id="first-caption">Congratulations on another great year of Science Olympiad! From late night study sessions to last-minute build modifications, we showed our dedication throughout the year, and the work paid off! This year was by far our most exciting and successful season. We want to extend our gratitude to all the families and participants who made this remarkable season possible.</div>
-            <!-- <div class="section-heading">Competitions and Medals</div> -->
+        
+        <img id="first-image" src="https://woodsonscioly.org/assets/newsletters/June%202024/regTeam.jpg" alt="2024 Regionals Team Photo">
+        
+        <div id="main-title" class="heading">June 2024 Newsletter</div>
+        
+        <div id="first-caption" class="text-box">Congratulations on another great year of Science Olympiad! From late night study sessions to last-minute build modifications, we showed our dedication throughout the year, and the work paid off! This year was by far our most exciting and successful season. We want to extend our gratitude to all the teachers, families, and participants who made this remarkable season possible.</div>
+        
+        
+        <div class="heading">Upcoming Dates</div>
+        <div class="text-box" id="upcoming-dates"><ul>
+            <li>August 19th: first day of school</li>
+            <li>September 3rd: date of rulebook release</li>
+        </ul></div>
+        
+        <div class="heading">Updates and Information</div>
+        
+        <div class="subheading">Season Recap</div>
+        <div class="text-box">This year, our team excelled in competitions with an impressive record: 10 first-place finishes, 12 second-place, 14 third-place, 18 fourth-place, 8 fifth-place, and 7 sixth-place achievements. These results highlight our dedication and competitive edge, setting a strong foundation for future success.</div>
+        
+        <div class="subheading">Season Highlights</div>
+        <div class="text-box">We earned a total of 3 trophies and 71 medals! <br><br> We are also extremely proud of our team and most notably, our performance at the Fairfax Regional where we secured FIRST place!</div>
 
-            <!-- Contact -->
-            <div class="contact-container">
-                <a href="https://www.instagram.com/woodsonscioly/" class="contact-box" id="instagram">
-                    <img class="contact-icon" src="https://woodsonscioly.org/logo/instagram.png" alt="Instagram"><br>
-                    Instagram
-                </a>
-                <a href="mailto:woodsonscioly@gmail.com" class="contact-box" id="mail">
-                    <img class="contact-icon" src="https://woodsonscioly.org/logo/mail.png" alt="Instagram"><br>
-                    Mail
-                </a>
-                <a href="https://woodsonscioly.org/logo/instagram.png" class="contact-box" id="website">
-                    <img class="contact-icon" src="https://woodsonscioly.org/logo/website.png" alt="Instagram"><br>
-                    Website
-                </a>
-            </div>
-            <div id="ending-title">Woodson Science Olympiad</div>
+        <img src="https://woodsonscioly.org/assets/newsletters/June%202024/GroupEoYP_WSO.jpg" alt="End of year party">
+        <div class="subheading">End of Year Party</div>
+        <div class="text-box">As our school year comes to a close, we celebrated with an eventful end of year party filled with fun, bonding, and water balloons!</div>
+
+        <div class="subheading">What's Next</div>
+        <div class="text-box">
+            Over the summer, our team plans to stay connected and continue the grind. Feel free to get ahead; there is no hurt in doing a little studying over the summer to prepare yourself for an amazing season next year. We will continue to send future newsletters to update our WSO families and students about tryouts, bonding activities, and more.
+            <br><br>
+            Have a wonderful summer and once again, thank you for an incredible year!
+            
+             </div>
+
+        <div class="heading">Woodson Science Olympiad</div>
+            
+        <!-- Contact -->
+        <div class="contact-container">
+            <a href="https://www.instagram.com/woodsonscioly/" class="contact-box" id="instagram">
+                <img class="contact-icon" src="https://woodsonscioly.org/logo/instagram.png" alt="Instagram">   <br> Instagram  </a>
+            <a href="mailto:woodsonscioly@gmail.com" class="contact-box" id="mail">
+                <img class="contact-icon" src="https://woodsonscioly.org/logo/mail.png" alt="Instagram">        <br> Mail       </a>
+            <a href="https://woodsonscioly.org" class="contact-box" id="website">
+                <img class="contact-icon" src="https://woodsonscioly.org/logo/website.png" alt="Instagram">     <br> Website    </a>
         </div>
-        <img id="ending-logo" src="https://woodsonscioly.org/logo/cog-white.png" alt="cog logo">
     </div>
 </body>
 </html>
