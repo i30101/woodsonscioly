@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill 2x2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="./">WSO Code</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="../">woodsonscioly.org</a></li>
+                <li class="nav-item"><a class="nav-link" href="columnar">Columnar</a></li>
+                <li class="nav-item"><a class="nav-link" href="fmc">FMC</a></li>
+                <li class="nav-item"><a class="nav-link" href="hill2">Hill 2x2</a></li>
+                <li class="nav-item"><a class="nav-link" href="hill3">Hill 3x3</a></li>
+                <li class="nav-item"><a class="nav-link" href="nihilist">Nihilist</a></li>
+                <li class="nav-item"><a class="nav-link" href="porta">Porta</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div id="title">2x2 Hill Cipher</div>
+        <hr>
+        <div class="question">Decode this Hill Cipher by Harvey Weinstein with the encryption key MZHQ.</div>
+        <div class="ciphertext">XCPKXWOERWUSSBHSDPYGZEUIVGCTOXQEFEUQMFQCHNHWZWXGJCNLKMRSOQIWSBWGPUYLXZ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Miguel de Unamuno with the encryption key RDOD.</div>
+        <div class="ciphertext">KKNNPGSGDQUPSUTDVOFUDNNSBZRTPDDNBPDRTDLVZQKSBGXOSGTDDATVYGWMKX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Marcus Aurelius with the encryption key PEVH.</div>
+        <div class="ciphertext">FLOAWSXXSXGWBXOXESKOLVBGQUCVAQIIITUSOIXBLDYVBGANBGQUCKAQOIDFVC</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jeanne Calment with the encryption key VVAB.</div>
+        <div class="ciphertext">FVZRKACERAAIXSRAGPZNUSOAYDCRMUSLUS</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Helmut Jahn with the encryption key OXHM.</div>
+        <div class="ciphertext">UYDYVYWCPJVEMSGANSQXGHRCQKBERCIYGOTCKSKCGNBBNAGNBGSNIHIYIGRDFYWAULQGITGPGARRXWHQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Albert Camus with the encryption key LAMB.</div>
+        <div class="ciphertext">KLQIGYNDYRQXKJKLMGRUNOLNSNEVZGBGAKSOJCYBRGBBKFGJZKEEANLQZGJNEYKLZUMZCCNEEB</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Melanie Fiona with the encryption key LZHS.</div>
+        <div class="ciphertext">EWHVPHTRGPWOGPEESCKPCGCMYIVEKQJKQYXECYJARIOIXERE</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Yogi Berra with the encryption key DCPN.</div>
+        <div class="ciphertext">XJRMPJPJMAQODPKKDPDWIQQNUVGWSCVGLBZNLPGESOCIZZUIDRTMQVINMVPZAPBKDBOXHVYVAX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Paul Cezanne with the encryption key OJHF.</div>
+        <div class="ciphertext">RMIKUGMPFRMUARSLRMVRGQKZJBXHARHNERMVKBBHVDXVUEHAERXHARHNOLSSZFJE</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Cinderella with the encryption key TIAB.</div>
+        <div class="ciphertext">YDRESMKSUWKSNYKUPHYAHTUAOEYWJEXYKURERAATOSHEOP</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Javier Bardem with the encryption key QZDF.</div>
+        <div class="ciphertext">VNDDBMMMJKSEJHQSEPITWCQZUYSYGELWEYIMGZURIMLOOCITAGTQWDQYLLTN</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Louise Brown with the encryption key BGAT.</div>
+        <div class="ciphertext">MDENDANXCBXUYUVERYZXMYHAPZEEQYDAWAUWZLWIWFQCHH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Demetri Martin with the encryption key NKWR.</div>
+        <div class="ciphertext">IFPEJOIFCMVLONYEPIVYFRILKWXMAPONTQOUMQIFNYXMBQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Longfellow, Henry Wadsworth with the encryption key EJDL.</div>
+        <div class="ciphertext">OFQDSCQDOMEVLDOZSPHPTRABEWRW</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Anthony Trollope with the encryption key ZFKD.</div>
+        <div class="ciphertext">ZPZVHWWCKKKXEFZYJSQDEEVYCOFASTJDDNXCMYZYZSGUIQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Fritz Todt with the encryption key BFDS.</div>
+        <div class="ciphertext">VYSJKKQYFKLGVQVJXUEMLMHQMMDQLTPCNWUKXKJNHUTOQIKCOXLTUYZZAZESHTON</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Tiger Woods with the encryption key TZOT.</div>
+        <div class="ciphertext">PLFJLRNLPMLRGRMSJMWAJIHOGINNMNZSPMDUBEPZWARSMIDMBOAQQNGI</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Rachel Bilson with the encryption key OPJK.</div>
+        <div class="ciphertext">IKIBJHTEQVZVPMWWRANFTUUMMVVUEUVOMSHHCGWAULZIHHWWCZNQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Herbert Hoover with the encryption key HHUV.</div>
+        <div class="ciphertext">KWAHWKMXNPRVQEHIEHASHCBQHCHHVPRLWOTBRVXKVIXOQHYQAIHHNAIMEJJNBWZL</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Sheryl Crow with the encryption key BAJD.</div>
+        <div class="ciphertext">PROPLHDRNSRJAHIREPHLTNMDEKLCYXULNHANDZMENZXFERLHNSBIIDGOPMAUEJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Henry David Thoreau with the encryption key FGEJ.</div>
+        <div class="ciphertext">EUOVHJSMHJUQBYZMFGXUPSRNOCXTSNMQZSILSZOH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Augustine Birrell with the encryption key FBNG.</div>
+        <div class="ciphertext">YDTKVYUAUFOEYDUAZZLOHLWDGEFTFB</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Liam Gallagher with the encryption key WNJG.</div>
+        <div class="ciphertext">HMHMNXNOQQIMQQNXCVWHNSNS</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Isaac Bashevis Singer with the encryption key OTBC.</div>
+        <div class="ciphertext">JHOQCZXMYVWCFYLICJFSLAMVOVFTZKXMMSIEGKBOEPILUHCJIGWDGELC</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Ethel Barrymore with the encryption key UFPF.</div>
+        <div class="ciphertext">ZIHNOUHQMYTZCKYYBHQJPVUFQCOJOPWPEOXBWCZKEVBT</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Robert Mondavi with the encryption key ZESD.</div>
+        <div class="ciphertext">CCANFJICOEGISBQWJZYFTWFEMFOLGIQTNLQIHQSBQWJZYFSHSYGRVEMYOAHZMFWMGIQTROWHZLWHQWEJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by James Cash Penney with the encryption key PPHI.</div>
+        <div class="ciphertext">AHXKSQYZICQAXAYIAMSQSPAMGMFHDFVGAWXAKEZJDEBBZHGLVCINVIUOVGVDVTOYJKDEBKASPU</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Billy Joel with the encryption key CBZZ.</div>
+        <div class="ciphertext">LXKUIJRBLTWQEYBQFCMSUZCKJJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Saint Teresa of Avila with the encryption key KTJT.</div>
+        <div class="ciphertext">OVSLAFAYDJKKFBVHPTXXXTZVAYOCUCBOTLMIAFCLLSPHJDASUCXKSLPW</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Daniel Carter Beard with the encryption key JYEN.</div>
+        <div class="ciphertext">IKQWUHTMXIHNUPWRBLIDAECUIERYGRMQKDDLSRVQNMKIBLMQKDMRBLADMPQPMD</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Holbrook Jackson with the encryption key RTOR.</div>
+        <div class="ciphertext">TEWMJGSIRYJIKXDRUQBVRKBXGYPEIRBH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jeanne Moreau with the encryption key DFNY.</div>
+        <div class="ciphertext">LAGSJNPDTEZOPELOVYMAZLHF</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jean-Paul Marat with the encryption key TRVU.</div>
+        <div class="ciphertext">XFZBJKKSKZDEINXOTTZIMCBUNEBZISAFDRZBUWGYBVXXISOVTUAEFCBVXOCONAUVVOFHDPYK</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jeff Bridges with the encryption key JHYT.</div>
+        <div class="ciphertext">XHPIFIQQPKJIFPXONXNAZAVYDKQQZAVOMCGAPHRYKWOYCS</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Eleanor Roosevelt with the encryption key EDDE.</div>
+        <div class="ciphertext">VSQNGFWECPHJZYMGYFLVOSMPMSBTUWCUVKHUXEVSQMJZQTIUTHMSNZSHWPNV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Charlotte Whitton with the encryption key OBHB.</div>
+        <div class="ciphertext">BXZDKQMAXNECUVBXZCIISTITNKTTUZKHQBVRWUILUWIOCCCFZXWUWMGSKO</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Horace with the encryption key TYLP.</div>
+        <div class="ciphertext">KJMUMGIHFZOGFVUAOJYFJCGKEJBEEZRUEAHJOZYXOCBTDN</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Henry David Thoreau with the encryption key LORX.</div>
+        <div class="ciphertext">VQGVCIBHFQGKTICEPFWPCPMAFXGTWRFLVTSYNO</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Charles Maurice de Talleyrand with the encryption key MJDD.</div>
+        <div class="ciphertext">YMFAKYNUGLXVQAFFFABFGLOEFATLOSNNWPWDGLVSCOJZUFODCXQICXJMYWPS</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by David Duchovny with the encryption key GHLR.</div>
+        <div class="ciphertext">CGUDLSJXOUDYGYHBCLPHNVSHLQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Abraham Lincoln with the encryption key TEJD.</div>
+        <div class="ciphertext">ZKCNSMHDSUBFVNCLPNOIDZDZMYQWBFUEYYJJUEHSMGZW</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Anna Katharine Green with the encryption key JZHU.</div>
+        <div class="ciphertext">LXININSYXFPTBXTJKLFJGKRPEWOSHKUGQOUDHZFBINRQHFRP</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Arthur Erickson with the encryption key DVCR.</div>
+        <div class="ciphertext">RKACNNTDXTHBCQJOFYNQOUGMWYVTBEFFRTHBVORGDVHWMU</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Devon Sawa with the encryption key LFQJ.</div>
+        <div class="ciphertext">QOMGJLBZZJUYVQZGFRQMRUCBKDJBSMFRZJMASUESVCYLGUMYGUZNFZMWBGYLNRKWGUJBNCRCWIKDWU</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Patrice Leconte with the encryption key LOLP.</div>
+        <div class="ciphertext">CCJAOSJYGUHSKPTHOAKQSFWNGZYMNNJNZHKOANSFHHTZWNILSHUWOSCB</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Luc de Clapiers with the encryption key SPVS.</div>
+        <div class="ciphertext">GERFQOGLMRWAQQTKMUESIJTPGQGBFIUGCFFFPAKMTGCUDWQKQYGEJZENTXEYNQUINJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jean Anouilh with the encryption key XUHH.</div>
+        <div class="ciphertext">UEDRDQETABYNCQKHCAOZIGJCIKQDABKQNNICCDZHDDUEXLABRTYWWUOCDR</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Plato with the encryption key DBHE.</div>
+        <div class="ciphertext">BRMFLEAWGLZNFUPJPUQABFZCQYCCSNTPVOJGMCFDKBCUDV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Doug Larson with the encryption key XMAB.</div>
+        <div class="ciphertext">BHMCUTGOULJVKRKWQLFBCMANKBWSDFTIONDBMTYOULRNGVKRSTWOBTKAFMWTNIHGWT</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Vincent Van Gogh with the encryption key EJJV.</div>
+        <div class="ciphertext">GUCSSBNSUTJYMFFZKWCJVHPJWONNNYNRZFRHECJGUKSPMRXYMICLNSSKAIAQDG</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by John Harrigan with the encryption key NUJP.</div>
+        <div class="ciphertext">NLBWAHWUKHMTRRQFPTCOIDNLBWAHWUWQNLPFRRQFPTZCYOCF</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Virgil Thomson with the encryption key CLDR.</div>
+        <div class="ciphertext">OXQXOSKVDLGJULSDNNWDACRDBLOVNOVZZL</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Albert Schweitzer with the encryption key CBPK.</div>
+        <div class="ciphertext">TROQMJTIOYVSBQHAECGYAGSMDSIKVKFPWUTEELOLSYMQNAZKPCDKZWQAEXGMLMDI</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Thomas A. Edison with the encryption key TDOD.</div>
+        <div class="ciphertext">NWJVVUSFEODHKQFQAWPXGSSSJVFFMYNAWJTTDPOUSTDHFH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Conrad Hall with the encryption key FRGZ.</div>
+        <div class="ciphertext">PSZWZMXURSZAUMDJMAUMDJSSFTLXHXUAGUTLQBNDXHVCDQFSDNHGWB</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Albert Einstein with the encryption key HRDI.</div>
+        <div class="ciphertext">PUYMHYPZLJNILYQORVLOAKXIXKFSWCERMUMLCAOBLYWAZAHQHWVM</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Ronald Reagan with the encryption key FHEJ.</div>
+        <div class="ciphertext">ZVTUJADPHTNNGIBTGEJNCYHJKSBTMUUNLMTGANJNRYEZNH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Christopher Marlowe with the encryption key REZH.</div>
+        <div class="ciphertext">CPTNCGBMHVWHGLNEANNEGYJHTRLDGELXFPFBLQFVHBCKDTYVYDTNWCANTTLHXF</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Thomas Fuller with the encryption key JABB.</div>
+        <div class="ciphertext">AGUNPPUBLHMSNQSQYHPXNNNPKMGSBRYVVPFGKWKRPS</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Maya Angelou with the encryption key BMBN.</div>
+        <div class="ciphertext">ZGARWESSRVTRXFJNDLJNXBXTAEPAGBIVITQVEEXAXBIVAGNRORGLKBCV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Mary MacLane with the encryption key CDLV.</div>
+        <div class="ciphertext">ZVPLHHWWISUXORIEGLDXWWLSULPZIFDXJG</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by William Shenstone with the encryption key BDBY.</div>
+        <div class="ciphertext">VBHEWAMWKYOFTUEEHPRRILDJTZPDYGDLHVNQDWYGPBNXREPZWAZDZFCQVIGUAEWHDWNW</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Alfred A. Montapert with the encryption key SHRH.</div>
+        <div class="ciphertext">LHJFTVUMGCCOGAELQDGPKMXDWIGOMZCOOXTXYGPXAW</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Liam Neeson with the encryption key VFFC.</div>
+        <div class="ciphertext">DAOMFPRZWIRZZVPSUKRZPGPG</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by William Shakespeare with the encryption key CFFN.</div>
+        <div class="ciphertext">ERYPEACHRNWHVRBECSKDDEQDZTPFHR</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Brad Pitt with the encryption key WVBB.</div>
+        <div class="ciphertext">MUHUUWJGXTRLMVGNQVUHSAPTOSAQHBOPIXTRJJDBAGGNQVJBSMHVPFWUXLPD</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by George Eliot with the encryption key QHJF.</div>
+        <div class="ciphertext">UFHJMKNEOEAPXVDJTPDHZDUJORIJLZQWUEWLAHBRSPLHEF</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Anthony J. D'Angelo with the encryption key JFWP.</div>
+        <div class="ciphertext">HIBCJUHEIBKKKXHHAWFCTZZDWKTQDNPQAOBCNGLIFTJKXXWGEZXI</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Michael Graves with the encryption key RXRY.</div>
+        <div class="ciphertext">LSPKDQFWUKEMRVKOIBFKFWYQRPTXPUBSNUBUKMDXRV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Loretta Young with the encryption key UNXP.</div>
+        <div class="ciphertext">MJSEBVNVRBMWUFMJPRCAMTGSXNJZUYZMUFQYANDWUIPZ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Avicenna with the encryption key VGXH.</div>
+        <div class="ciphertext">ZSIMGZPOQYHVVTJTHVXQCQGBKJYHWRIMWFANLEGZUNWSSWNNFIQSPLXZRFXRRDTXSMIXANLEKIWF</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by V. S. Naipaul with the encryption key FOGV.</div>
+        <div class="ciphertext">IDUYNEPKZWTWKMBVKJSTCKBVCEIDCDHARCSNWZQONH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Ruby Wax with the encryption key LKAB.</div>
+        <div class="ciphertext">GOXLAGSATHYLATQSKSWDLOCEBAVECRGEKNZRKNQIVGOOARXEHCQL</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Iris Murdoch with the encryption key RHNG.</div>
+        <div class="ciphertext">IDEMPBNEYSCAJJXBFDEBWYVLPBRALSCCGH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Eric Butterworth with the encryption key FAFD.</div>
+        <div class="ciphertext">GSPFNSKFANEQGBAFGSAZUIUAJJNFUIJJRFUZJHNRGBAFGSAZUR</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by James Madison with the encryption key JFQJ.</div>
+        <div class="ciphertext">IENNLIGCMDTVRJFAHLZCYYTABUJDGCCBYDJFRWUEEUAIBUSGDMJDVJYDSQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Benjamin Jowett with the encryption key BAQL.</div>
+        <div class="ciphertext">TREUAETQGKTTHSNOSJODEWSPORTQMUNHWNOEENSDHACLETIZFARTOANOTREO</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by David Hume with the encryption key LAQB.</div>
+        <div class="ciphertext">QEZWRUQVKARYARNINGANHLYBSYKAALHEXGNIBQFQBSFPSPBZSSFAIHZWDCRFBJMMGRYMRYHCSL</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Harvey S. Firestone with the encryption key DFJW.</div>
+        <div class="ciphertext">MUJPYATFDVKAZHBCXLKFEGWNDMNHWQXOWMXGDSXGUENAADNHWQIABXZHQAHXOMCKON</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by J. K. Rowling with the encryption key ZABB.</div>
+        <div class="ciphertext">TLARSVUBMWYGIFMCNRWPIWYCNUWEJZIFHTUUMRIAUTWZWRSVHAWASHARXLNTEKJCXC</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Henry Adams with the encryption key LFDC.</div>
+        <div class="ciphertext">BKWISWBVCMPALPTHZIBRMHRMBAUGNAXYVNUDOKFMQOFLCIANXYUKBKRXHVIEVO</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Lily Tomlin with the encryption key BPAT.</div>
+        <div class="ciphertext">RBCIEABYEMPYJCJGWWDYOOCQUGUYUDVNFXNXUIFDMUDXNXXWHIPTCQITOEBFOEJGUYYGLI</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Thomas Jefferson with the encryption key NJOL.</div>
+        <div class="ciphertext">VZMOPFXMKVAEGCTRYFTHPVXZJPPFXYCFNUCBXMHEPTXTWWCTXMNCPT</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Josh Billings with the encryption key TXSX.</div>
+        <div class="ciphertext">CJZVAWRZHTNJLHYSOWWUBPPELSYYBWTCLDLHWSHP</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Thomas Aquinas with the encryption key JFZO.</div>
+        <div class="ciphertext">YBRAYETINSZBRTJMYBGKKWOPTFDQBCBAHYLRLFSDLTETTDJOLRXWNPZBAX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Johnny Thunders with the encryption key FFWX.</div>
+        <div class="ciphertext">UGOOSZEVTXNNYQRVXARIFTEGONYKFWLWFWDIXUPN</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Lena Dunham with the encryption key SDND.</div>
+        <div class="ciphertext">BNFLTZZIAIZVUDWXSCBHMNTHSEUAUVNAJTTZCQXK</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Denis Waitley with the encryption key CBNH.</div>
+        <div class="ciphertext">JDIWOHURTQSPYXAJWEAHRKPBMREPCWTKTDWCSRDIEXBWBZITVNURURSETQSPONTODNAWYUZOFPEKJD</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Donald Trump with the encryption key WDFB.</div>
+        <div class="ciphertext">CKPOWLHLMMCROVWGHLQGKISSFVCSGZKHEUKKJFEOXUTX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Danielle Steel with the encryption key LWMZ.</div>
+        <div class="ciphertext">QNAOSOCSZNWKCUCQKFGVUSNYBUBYAOEEANDIGUZNYRONWPWX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jackson Rathbone with the encryption key OXDG.</div>
+        <div class="ciphertext">BMDMXAEMRZVYTSQOLVVYEWLVVKYKRVOLWJBFLYPSQLDRUMIBCGQXGA</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Joel Osteen with the encryption key BPAJ.</div>
+        <div class="ciphertext">FAHPHABPLHZPOGIWATEARABPLHZPOGULMKVKII</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Gilbert K. Chesterton with the encryption key HJAB.</div>
+        <div class="ciphertext">OHZRCAZEJONUJESOJAHCRINEDTHRVFRRSCGSYLWICTHEJLSUBS</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by George Eliot with the encryption key TKYN.</div>
+        <div class="ciphertext">PBMFASOQTNYEBARQCXEZASTNUXSFEYGQZLYSRNPBINUKXAFBQLGFDSGFOLRMHYMDGLUSXAAI</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Francis Ford Coppola with the encryption key JKLN.</div>
+        <div class="ciphertext">YAFRVNYAOKANECAGFRNBULOCBNKEXNHOYFBLIQBNEQISAXPRWLRBFNSFUYIZIQDHFPKCIYZNKLCT</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Aristotle with the encryption key IHHJ.</div>
+        <div class="ciphertext">KKTHQCKWRLGHSDCVQZLUKONNIGZVPTOOVFUUKYQGPTIKTOOQEKOTILRJAWUZEKGPDCIMRLGHLJGHCV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Emily Procter with the encryption key EDJJ.</div>
+        <div class="ciphertext">LJUGWEULSPFBFPBBCURGQGJZDTIEBVIRIIRX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by William Shakespeare with the encryption key DSEZ.</div>
+        <div class="ciphertext">BRWOMKLYECTBVWCFEJMDAVGZXEDVIPKIIQBR</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Friedrich Nietzsche with the encryption key EFFH.</div>
+        <div class="ciphertext">TDYUADFCYUHZVVCJADEQWMLYRDWLCDUDFVJQIBEUKJRFLN</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Aristotle with the encryption key NEYJ.</div>
+        <div class="ciphertext">YZUQAZDIESGWLCRMFACWLCQMLPCWLDQPACTAUI</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Germaine Greer with the encryption key STDE.</div>
+        <div class="ciphertext">HMFKSSIDXAUHSPSSSDIIKGRZTWMMWKPAWIMNXLULKSEHRKWVBDULGAGRBFBKUMRZCCLQUMYHTGPOULOVHM</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Paulo Coelho with the encryption key EDJN.</div>
+        <div class="ciphertext">THTCYKYNKPOBYPKPSGKASACXFNCGOSSKXTHLGUJRJJGAXXTXOXSP</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Enrique Iglesias with the encryption key SXRW.</div>
+        <div class="ciphertext">OEBGTMPQVCYCANINJJGGIINANRCQRBRSVYNAVHFENYBGSWPY</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Sophocles with the encryption key HJQX.</div>
+        <div class="ciphertext">QYTYTSFBADJIXERHHWMIXFBMLXHDJLRKPIFMMNVXJIDBAIRQMWIKVTEYLWYXHWBZZASMXMXUHD</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jose Rizal with the encryption key JBYF.</div>
+        <div class="ciphertext">PGXRZNASTDPPJWLETAUIDVVETEYMGIMWEAPEDJLMNANAVOECVEQPSYVVTUBENZ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Kevin Mitnick with the encryption key BAEL.</div>
+        <div class="ciphertext">IUERHMRIDNODAWKYNBOAOGPUTQRGNYWKNHSSMOTIMOSETOAWTKARLWEQSEEVTXANIHWKSYEQRGAOOT</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Audrey Hepburn with the encryption key VSAB.</div>
+        <div class="ciphertext">DAHICIOADWQYOAOOKDODGA</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Helen Hayes with the encryption key FAMF.</div>
+        <div class="ciphertext">AEUKMVSDOAXQHNANRQNDUIMYSIHQAKJAUIUR</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Branch Rickey with the encryption key RVQV.</div>
+        <div class="ciphertext">JYKIUMCJJFEARJIOFRFCGOLF</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Leona Lewis with the encryption key PLBC.</div>
+        <div class="ciphertext">PWXQKCHAYOJJLLQKRKVEQIYMHNFV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Giordano Bruno with the encryption key IHNO.</div>
+        <div class="ciphertext">PGSAROSYSUQRPEMOIRQBAROVORRJZQCMTAGHKBGZJGENEVQRPEEHOTUEDT</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Immanuel Kant with the encryption key QVPU.</div>
+        <div class="ciphertext">IBJFLQAEOOPKZSNAJYMICDVZMIKEVHRERYQWWQLQJQGKFT</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Dolly Parton with the encryption key BCBV.</div>
+        <div class="ciphertext">UREKEBSSNTVBDXOBAOVBNTIQHKSWQTEENU</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Florenz Ziegfeld with the encryption key BAMZ.</div>
+        <div class="ciphertext">BIAGTWOHCKUPSEIATNEKOUTMMZOVTUNHRSQQIBEKEJTUNXTNEHAJAOOSNHAISETGFPHCALPNIQANTV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Henry Miller with the encryption key IRFN.</div>
+        <div class="ciphertext">UMYNKWVQQNHJCSGOLEYUDNKUQNNNJCUJOMIILENHIHXBPFLERHWHKUCZENZTFHME</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by William James with the encryption key CBTO.</div>
+        <div class="ciphertext">TROEMPTGGIWMVPVOQGDKUYIDDDJCYFADOSBEWLGTTRTGAKHZWAXVSSUFLJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Samuel Johnson with the encryption key DEIR.</div>
+        <div class="ciphertext">PESEUUKEMTCJSFZCTYYCHUHLYLYSIENQXOQJGUHDMGHLKUSNXAVMYX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Andre Breton with the encryption key JCED.</div>
+        <div class="ciphertext">RQOILSGIRZRQUYDLUJWSPSEDGIRZPQRBKQPYRZ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by John Locke with the encryption key KLBC.</div>
+        <div class="ciphertext">BWXQOEODEWZEQJGGTTHHOEVOAKQXNYIUBZKPCJZEPIABXVGZABEBNYHHYUPDQJGGTTNQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Alton Brown with the encryption key WPNK.</div>
+        <div class="ciphertext">SQYPUOVOKARTUIYKCTAXMOOUKBEUGBVD</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Charles Hodge with the encryption key LSBD.</div>
+        <div class="ciphertext">XOOMVQSSEFWWXHMHZTPUOYXOANFHFDYDUNISWKOSZCMRSRQOKVGWPA</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jack Anderson with the encryption key DFMZ.</div>
+        <div class="ciphertext">ONAOXYYEBAMSJRPLRHQEZIJYYXDDIAZJKGFOMJEKEHNNOJCMZSQAHWOQONNOFOQAEHPCJKXM</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Sophocles with the encryption key RMSN.</div>
+        <div class="ciphertext">AOZADUHNSIXNEFBEZAOGPWFEQSTPLWYDGFRCHNLWCBPWXNAMHNIBRRSUPOJZCJQELEKGGD</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jean Anouilh with the encryption key JCID.</div>
+        <div class="ciphertext">DRUZMYIZMJKGKJEBULEBKAULMTWLTQCP</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Princess Diana with the encryption key DEHL.</div>
+        <div class="ciphertext">HCCHWKCHKDLCCUKXCAYRHCSUKGPUYEIIGUWFOYCWJRNZDNAFYJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Minnie Pearl with the encryption key GZFZ.</div>
+        <div class="ciphertext">WQLIIILLODVIPBPPAPKFDLXDMFBXITTRKSLTDPSEZFXFJJKGLGMFOSOX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by James Allen with the encryption key IFBB.</div>
+        <div class="ciphertext">FAWCDDRVBVQGVBUKNVVHQRJVWTPQIJHREHGZIQCDYYAVXIOIGFAV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Isaac Newton with the encryption key LFHE.</div>
+        <div class="ciphertext">BDNMWYKFSCWNXOCGUYRLXIMAELWEKFUWJZYOXEOQHDHDSY</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Fidel Castro with the encryption key TAIB.</div>
+        <div class="ciphertext">MQZYXWBSEAWEQWWZKEXOUGNEOGYYGKWMBSEHEHDVGEWFAWAY</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Tom Allen with the encryption key QTDF.</div>
+        <div class="ciphertext">RXZBIAKTQVFLGMOFLHESDDVOEILLQZDYBXOWGMYJIVMZDXXTNNPOINKRIUFZGMFEQYZA</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Enya with the encryption key HCKF.</div>
+        <div class="ciphertext">KMOARRANYXNGZEWBCOTWZWCDANYCOOEPSPQTCFHA</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Sivananda with the encryption key JCLD.</div>
+        <div class="ciphertext">ADSRWZWWANRXUXSMSVTLOIDWEXGNBXIGQVTLWHDWEXRFOCKCIP</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Mick Taylor with the encryption key EBDD.</div>
+        <div class="ciphertext">BJDZLXHLNHTJMFXQQMDMTLXP</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Paul Newman with the encryption key LDWH.</div>
+        <div class="ciphertext">SYZCSGLJMQPAQISKSCUSXNCWSYZCQKZPZCEH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Joseph Joubert with the encryption key ILBC.</div>
+        <div class="ciphertext">OGOMZIBMKKKDPEWPKAEGPRWPMUVQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Charles Baudelaire with the encryption key JONV.</div>
+        <div class="ciphertext">JEOTKABTSOEALXUMDYUIHIKAEJIAMJPTBTETEROVAJYARHYKUILBOGUMTJLNHQUNCOSF</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Dorothea Lange with the encryption key UXBC.</div>
+        <div class="ciphertext">TDPACACRTDHKWUAONARIRENAAVFGFYSJUUTWEBEHIZOBKNAXUJDRRISWODSJFH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jordin Sparks with the encryption key NBVC.</div>
+        <div class="ciphertext">LIVYFQOKNLQTLIVYMECORMRHZM</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Johnny Carson with the encryption key QZDF.</div>
+        <div class="ciphertext">LOYEPQBLAJURWCWHOYDZUYGMAWJTEPLWIGIBWCPCXHAGVGMIURZFWMGNDDOC</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Abraham Joshua Heschel with the encryption key FUCJ.</div>
+        <div class="ciphertext">AOVBWFHIBXWFBXANJCQXVGCZLYBEIROVMVVIHWSNCJGW</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Thomas Sowell with the encryption key PEBB.</div>
+        <div class="ciphertext">OBZTKOSUCBQAJHVRHMWORBKHUHCKHDILDHLVSLMHGXRLWBPXLGWTAMELMKTVMTSFANUG</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by David Lean with the encryption key FGKN.</div>
+        <div class="ciphertext">VEXNIQWWZMWWMYLKGFFYKX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Vinny Guadagnino with the encryption key SZPV.</div>
+        <div class="ciphertext">KIUGQMQUNAZVBRSHKBYICWMNEZINJTMMUQBVKHMHXDRMWW</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Lucille Ball with the encryption key RMDD.</div>
+        <div class="ciphertext">EKKKMYCSOBIAZLMFEKYHOBIFVIQZEDESRASGBTSLWHSAEJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jane Asher with the encryption key BBBE.</div>
+        <div class="ciphertext">IIRHVHTJRANADDHVYSZUVGDA</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by John F. Kennedy with the encryption key VAMB.</div>
+        <div class="ciphertext">JBGLAYMKWIIPANLSQYNWALCJIIIDCP</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Benjamin Disraeli with the encryption key BBMV.</div>
+        <div class="ciphertext">ALTJFITUONFEWZVPASLXPIDKVCGRWKRJTUBGZYUCZYEJQUGJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Spike Lee with the encryption key SVRV.</div>
+        <div class="ciphertext">XXBNTFQXOCWEWIKEUBAJOLFMLXVDXDYTKXWIMVRDUMWEWIOLPMQXJWHDLINZDZCVAJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Alain de Botton with the encryption key DAMD.</div>
+        <div class="ciphertext">OZAFYUPICOYFAFYFSUDCILKOZVYSSGYUOZUCNUQZMKANFWFKSGFEAZZUMF</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Emo Philips with the encryption key QDFB.</div>
+        <div class="ciphertext">MKCSJXYYEFSTNYCINYLLYVNLSRKRMRNYNNGQIFNYYYJELLIQANIFJG</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Henry Ward Beecher with the encryption key CDDF.</div>
+        <div class="ciphertext">HOHTGAXPRPGNVZIVMJRGJTNRPPUWNDOVCXPGAPETUTFEAHNQAPZPXBDE</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jack Johnson with the encryption key BEAR.</div>
+        <div class="ciphertext">QCDZHQWWSAHQMATQIHHQSFVPINAURGAQUULEIRCBHCDFIHRPMLMYRARPOJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Mark Twain with the encryption key DUBN.</div>
+        <div class="ciphertext">MGYBRSAIVASSKODQKOAKANJDOFOEFPACJNKCMRICPGUIUIPGQELDMNLLRF</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Campbell. Thomas with the encryption key BEAT.</div>
+        <div class="ciphertext">RYCQLOQXEALEQLWBUJWBYYPXHAPDULOUABAH</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Ice T with the encryption key RPML.</div>
+        <div class="ciphertext">LDDJUAMWLUCXPLMWTFAMGWBPZRMTZNWUAMMTNNOEZOCNSQWJ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Aldous Huxley with the encryption key PKPL.</div>
+        <div class="ciphertext">RYUOELPBMEJKMPSNUXMPIOCKLDBJXPOZHIGLQHKSTVANOCMQJXANSCXLYJMPAEAFYRYCHM</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by David Bailey with the encryption key GDTK.</div>
+        <div class="ciphertext">FPBIAWKXDHCQWAJAXMAUYJCYFPFIVIUSAPKNWAXYUSXMNAXNKCKMLNYYQHSV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Bertrand Russell with the encryption key RXLQ.</div>
+        <div class="ciphertext">IPEEJXYAVFDSRETUWCPUHOBUTKHOYCQJQSPNDSWIPABOPIUGTDPIZQDLRRTUJUVSQAXDYZOUHWOU</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Erma Bombeck with the encryption key NIMJ.</div>
+        <div class="ciphertext">TKTCXRAJXSEKDOGXVQANIYTKVQEPSQIYERMHWYMZAJZGJLFX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by LeAnn Rimes with the encryption key UNDD.</div>
+        <div class="ciphertext">EIMFEJAFMFWBACUPJHEENNULQDTXHVPDCWBYJOUAWPRFXHCMNWGKSCAFUDIPKLEECO</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Angela Davis with the encryption key VDNC.</div>
+        <div class="ciphertext">GIPAWSEBFIIAQZXKFVPGSYRNOALFUWRCSIPXJNBHPGPJXVFMOL</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jason Ritter with the encryption key DGGR.</div>
+        <div class="ciphertext">IRMLCDIHVEEXLOBWYMJSFYHUGIZNBWUWEXEAEPQSDUIZTPSEQLYDZYGYYJODKBYKQT</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Beecher, Henry Ward with the encryption key FEQP.</div>
+        <div class="ciphertext">OLAPKHYREENKENCIILODWPWVXIJKYREENKENKZYTQX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by La Rochefoucauld, Fran?ois with the encryption key OPNP.</div>
+        <div class="ciphertext">BICIAPQVSKODSIHBYKQXXBMECVQVAJQPMJGNSHSAQPTZNNNKWSUNQVAIRN</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Nicole Kidman with the encryption key GNHR.</div>
+        <div class="ciphertext">JRLVLFVFYMJDGXJRAWQEWMNFOPKDODADCEANANCYLOENYTAD</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Natalie du Toit with the encryption key RWMR.</div>
+        <div class="ciphertext">WPIABEANNFADUSYWYBHIBZUYDMHSOGKRJNQWCIANBIEMLW</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Thomas Menino with the encryption key XCWD.</div>
+        <div class="ciphertext">PRSDIZCHKSAXKQRWXSEGVWEVEIFEZAKLCHYWYBBHUGIWJWKLDAZSBUGJWJMBGN</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Richard G. Scott with the encryption key DAXF.</div>
+        <div class="ciphertext">FEMWQWFKYBPZGQHKYOFEMNYJCPPLKEHJFNDEYPSUQSMGNHQGFNPCVZOEZEJM</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Zsa Zsa Gabor with the encryption key HOGP.</div>
+        <div class="ciphertext">SDCLQUYJUTKOOMFKDWEPSHMQSWYWEUBPSRGSXLOUDKNAVKWOCLPV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Ansel Adams with the encryption key HMNX.</div>
+        <div class="ciphertext">YVMYJXLOMLECHVJSUVUOXNNBPXBPWFPXGBYMHVMPYBBDCNXICYSPWVTBCNJPBXBDCNRQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Miguel de Unamuno with the encryption key LZGP.</div>
+        <div class="ciphertext">PJFFTDAMVZJVUYYCUZQEBGBVQWNWGHMYMENVKIVGLSTVCYUWZQULKOXDPJYYHMZPEUCV</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Duke Ellington with the encryption key CBJI.</div>
+        <div class="ciphertext">WOTWUBGTKHIIETUNBTDEAYTWIISFLIETUNMDOVUUBLDWZQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Plato with the encryption key POFF.</div>
+        <div class="ciphertext">INMIANRHKHKERDYJQGGREGHWEAYDMKJDCCNJTAMODCURJXIPINUP</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Charles Baudelaire with the encryption key ZFEB.</div>
+        <div class="ciphertext">QFDHWQDUMSOWDYEWCDAIAVWQXVCSZNNGDUHRFXFBJZGCVOQYAIHMQUEWRGTCIXFTIIDT</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Andre Malraux with the encryption key MLVU.</div>
+        <div class="ciphertext">SDWKQYNAUPJECEBIKBYHTTFMWCRKWGHVYHTTFMLIMCXU</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Helen Reddy with the encryption key FDZU.</div>
+        <div class="ciphertext">WYUQSDBUUMJTNHYITLHINADQTYZJIUHIMRSAOVZWWSNAKHGKIOGLOSQWQOROQODHRHXLMZHITI</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Knute Rockne with the encryption key FEEH.</div>
+        <div class="ciphertext">YDNWYYWMXSTVWNMALUANVQDCRIZPCYGLTVAUFOEUDBAULQQWFEXFUWGLOTPJSRVSDOMRPJEIZVIN</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Diane Kruger with the encryption key EDRT.</div>
+        <div class="ciphertext">PLRRIFEIAKPNSEZRALEVTTOEHMALSQMECASXORQPVDUMTJVZTVSDUGALVS</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Robert Rodriguez with the encryption key DDQV.</div>
+        <div class="ciphertext">YYVOUKQWNNRYOFTLMMHLUKFJLQWQJWTOECLLSSEVKKCQFWASJKOA</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Wolfgang Puck with the encryption key PFXI.</div>
+        <div class="ciphertext">HYDKQCMBUSHDKYMDFIYONHRJPHHDVOLJNAHDLJFVYJAGAINAHDLJFVYJNAUE</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Charles Schumer with the encryption key ZOXN.</div>
+        <div class="ciphertext">QGWFGXINCBOKTFTNCBBFTNIYEYENVLNBSHANYIUL</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Mark Twain with the encryption key QTFG.</div>
+        <div class="ciphertext">YKVKNXWMFFMWWYPVWYICNAWPDAKSULMQERCGZUEIVHCSCSVHIQUNBOQZAX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Phillips, Wendell with the encryption key XCWD.</div>
+        <div class="ciphertext">CHMOJJSQLAKJULJXYEWXVCLWWUCZJWCEZAOEXCAXJWGXEKPQLGZUWD</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Yann Martel with the encryption key HENJ.</div>
+        <div class="ciphertext">YTQBQBLCXNHXQLWVLKCNCPDHBZYIFHZXCWCVZWCAJNWVAXYR</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Jean Nouvel with the encryption key VUAB.</div>
+        <div class="ciphertext">GAAHPEQSCTEANIINVEIUORCSANEWCRAHCTUCTUVE</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Mark Twain with the encryption key FLJU.</div>
+        <div class="ciphertext">WEVBEGKTWOHLJXXTSFBNRZEGKSUVEQPJINQZWQQWOCFMVXQWJQ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Francis Bacon with the encryption key VUEF.</div>
+        <div class="ciphertext">THWUVKQRGDFENXIFKEOHYVCBGKZMBQAVUTOKNMIR</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Meryl Streep with the encryption key VJDC.</div>
+        <div class="ciphertext">UTKKFYOIGEXIACCZLLXEKSZYMWDOBDOMDHPJBMHPULEKRBGEFLMICS</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Leslie Fiedler with the encryption key DEJP.</div>
+        <div class="ciphertext">WTBBBHHQUBYZVXZKKTCAGUCGOSSEUXILFJHQYHUDIRJNDVHAMUQMJLEASWHQDZGKPIYHDVSCHXOQUU</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Lily Tomlin with the encryption key RYLR.</div>
+        <div class="ciphertext">WRDVLNWEXQQSDHCYZNQAZQQIYHXHQUIVMNHCQUEDHPYWGMVHEL</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Joaquin Phoenix with the encryption key LKJJ.</div>
+        <div class="ciphertext">SWAIOMIMOJXPHRSXKCKKTAACQOYVKRFNMSKHRXDTJPPMUSRG</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Benjamin Disraeli with the encryption key WNZP.</div>
+        <div class="ciphertext">AKGIGSHFNZUUNOAKAVUNKNYTAZXPPIXXUCCJKFJJPIKOJHVI</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Eric Hoffer with the encryption key BCDL.</div>
+        <div class="ciphertext">EGIFADEMEDSZEZVDXYIISOYSPLSFKTOKEERJMRDXZBHEQNXFZBKKEMZROIEDDDPNUCZOCLCCRU</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Laurence Sterne with the encryption key FJBG.</div>
+        <div class="ciphertext">JTCJBIYCSWXARCJDZMLZEUCYBIEGMSNZRTVXJHPXQKTBZBGE</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Audre Lorde with the encryption key GRFR.</div>
+        <div class="ciphertext">WOTHDZNFBXLLYUZMHHYHVNNZERZGJBTN</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Richard Bach with the encryption key DBHG.</div>
+        <div class="ciphertext">ISIKDNLOOYMQGHQATJNENAWOISZISCQFNALHJDIYMCRRUNDAZCKHBUZIAIZPRRUNDAZCUPSEEX</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Mae West with the encryption key WXDE.</div>
+        <div class="ciphertext">FCBQEFNASSMWNCMJIVRZ</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Doris Day with the encryption key HFHI.</div>
+        <div class="ciphertext">USKTTFEWQOMGQYMHMKMHQYGNDOVAMMCLEWIWVAPFBGPBOOHE</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Thomas Browne with the encryption key GBLF.</div>
+        <div class="ciphertext">LDHIYNGREQCZRHSPMRUKLDSVLSTRHTGGXHUTRHYTKHJN</div>
+        
+        
+        <div class="question">Decode this Hill Cipher by Scott Walker with the encryption key PDUF.</div>
+        <div class="ciphertext">DIVRVGDVICLKVQRGDSEHNECIPYIPKASR</div>        
+        
+    </div>
+
+    <!-- <script src="code.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

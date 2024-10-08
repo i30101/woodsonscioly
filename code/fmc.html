@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="./">WSO Code</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="../">woodsonscioly.org</a></li>
+                <li class="nav-item"><a class="nav-link" href="columnar">Columnar</a></li>
+                <li class="nav-item"><a class="nav-link" href="fmc">FMC</a></li>
+                <li class="nav-item"><a class="nav-link" href="hill2">Hill 2x2</a></li>
+                <li class="nav-item"><a class="nav-link" href="hill3">Hill 3x3</a></li>
+                <li class="nav-item"><a class="nav-link" href="nihilist">Nihilist</a></li>
+                <li class="nav-item"><a class="nav-link" href="porta">Porta</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div id="title">Fractionated Morse Cipher</div>
+        <hr>
+        <div class="question">Solve this Fractionated Morse cipher by Milton Berle that ends with the word</div>
+        <div class="ciphertext">D  L  J  O  Z  S  Q  U  Y  C  T  I  C  Y  M  J  I  E  X  G  Z  S  V  L  A  E  S  T  W  N  B  C  P  I  M  D  L  J  O  Z  S  Q  U  X  V  Q  U  K  Y  W  N  V  Z  N  R  R  E  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Emile M. Cioran that ends with the word</div>
+        <div class="ciphertext">F  I  U  W  Q  F  F  I  W  K  R  C  N  X  T  A  C  Q  V  R  W  B  E  U  L  W  I  B  X  H  B  F  N  R  F  P  K  Q  H  V  M  T  A  X  A  S  T  A  Y  L  N  D  E  C  L  A  S  E  V  O  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by William Feather that ends with the word</div>
+        <div class="ciphertext">D  U  Q  S  V  W  G  B  W  F  N  L  V  G  F  E  T  W  T  J  O  C  Y  O  W  P  J  V  N  L  S  P  J  V  J  D  C  C  H  V  C  J  F  G  P  Q  B  C  M  T  T  M  O  G  P  D  U  S  J  E  V  Z  N  E  X  W  P  O  Z  P  F  M  H  T  M  G  B  K  U</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by John Ruskin that ends with the word</div>
+        <div class="ciphertext">G  I  V  K  G  F  N  A  P  U  E  N  U  B  Q  N  V  N  A  P  E  J  P  A  O  B  T  N  A  U  F  M  O  A  W  P  A  O  M  D  P  A  A  F  N  A  V  N  A  P  N  E  K  H  Q  A  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Rick Wright that ends with the word</div>
+        <div class="ciphertext">H  C  D  D  B  P  I  A  D  L  G  N  R  P  P  E  A  C  D  B  E  B  V  Q  Q  C  I  R  B  J  T  W  S  C  N  P  E  K  U  X  O  H  C  Q  D  M  N  C  U  W  W  A  P  Q  Q  R  P  C  Q  I  B  A  Q  W  R  K  U</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Mark Hyman that ends with the word</div>
+        <div class="ciphertext">I  Q  O  A  B  O  P  C  G  T  E  H  U  S  W  X  P  M  S  W  L  J  M  G  N  K  A  J  E  N  M  T  J  R  T  E  P  L  J  S  N  P  M  S  N  M  B  Y  A  J  H  T  B  I  S  R  R  G  X  A  B  K  E  H  Q  L  W  R  O  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Henry David Thoreau that ends with the word</div>
+        <div class="ciphertext">R  N  Q  I  M  F  R  W  P  K  I  V  J  R  M  L  J  F  M  E  A  T  M  B  M  I  W  H  I  M  R  W  G  T  H  I  K  E  A  B  R  W  P  L  M  N  S  M  P  N  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Shakespeare, William that ends with the word</div>
+        <div class="ciphertext">D  L  I  L  S  S  S  J  N  M  S  J  U  E  K  J  U  A  K  S  K  P  K  N  N  U  C  Y  J  S  S  L  S  S  Q  I  L  S  G  C  U  S  S  R  G  F  S  Q  I  D  S  Y  O  K  N  D  J  F  K  S  G  F  U  L  F  D  U  K  F  M  S  N  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Maurois, Andr that ends with the word</div>
+        <div class="ciphertext">P  K  O  P  E  I  A  M  D  K  O  A  K  G  T  W  G  G  D  A  K  L  R  O  V  O  S  L  Q  V  Q  O  O  A  K  Q  D  N  G  D  L  U  R  K  G  S  J  T  O  V  D  I  D  K  G  O  T  U  M  D  G  L  I  P  Q  O  H  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Earl Wilson that ends with the word</div>
+        <div class="ciphertext">R  A  D  G  M  K  A  X  O  R  R  H  G  X  B  K  F  B  K  F  T  K  T  H  R  E  Q  C  W  S  E  X  E  U  L  R  E  Q  P  P  R  R  C  L  X  P  B  E  X  L  S  R  C  O  T  U  D  R  T  H  J  O  L  I  P  R  D  J  O  H  T  H  R  E  W  I  P  T  K  K  B  B  O  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Peter Drucker that ends with the word</div>
+        <div class="ciphertext">L  S  U  W  W  L  R  O  R  K  N  C  K  A  X  D  H  O  L  S  P  V  W  E  R  H  V  H  J  W  W  P  M  B  C  A  Q  X  R  J  V  Y  B  R  P  R  B  L  H  R  H  I  Y  K  S  B  M  Y  B  R  H  O  S  Q  P  V  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Voltaire that ends with the word</div>
+        <div class="ciphertext">M  N  I  A  X  J  T  W  J  D  S  A  E  H  N  T  W  H  O  J  E  W  L  D  G  P  I  W  K  E  O  V  E  S  C  I  E  E  D  I  D  E  X  E  P  K  X  E  H  U  K  I  W  H  M  E  X  E  U  J  D  D  Q  J  E  P  O  Q  X  M  D  G  Q  J  A  R  A  U  I  X  H  C  S  F  U  K  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Clare Boothe Luce that ends with the word</div>
+        <div class="ciphertext">I  E  M  G  S  D  O  J  F  P  T  Z  R  P  F  A  D  O  P  H  U  A  Z  M  J  S  N  T  R  V  J  T  F  C  A  D  H  Z  R  P  F  L  X  T  D  S  F  T  N  D  J  N  C  D  P  W  W  N  C  J  Q</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Elizabeth Taylor that ends with the word</div>
+        <div class="ciphertext">D  M  N  Y  L  H  R  C  I  X  D  R  B  S  H  P  I  Q  W  M  E  L  C  E  D  M  N  Y  M  T  C  E  L  D  R  S  B  B  U  E  O  L  Q  D  K  S  P  L  D  H  G  P  I  V  O  N  U  Y  R  S  U  Y  N  O  D  E  N  M  S  W  U  H  R  B  N  C  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Ingrid Newkirk that ends with the word</div>
+        <div class="ciphertext">A  F  A  N  G  I  T  T  H  P  S  K  C  I  N  R  A  F  F  T  R  R  G  I  N  R  B  N  F  J  K  T  T  R  B  S  M  A  F  J  C  M  I  A  I  O  G  A  A  I  O  M  R  Q  N  G  J  Q  I  R  Q  B  R  L  K  C  N  Q  F  A  T  S  F  G  A  A  M  D  O  R  C  C  A  Q  T  F  C  A  A  I  O  A  T</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Beecher, Harriet Ward that ends with the word</div>
+        <div class="ciphertext">L  R  P  Y  B  U  Q  Q  Y  F  S  E  S  Q  X  K  M  D  S  D  W  J  S  F  G  R  B  W  Y  B  Q  S  J  A  M  P  O  S  E  S  O  S  D  S  D  W  S  D  Y  M  P  T  K  B  R  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Beecher, Harriet Ward that ends with the word</div>
+        <div class="ciphertexB  M  S  N  T  K  R  R  C  Q  Q  C  X  A  A  D  B  A  Q  A  A  A  X  A  R  B  A  A  Q  A  Q  T  W  A  Q  Q  E  J  R  O  E  A  U  L  A  N  E  A  H  F  W  I  R  Q  T  V  A  W  A  Q  Q  E  J  R  O  E  H  A  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Ray Romano that ends with the word</div>
+        <div class="ciphertext">C  L  D  K  F  P  L  L  N  Q  C  L  G  Q  C  O  E  W  A  Q  N  G  I  S  E  X  M  W  Q  O  B  D  J  T  T  G  D  C  E  X  A  S  R  T  W  N  O  T  G  J  Q  N  B  R  T  V  R  L  B  G  A  B  X  B  K  H</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by A. C. Benson that ends with the word</div>
+        <div class="ciphertext">K  L  R  A  I  Y  J  N  A  S  E  R  Y  W  Q  O  N  E  F  S  U  L  W  X  O  G  C  Q  E  Q  Q  B  E  G  T  G  T  B  J  H  R  G  Y  Q  O  N  E  R  Y  W  Q  O  N  E  F  S  U  L  W  X  O  D  G  T  S</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Baruch Spinoza that ends with the word</div>
+        <div class="ciphertext">J  S  V  J  O  C  T  M  O  H  X  J  F  C  D  A  N  O  O  A  P  Q  D  Y  V  L  D  A  Y  K  I  S  W  N  U  O  T  J  U  F  L  S  F  D  X  S  M  K  K  S  N  O  C  S  R  Q  M  J  O  P  N  N  O  R  B  T  Y  K  I  S  W  N  V  U  O  O  J  B  I  P  M  C  S  F  D  X  U  M  S  O  H  M  J  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Hillary Clinton that ends with the word</div>
+        <div class="ciphertext">F  U  M  H  I  M  B  L  V  X  A  B  S  X  E  Q  O  C  E  W  B  K  U  Y  M  I  D  G  A  L  S  U  V  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Bill Moyers that ends with the word</div>
+        <div class="ciphertext">L  A  H  M  Z  N  Y  B  L  S  S  E  O  W  W  Y  H  B  Y  E  V  I  U  M  X  O  N  N  A  V  I  E  D  K  Y  C  R  G  Q  Y  G  V  A  P  X  J  A  Y  W  O  S  V  I  C  V  J  E  D  K  O  A  H  M  A  Y  Q  Z  J  H  E  G  Q  E  G  Q  Y  D  K  G  N  E  Q  E  G  Q  I  Q  B  Y  E  Q  I  I  Y  O  S  A  A  E  J  H  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Nichelle Nichols that ends with the word</div>
+        <div class="ciphertext">P  X  C  E  F  F  D  T  V  V  M  H  F  M  H  V  M  T  N  F  R  P  T  V  V  M  R  V  X  E  H  T  P  P  K  U  J  I  E  Y  P  P  N  P  V  F  M  B  V  Y  O  F  P  R  E  U  C  Y  P  N  N  J  X  S  U  I  Z  F  M  Q  D  V  N  F  P  C  Y  P  C  F  M  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Morgan Freeman that ends with the word</div>
+        <div class="ciphertext">D  E  D  Q  U  G  F  X  S  P  P  C  V  K  G  F  O  M  S  X  L  K  Q  E  C  A  Q  U  X  S  P  P  C  V  K  G  F  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Douglas Adams that ends with the word</div>
+        <div class="ciphertext">M  P  U  V  O  B  O  E  V  Q  J  R  H  R  H  E  C  L  R  V  W  D  N  P  Y  F  U  S  E  V  R  V  W  D  P  C  K  L  Z  W  Q  M  P  T  C  K  L  Z  L  W  M  S  E  R  B  T  N  A  D  S  Q  M  P  U  W  B  H  J  R  O  C  N  T  V  V  D  K  N  P  R  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Benjamin Disraeli that ends with the word</div>
+        <div class="ciphertext">O  D  L  S  S  I  N  V  T  E  K  R  M  T  F  T  X  T  P  A  U  L  S  E  I  D  K  H  S  I  G  F  L  N  W  Y  M  T  S  F  E  E  N  V</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Pope John Paul II that ends with the word</div>
+        <div class="ciphertext">P  A  I  C  J  X  S  U  T  R  C  J  Q  B  D  R  O  S  Q  W  A  U  Q  T  T  B  U  T  F  H  M  J  D  T  B  N  D  T  B  J  C  R  M  U  U  C  W  H  Q  A  O  Y  I  O  B  U  P  R  P  S  K  A  U  Q  F  P  V  J  O  R  C  X  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Doug E. Fresh that ends with the word</div>
+        <div class="ciphertext">P  A  A  E  M  R  F  N  D  M  M  H  P  M  J  E  N  D  F  M  A  Q  H  K  I  M  J  E  N  R  R  A  P  U  K  P  R  Q  D  A  O  R  J  V  S  L  P  R  A  Q  D  R  J  U  E  O  F  N  D  A  A  V  I  D  N  U  B  N  N  P  D  A  D  N  R  A  A  O  A  H  R  D  B  V  S  L  I  R  C  O  N  V  A  M  R  R  D  E  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Harvey S. Firestone that ends with the word</div>
+        <div class="ciphertext">H  L  H  A  X  G  B  I  M  E  W  J  H  P  J  X  H  E  C  Q  I  M  G  E  E  F  U  A  E  P  E  H  U  A  E  K  W  G  E  E  E  P  M  J  K  E  R  U  I  M  E  W  H  C  R  B  T  E  Q  N</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Isaac Mizrahi that ends with the word</div>
+        <div class="ciphertext">G  S  J  J  N  T  S  U  F  S  M  H  U  N  T  M  E  E  N  E  T  E  F  E  R  P  T  M  E  E  B  K  V  T  M  T  T  C  P  O  T  V  L  Q  G  E  P  B  E  B  I  T  O  E  T  M  T  P  F  Q  M  R  J  R  J  H  E  J  K  T  P  F  D  J  I  S  O  N  T  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Thomas Fuller that ends with the word</div>
+        <div class="ciphertext">F  D  K  E  K  I  I  E  C  B  J  P  U  L  J  V  P  F  V  E  J  P  U  M  E  E  M  C  D  F  M  M  A  S  D  P  G  E  V  A  Q  V  P  M  M  A  Q  V  P  N  R  F  E  K  N</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Ronald Reagan that ends with the word</div>
+        <div class="ciphertext">L  T  R  R  S  Y  S  Q  E  S  F  U  S  Q  F  S  M  T  C  X  E  F  P  S  Q  S  P  R  K  Y  F  P  N  K  X  E  L  B  H  U  Y  F  H  U  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Dante Alighieri that ends with the word</div>
+        <div class="ciphertext">T  T  E  D  W  S  R  K  H  P  O  Q  A  T  G  D  R  L  C  F  K  W  J  S  B  J  P  G  K  O  C  S  E  O  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by David Giuntoli that ends with the word</div>
+        <div class="ciphertext">G  B  J  G  F  S  W  S  H  Y  Q  L  G  L  I  G  Q  T  G  M  H  A  M  U  N  P  O  A  V  L  R  M  Q  U  T  P  U  F  W  P  F  V  I  T  P  Q  T  G  C  J  D  O  J  I  G  F  V  I  T  P  K  S  H  E  A  V  I  A  S  H  E  J  P  J</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Lucille Ball that ends with the word</div>
+        <div class="ciphertext">N  W  S  Q  D  T  J  A  S  P  L  Q  J  Q  E  R  T  M  Y  J  K  Z  B  U  N  C  J  K  X  D  Y  V  L  X  G  Q  Q  C  F  W  E  M  J  D  Y  N  G  T  M  S  C  P  W  R  Y  L  R  N  G  T  M  R  T  T  F  A  D  D  X  O  W  U  N  C  P  I  O  M  H  R  F  C  K  S</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Dumas, Alexander that ends with the word</div>
+        <div class="ciphertext">H  C  Q  R  B  C  E  H  N  T  F  K  B  L  H  R  E  S  U  I  P  R  J  M  C  W  M  F  W  C  Q  N  C  I  O  X  K  M  N  J  M  J  H  I  N  E  M  V  O  U  J  I  G  R  B  N  P  L  N  O  W  N  N  B  S  W  M  F  U  Q  H  N  H  K  T  H  C  L  E  Q</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by J. K. Rowling that ends with the word</div>
+        <div class="ciphertext">N  R  U  V  P  C  P  Q  L  S  J  S  N  P  W  S  N  P  Q  R  W  O  N  X  P  M  C  P  U  B  Q  L  S  N  J  T  O  M  E  V  C  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Thomas Carlyle that ends with the word</div>
+        <div class="ciphertext">F  C  F  R  X  P  C  S  E  X  X  V  X  R  Q  L  X  T  O  X  C  L  X  P  H  J  P  M  D  X  P  X  X  X  V  K  J  Q  D  B  Q  X  D  V  X  P  T  V  L  X  G  W  D  K  T  M  P  X  C  H  S  X  X  C  P  C  X  D  X  H  C  X  X</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Bryan Cranston that ends with the word</div>
+        <div class="ciphertext">N  Q  N  I  S  M  Y  P  D  H  L  S  M  R  N  F  P  A  C  O  M  C  E  U  L  R  M  S  V  P  S  Q  M  J  R  G  K  R  H  Q  B  L  B  I  G  E  Y  H  Q  B  J  R  C  R  X</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Andy Warhol that ends with the word</div>
+        <div class="ciphertext">O  E  J  S  V  W  H  O  M  V  U  J  R  C  N  Y  P  K  R  E  K  I  Y  O  M  T  G  E  C  K  L  Y  F  C  T  T  G  Y  Q  G  C  W  G  O  M  V  H  I  F  E  N  S  V  U  N  S  H  C  N  Z  S  C  H  I  F  S  G  Y  P  K  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Claude Chabrol that ends with the word</div>
+        <div class="ciphertext">T  A  L  O  P  S  U  D  K  G  M  F  C  M  B  X  G  T  B  K  P  D  F  L  J  O  W  T  Q  A  R  E  U  L  N  O  P  V  B  C  J  O  V  S  T  A  C  C  G  V  I  U  N  I  S  T  B  K  C  J  O  P  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Samuel Goldwyn that ends with the word</div>
+        <div class="ciphertext">L  T  K  C  D  U  V  W  R  F  A  T  K  F  E  I  G  Q  O  S  E  P  A  U  W  W  Q  E  V  O  W  Q  G  P  L  S  S  G  N  V  U</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Thomas A. Edison that ends with the word</div>
+        <div class="ciphertext">L  J  N  E  F  S  K  V  M  G  O  I  O  U  N  R  I  O  V  S  O  N  F  S  F  O  E  H  U  T  K  C  W  N  E  E  M</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by James Thurber that ends with the word</div>
+        <div class="ciphertext">I  U  T  L  D  Y  L  T  Y  B  F  L  M  D  S  R  E  R  X  P  L  Y  K  T  W  N  E  G  V  Q  N  N  P  U  T  Y  K  P  E  I  Z  R  R  D  Z  I  W  M  C  S  V  Q  L  K  L  G  X  P  L  Y  H  Q  R  J  V  U</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Josh Billings that ends with the word</div>
+        <div class="ciphertext">N  X  W  E  F  F  D  S  O  W  T  J  X  W  E  Y  B  R  O  H  S  N  R  N  L  S  E  J  L  S  G  L  R  J  U  N  E  F  F  J  R  J  N  A  F  U  M  R  N  N  O  N  U  M  L  R  Q  I  P  M  A  Y  N  W  F  M  A  S  N  H  Y  N  O  P  C  Y  W  V  P  O  Y  P  F  N  R  N  D  W  O  Y  Q  K  V  P  M  H  Z  B  S  F  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Henry Wadsworth Longfellow that ends with the word</div>
+        <div class="ciphertext">A  D  L  C  R  A  M  Q  E  M  A  P  S  U  B  T  U  Q  S  L  P  B  R  L  S  U  O  B  T  P  Q  T  V  A  B  D  D  H  P  P  E  A  P  N  A  S  H  B  T  A  W  N  D  T  S  U  O  I  U  N  L  F  X  P  T  T  H  I  W  B  T  P  H  K  T  A  B  K  A  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Barbara Jordan that ends with the word</div>
+        <div class="ciphertext">E  B  J  R  W  K  D  P  R  U  K  R  W  B  N  C  E  S  S  G  A  G  K  K  B  B  S  J  P  K  X  R  P  S  S  U  L  W  R  P  R  A  X  N  R  C  E  A  R  K  R  R  Q</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Mae West that ends with the word</div>
+        <div class="ciphertext">A  W  R  V  Q  D  G  Q  Q  B  U  Q  Q  D  F  B  B  U  Q  B  C  I  I  A  N  A  S  T</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Alfred Nobel that ends with the word</div>
+        <div class="ciphertext">A  U  J  F  O  K  H  Z  W  R  B  L  T  C  F  E  S  P  H  X  I  T  C  Y  A  S  Q  Q  A  S  Q  K  S  S  G  P  A  U  V  M  M  L  W  C  S  F  Y  F  F  M  I  S  F  T  F  D  Z  O  I  G  N  S  P  K  T  W  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Penn, William that ends with the word</div>
+        <div class="ciphertext">J  E  P  T  B  Y  N  N  J  B  U  M  U  A  P  W  R  J  L  S  G  B  F  M  P  N  Y  P  R  O  X  A  E  Y  R  A  D  Q  N  P  V  N  D  S  A  L  R  D  E  A  Q  C  R  A  D  Q  A  P  X  H  V  N  P  T  B  F  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by James Thomson that ends with the word</div>
+        <div class="ciphertext">K  J  P  D  W  I  O  P  A  N  E  G  C  W  R  E  P  D  X  O  R  B  D  D  M  A  R  T  L  I  X  I  T  L  E  I  P  T  D  W  R  L  G  R  F  Q  D  W  K  D  D  S  W  A  X  K  C  D  S  K  D  X  O  R  B  V  P  U  F  D  D  O  G  E  P  R  Q  F  L  X  K  E  B  F  D  L  E  L  A  K  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Novak Djokovic that ends with the word</div>
+        <div class="ciphertext">J  E  M  C  I  L  N  O  I  F  R  Q  A  K  P  B  K  K  D  R  K  R  B  T  D  C  J  C  W  W  A  I  X  O  T  E  I  F  O  C  I  C  U  Q  A  Y  N  O  T  M  K  A  Q  N  F  T  J  O  U  C  S  Y  K  L  O  B  C  C  J  U  Y  K</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Karlie Kloss that ends with the word</div>
+        <div class="ciphertext">D  K  I  A  V  P  O  N  L  B  K  I  T  E  F  H  O  M  J  P  N  S  F  D  V  R  D  N  S  V  K  L  R  U  P  E  K  W  I  F  A  L  L  W  A  T  K  J  N  B  L  N  U  P  B  J  L  J  V  K  L  R  O  R  E  J  F  F  R  F  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Mizner, Wilson that ends with the word</div>
+        <div class="ciphertext">A  D  D  A  U  M  Y  Q  P  N  E  W  D  M  Y  K  T  F  N  B  F  N  M  R  X  S  L  V  Y  P  F  S  X  M  D  Y  A  R  T  D  S  Q  M  D  C  J  H  T  D  V  G  I  O  T  T  D  S  T  T  D  Z  R  S  G  M  D  O  J  H  U  M  X</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Adam Duritz that ends with the word</div>
+        <div class="ciphertext">A  O  G  H  T  E  T  W  S  G  D  L  U  T  A  A  I  U  W  W  P  O  S  U  C  Z  S  A  F  G  N  F  Q  N  L  S  U  C  Y  P  J  G  O  E  E  H  W  S  G  D  H  F  N  O  X  W  E  C  W  P  A  P  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Kyle Chandler that ends with the word</div>
+        <div class="ciphertext">O  T  O  L  S  A  F  N  R  U  S  V  S  C  S  X  H  X  O  L  V  Z  M  H  F  M  A  D  T  B  B  P  J  F  A  J  G  Y  F  D  C  M  R  N  Z  P  E  Z  N  N  J  D  S  T  W  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Einstein, Albert that ends with the word</div>
+        <div class="ciphertext">F  B  J  J  J  I  U  X  S  B  A  S  C  S  R  Y  N  S  C  F  B  J  O  A  D  Q  F  B  N  V  L  C  I  N  G  P  G  O  Q  R  K  T  D  N  U  G  A  S  P  U  G  H  K  T  S  O  Q  D  Y  R  U  J  P  V  A  X  N  V  A  R  W  A  U</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Richard Dawkins that ends with the word</div>
+        <div class="ciphertext">G  F  N  R  G  H  A  B  F  B  B  X  D  Q  Q  F  C  K  U  X  P  T  A  D  R  U  S  P  E  B  L  L  A  G  V  N  H  X  O  F  C  T  Q  G  B  C  G  P  I  A  A  F  M  W  R  O  L  H  U  N  G  V  N  Y  P  N  M  S  R  A  R  Q  B  L  F  Q  F  K  R  C  G  N  G  V  N  L  F  S  D  N  A  G  N  U  U  F  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Augustine Birrell that ends with the word</div>
+        <div class="ciphertext">A  D  E  U  S  D  M  I  B  D  B  S  S  D  Z  E  L  P  L  C  G  T  X  U  D  V  L  W  D  I  K  S  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Lynn Johnston that ends with the word</div>
+        <div class="ciphertext">K  J  U  W  N  A  L  T  E  N  L  R  N  K  O  R  L  D  W  L  M  N  E  W  A  B  D  E  T  B  J  T  W  L  O  T  T  E  N  E  X  N  K  L  T  Q  T  U  B  D  E  G  P  M  C  S  T  M  A  L  C  W  K  J  Q  M  D  T  B  C  E  M  O  S  V  J  X  H  J  X  U  P  F  E  C  Q  M  H  F  E  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Chelsea Clinton that ends with the word</div>
+        <div class="ciphertext">O  L  O  F  M  B  I  J  G  S  M  Q  H  W  K  E  T  G  C  L  U  O  C  H  W  D  M  T  G  V  L  J  P  U  O  C  H  X  P  S  J  T  M  A  T  C  L  J  L  S  J  I  R  C  X  P  L  O  A  L  T  E  W  H  O  U  C  A  J  X  H  J  E  W  O  F  L  J  T  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Frankie Valli that ends with the word</div>
+        <div class="ciphertext">O  R  C  J  T  I  Q  L  B  I  H  Q  B  R  C  B  L  L  C  I  T  B  M  S  O  H  Q  L  K  S  E  C  E  E  I  S  N  E  R  O  W  D  C  X  I  B  G  R  V  Q  D  N  S  E  A  X  G  V  N  L  R  O  B  M  C  M  X  O  M  C  T  A  C  E  E  I  S  U  U  F  D  C  N  G  R  I  S  O  O  D  W  E  C  E  E  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Martin Luther that ends with the word</div>
+        <div class="ciphertext">E  A  V  V  D  A  W  L  T  E  A  X  M  N  T  F  M  D  R  P  T  E  P  B  D  Q  S  S  F  J  Q  T  T  G  X  U  O  H  B  L  L  F  D  B  L  L  F  T  I  G  W  G  R  O  D  A  B  O  L  T  H  R  P  T  A  I  P  B  L  E  Q  B  C  X  U  O  D  R  F  D  A  B  O  E  A  Q  P  T  F</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Blaise Pascal that ends with the word</div>
+        <div class="ciphertext">O  B  P  C  R  I  V  C  I  P  I  C  S  A  I  H  U  G  O  A  I  T  F  O  I  I  L  L  C  T  C  L  L  I  V  H  F  A  S  M  A  S  I  Q  M  T</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Denis Waitley that ends with the word</div>
+        <div class="ciphertext"> SELFP  S  P  A  T  V  P  A  N  A  O  Q  A  Q  G  B  N  V  O  P  K  W  O  A  D  N  G  V  R  P  B  R  N  N  C  E  N  O  R  M  F  A  P  Q  T  U  A  N  C  I  N  K  G  N  A  Q  O  R  A  B  K  L  G  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Josh Billings that ends with the word</div>
+        <div class="ciphertext">D  W  F  M  L  V  G  B  S  V  M  R  Z  D  J  L  S  Q  O  M  R  J  P  J  H  Y  T  S  S  J  B  E  F  E  R  E  P  R  R  G  O  M  V  W  O  Z  T  W  N  J  G  D  R  P  L  S  P  G  O  M  R  J  P  Q  N  T  U  S  J  A  E  D  K</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by William Congreve that ends with the word</div>
+        <div class="ciphertext">J  F  N  I  S  F  R  D  C  R  S  K  R  R  G  P  N  W  S  S  D  K  T  B  L  U  S  R  G  B  R  B  D  K  J  Q  A  R  X  P  A  Y  L  S  F  N  E  F  N  L  R  O  Z  W  Q  B  R  B  D  K  J  Q  H  R  O  H  S  T  S  K  E  D  P  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Suze Orman that ends with the word</div>
+        <div class="ciphertext">H  I  A  S  T  X  P  R  I  H  P  U  P  R  I  C  O  L  K  U  S  G  O  M  B  Q  W  U  L  K  P  O  E  P  Q  C  T  D  H  I  U  D  E  I  H  C  K  Q  D  N  L  W  B  I  H  I  Y  V  O  A  I  I  A  S  U  L  I  M  H  B  L  C  H  C  L  A  V</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by John Bolton that ends with the word</div>
+        <div class="ciphertext">S  L  V  W  N  Y  S  A  Q  B  Y  F  P  P  C  W  M  I  H  O  F  B  M  S  U  I  G  U  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Fred Schneider that ends with the word</div>
+        <div class="ciphertext">A  K  G  E  Y  O  B  F  Q  M  H  V  J  O  J  H  S  I  U  S  I  N  E  O  I  S  Q  B  I  S  K  U  G  U  B  F  V  J  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Douglas Horton that ends with the word</div>
+        <div class="ciphertext">B  G  D  Q  W  M  E  G  C  B  T  U  P  Y  T  U  B  T  Y  D  C  M  T  X  O  J  V  Z  T  S  C  S  X  C  O  X  C  H  T  W  L  H</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Dick Clark that ends with the word</div>
+        <div class="ciphertext"> FATHER-INB  L  A  J  H  P  Y  S  B  V  K  D  P  K  M  C  O  Y  D  L  K  S  L  S  T  M  Y  A  T  T  M  S  S  E  L  A  J  T  K  I  W  P  L  A  K  B  V  B  P  O  A  Y  E  M  J  A  V  O  A  L  F  O  S  L  K  F  D  V  N  C  M  J  E  Q  P  R  S  H  O  M  V  N  A  L  M  O  S  L  F  S  F  I  L  K  J</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Shia LaBeouf that ends with the word</div>
+        <div class="ciphertext">H  J  U  N  J  U  C  R  Z  L  M  A  B  N  V  V  L  W  Q  T  O  Y  F  Q  U  L  Z  K  E  B  B  W  T  E  Y  N  M  K  H  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Kathy Griffin that ends with the word</div>
+        <div class="ciphertext">E  Q  U  J  W  V  L  R  X  U  L  L  G  C  Y  U  J  T  W  P  U  E  C  L  X  N  C  S  G  C  S  V  L  R  X  C  P  M  M  K  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by James Lovelock that ends with the word</div>
+        <div class="ciphertext">J  I  Q  I  Q  M  M  R  I  T  O  W  I  T  X  M  A  D  S  Q  E  B  T  Y  M  D  A  L  G  M  J  E  M  U  U  T  T  N  M  U  T  A  A  I  R  D  E  J  P  D  I  T  O  E  O  O  I  Q  M  D  A  I  X  O  J  F  P  O  H  I  J  U  R  J  I  P  O  H  N  V  T  I  X  E  O  I  V  J  E  S  Q  S  X  I  M  M  O  V  J  E  B  L</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Lillie Langtry that ends with the word</div>
+        <div class="ciphertext">I  P  U  C  K  P  Q  Q  K  H  S  I  P  W  I  A  S  T  U  C  M  O  T  R  N  R  A  N  R  U  C  U  T  N  S  G  N  D  V  A  R  I  O  J  F  Y  J  M  A  N  V  Y  K  D  A  E  N  A  K  A  Q  I  I  A  N  D  O  H  G  N  I  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Vladimir Lenin that ends with the word</div>
+        <div class="ciphertext">I  T  M  K  V  C  J  I  I  I  P  P  N  T  K  E  B  O  E  I  S  I  C  Q  W  F  P  K  C  I  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Friedrich Nietzsche that ends with the word</div>
+        <div class="ciphertext">T  D  M  E  Q  S  V  W  N  Y  L  C  I  M  E  E  I  X  K  Z  C  I  K  R  O  B  Q  S  C  O  S  P  Z  R  D  C  F</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Henry David Thoreau that ends with the word</div>
+        <div class="ciphertext">M  E  R  P  C  M  M  F  Q  I  B  I  O  E  R  C  I  V  M  S  Y  S  Q  P  W  E  D  I  E  Z  E  R  N  R  S  Z  P  I  A  H  W  E  B  Y  F  Q  Q  C  H  B  I  O  X  B  H  X  P  W  V  M  S  Y  E  Q  Q  H  T  B  C  B  P  B  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Olivia Munn that ends with the word</div>
+        <div class="ciphertext">A  S  A  D  N  O  Y  R  H  T  T  F  D  S  E  V  S  E  Z  M  P  G  N  E  D  M  L  T  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Billy Wilder that ends with the word</div>
+        <div class="ciphertext">E  A  G  C  G  F  A  Y  A  R  Q  Y  H  Q  R  C  F  A  Y  K  V  A  Q  A  Z  P  R  B  K  J  U  S  F  O  E  A  M  D  Q  R  V  Y  M  H  Q  Q  L  Y  L  B  F  N  K  E  Q  B  V  A  N  L  R  V  Z  V  P  N  Z  I  W  M  C  U  G  C  G  O  M  Q  Q  B  M  V  S  X  J  P  Q  R  L  Y  H  Q  Q  G  A  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Herbert Hoover that ends with the word</div>
+        <div class="ciphertext">A  C  T  J  R  W  W  P  N  Y  O  V  S  Q  K  Y  G  Q  U  Y  K  L  A  B  K  P  S  S  F  C  O  B  J  N  W  O  T  J  J  T  P  V  L  E  D  M  J  I  O  A  N  E  W  P  N  X  U  U  N  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Ruth Handler that ends with the word</div>
+        <div class="ciphertext">F  H  P  A  K  I  P  T  P  L  F  N  N  B  C  W  L  N  O  N  R  F  N  M  N  H  W  R  K  I  G  B  D  M  E  T  T  S  S  H  G  L  M  O  N  M  G  M  R  L  O  D  L  B  S  H  G  L  M  O  D  M  J  O  U  G  N  F  N  T  P  H  V  F  N  M  Q  G  N  T  T  V  E  D  R  P  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by John F. Kennedy that ends with the word</div>
+        <div class="ciphertext">I  D  L  C  S  F  H  X  N  S  P  B  C  A  I  C  B  C  W  J  M  A  A  Y  I  U  F  L  K  I  T  R  B  R  F  W  A  I  N  J  P  A  A  J  T  T  N  Q  P  F  V  W  K  J  S  R  A  R  T  S  K  R  M  R  A  R  W  A  I  M  A  P  S  J  A  F  N  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by La Rochefoucauld, Fran?ois that ends with the word</div>
+        <div class="ciphertext">E  F  R  P  P  A  E  V  C  J  D  E  D  O  K  P  L  G  W  I  T  J  D  B  L  Y  L  U  W  M  X  P  L  A  K  L  S  Q  Q  L  M  K  X  H  N  A  I  L  L  I  R  Q  Q  L  I  A  J  U  R  Q  D  I  L  Q  P  L  E  I  R  U  X  H  N  A  C  M  H  N  V  U  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Goldwyn, Samuel that ends with the word</div>
+        <div class="ciphertext">B  T  P  F  E  G  C  V  J  A  U  F  G  N  P  B  C  X  W  T  V  P  S  G  B  V  E  B  H  Y  A  S  T  E  O  X  N  S  V  J  G  B  C  Z  C  T  V  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Jill Scott that ends with the word</div>
+        <div class="ciphertext">P  N  V  A  G  D  W  D  L  U  F  G  M  S  J  T  Y  R  W  O  D  R  U  R  F  N  B  F  A  S  S  G  D  T  J  M  T  O  T  E  B  S  O  H  Z  S  A  A  J  K</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Ron Paul that ends with the word</div>
+        <div class="ciphertext">R  P  D  B  C  J  U  T  V  A  W  O  X  B  C  F  A  U  C  R  P  W  O  C  I  V  L  R  T  E  U  V  T  H  N  J  U  T  V  P  L  D  N  B  R  Q  H  B  E  W  W  O  A  Y  D  D  O  T  S  O  T  O  X  B  X  D  R  A  H  A  M  D  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Buddha that ends with the word</div>
+        <div class="ciphertext">I  B  R  R  P  L  I  Y  B  P  X  I  B  Z  G  U  S  A  L  Q  C  Z  G  P  N  C  Z  U  W  M  C  S  G  M  L  V  X  X  I  B  Z  G  U  S  A  L  Q  C  Y  K  B  L  E  X  I  D  N  B  L  C  Q  P  N  B  A  U  C  B  Q  B  P  X  I  B  Z  I  S  I  X  R  B  R  P  A  L  C  K  G  I  Q  P  P  T  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Walt Disney that ends with the word</div>
+        <div class="ciphertext">J  I  J  O  N  A  C  G  X  P  U  K  I  S  S  J  I  H  C  D  X  P  O  S  A  C  E  R  O  I  H  Q  Y  J  E  O  T  Y  G  T  H  V  D  Y  K  W  H  N  H  I  O  I  X  A  Y  Q  C  U  J  A  P  W  J  I  M  B  I  H  C  D  V  A  C  J  G  T  H  O  C  F  T  C  I  O  Y  T  N  F  T  X  O  S  N  I  Y  A  J  A  P  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Epictetus that ends with the word</div>
+        <div class="ciphertext">V  F  F  K  C  X  S  A  F  O  K  K  X  C  F  Z  O  S  U  R  U  W  H  M  R  K  S  O  C  S  X  U  N  M  R  Q  C  S  U  N  S  U  U  H  O  C  T  K  R  F  L  T  E  J</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Walter Benjamin that ends with the word</div>
+        <div class="ciphertext">O  W  T  R  U  D  S  Z  R  L  C  Q  W  D  O  J  S  I  L  I  D  L  W  Z  K  V  O  C  K  E  L  R  L  C  W  O  Y  Q  W  R  L  C  K  T  R  U  Z  W  T  C  A  X  H  Q  B  V  O  C  K  E  L  U  L  F  P  N  M  Z  O  C  H  D  W  Z  N  A  F  C  V  E  N  M  U  F  O  W  R  U  V  F</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Abdul Kalam that ends with the word</div>
+        <div class="ciphertext">R  V  W  K  C  A  V  M  O  L  E  X  H  U  L  F  S  J  L  M  W  J  K  F  O  A  O  T  A  D  T  V  A  J  L  R  D  C  J  M  L  L  D  F  X  M  L  R  K  C  A  J  L  V  A  I  F  O  D  B  L  J  H  S  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Ang Lee that ends with the word</div>
+        <div class="ciphertext">E  T  C  K  H  O  Q  B  L  U  S  P  T  T  H  E  S  F  P  T  E  E  B  Y  A  H  J  R  L  F  S  F  V  B  X  M  Q  V  L  A  O  U  B  B  F  V  P  D  J  R  D  J  P  H  P  H  E  E  C  M  L  M  A  E  H  I  X  Q  P  P  C  V  L  H  G  O  E  K  T  V  M  Y  P  E  A  O  G  P  T  T  D  J  P  H  R  H  B  H  Q  V  M  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Robert Motherwell that ends with the word</div>
+        <div class="ciphertext">N  H  M  S  I  S  D  K  I  Q  C  I  G  I  N  S  V  K  I  I  H  R  I  S  S  I  K  L  S  S  M  I  N  S  V  K  I  I  H  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Robert Browning that ends with the word</div>
+        <div class="ciphertext">S  M  F  S  D  E  W  Q  L  E  A  I  R  O  P  I  H  M  K  M  V  M  F  H  N  B  K  I  Q  K  E  P  F  E  N  F  D  L  S  G  O  N  J  A  M  V  T  R  E  W  V  E  O  S  I  Q  J  E  W  J  O  L  C  O  S  J  R  U  I  V  J  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Blaise Pascal that ends with the word</div>
+        <div class="ciphertext">T  A  B  L  R  R  D  K  M  K  S  G  Y  J  A  Q  B  K  C  V  K  O  H  P  T  K  T  Q  K  X  T  C  G  K  D  Q  T  P  F  T  F  D  Y  P  T  S  N  O  A  G  J  O  E  K  T  V  M  A  U  F  A  Q  F  T  S  T  Q  K  S  P  T  W  C  G  X  H  Q  P  S  X  M  S  T  W  C  G  X  A  P  M  P  K  F  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Julie Bowen that ends with the word</div>
+        <div class="ciphertext">T  O  K  K  T  Q  F  E  I  K  T  D  W  L  J  J  O  S  S  D  I  U  G  O  I  N  V  E  N  T  H  R  K  A  W  J  F  E  B  K  O  O  E  T  F  A  U  E  C  O  N  E  C  I  F  V  S  B  M  J  E  Q  F  D  E  T  D  Q  K  Q  E  F  H  S  S  H  W  T  H  W  N  T  T  M  T  G  O  N  Q</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Sara Paretsky that ends with the word</div>
+        <div class="ciphertext">N  Q  K  S  W  W  I  Y  N  V  K  D  Q  N  B  G  C  L  O  K  T  R  P  M  A  A  U  R  N  P  A  B  S  J  V  K  N  Y  L  L  G  T  Q  P  C  E  P  N  A  G  C  N  V  B  J  O  L  S  A  V  A  G  A  X  B  C  E  B  J  N  A  B  P  S  G  L  N  C  T  S  G  N  B  B  N  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by P. J. O'Rourke that ends with the word</div>
+        <div class="ciphertext">C  I  G  R  X  N  L  Q  V  U  O  V  L  O  R  A  U  H  N  W  E  U  H  R  M  N  V  C  J  B  R  S  X  D  A  T  H  R  R  D  L  D  R  G  S  O  B  M  U  U  I  O  Q  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Charles Henry Parkhurst that ends with the word</div>
+        <div class="ciphertext">I  I  K  E  N  S  N  N  S  K  F  P  N  S  I  C  G  N  N  E  M  G  N  C  U  F  I  V  E  E  P  H  I  A  P  B  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Beverley Mitchell that ends with the word</div>
+        <div class="ciphertext">A  X  N  E  F  F  D  S  X  N  Y  A  M  Y  F  P  L  W  P  K  P  Q  F  Z  W  R  J  U  E  L  Y  H  U  D  B  V  S  V  W  G  D  K  H  Z  D  E  T  K  V  O  M  S  P  K  V  A  B  T  S  V  Y  Q  B  X  A  N  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Gabrielle Reece that ends with the word</div>
+        <div class="ciphertext">M  H  P  M  L  X  A  I  N  O  S  W  O  F  I  D  N  A  T  T  A  B  T  V  M  I  Z  I  U  E  F  I  D  T  T  A  N  I  D  O  S  V  W  F  I  D  T  T  A  N  I  V  M  T  V  V  F  N  O  C  A  J  K  Z  Q  T  T  D  Z  M  R  F  M  H  N  A  D  G  S  J</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Kate Hudson that ends with the word</div>
+        <div class="ciphertext">E  P  P  E  E  P  R  H  E  W  H  N  D  I  R  A  J  H  R  E  A  N  U  U  J  K</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Lawrence Lessig that ends with the word</div>
+        <div class="ciphertext">I  U  G  O  R  T  L  I  I  S  R  L  D  Q  T  J  Q  M  X  H  R  D  K  F  E  R  D  U  K  V  L  G  Q  U  X  K  N  E  D  I  Q  T  U  G  I  S  I  M  K  I  Q  A  C  E  M  D  Y  G  D  X  H  R  Q  U  A  T  N  X  M  E  L  G  C  E  N  U  K  U  V  M  X  I  R  E  S  B  V  M  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Munshi Premchand that ends with the word</div>
+        <div class="ciphertext">P  N  V  B  G  H  R  P  A  V  K  E  B  H  R  K  U  S  B  R  V  Y  I  R  R  K  G  C  R  B  D  Q  J  P  N  U  Z  E  T  I  Y  E  B  T  I  R  P  A  S  X  B  M  V  Z  F  N  Q  A  E  F  T  A  S  V  K  J  Q  D  K  I  Z  B  F  K  A  T  E  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Montaigne, Michel De that ends with the word</div>
+        <div class="ciphertext">L  P  L  C  Y  D  K  P  F  T  A  M  C  X  D  X  B  L  U  D  R  Q  U  V  E  M  C  S  W  S  S  L  A  O  V  Q  E  K  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Bryan White that ends with the word</div>
+        <div class="ciphertext">L  T  C  W  U  N  G  C  T  F  N  H  R  N  K  W  Z  L  D  U  M  S  C  V  F  D  C  E  B  F  A  P  Q  C  C  L  T  N  K  T  I  D  C  E  F</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by John Lennon that ends with the word</div>
+        <div class="ciphertext">A  C  C  A  U  S  S  H  R  S  G  B  Q  E  C  O  L  T  K  F  C  G  T  O  E  S  T  G  H  J  P  N  D  Y  O  K  H  I  C  B  E  V  N  W  T  V  O  F  F  K  W  P  S  G  C  K  T  K  A  C  P  C  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Alexis Carrel that ends with the word</div>
+        <div class="ciphertext">O  T  S  I  A  D  T  L  Q  T  U  A  S  K  Q  Q  P  H  N  K  P  C  M  P  D  X  O  V  K  F  B  T  S  P  B  R  F  U  P  C  M  K  D  R  Q  P  I  S  N  A  H  N  F  Q  P  P  E  T  Y  D  R  C  T  K  I  D  R  N  W  N  N  A  T  P  D  R  F  K  T  K  B  Q  P  C  M  B  R  D  W  O  N  L  O  W  P  D  K</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Albert Camus that ends with the word</div>
+        <div class="ciphertext">F  G  S  F  V  N  R  J  V  C  W  T  K  Q  L  A  X  J  V  N  A  E  D  O  K  M  H  L  N  R  J  K  V  E  N  N  E  M  D  N  A  F  V  J  L  V  L  T  W  I  R  M  G  J  K  V  C  J  E  D  R  M  G  Q  D  U  C  W  C  J  F  V  F  M  E  Q  D  J  U</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Hilaire Belloc that ends with the word</div>
+        <div class="ciphertext">L  O  C  I  E  C  P  U  X  C  T  M  C  O  W  F  U  K  G  Q  O  V  U  P  R  J  R  C  E  F  P  O  R  E  F  T  T  C  O  T  I  T  C  P  K  P  T  W  C  B  T  K  D  I  T  V  R  C  A  V  O  C  C  F  X  F  U  M  J  B  O  E  L  Q  I  Q  P  T  P  R  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Rem Koolhaas that ends with the word</div>
+        <div class="ciphertext">S  C  P  O  J  M  M  D  J  J  U  N  I  A  A  F  M  S  F  A  I  A  E  T  F  V  I  A  A  N  X  E  L  F  E  N  M  D  P  C  Q  S  X  C  K  E  U  Q  A  A  B  M  I  I  S  A  E  X  G  U  V  I  A  A  S  B  I  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Samuel Johnson that ends with the word</div>
+        <div class="ciphertext">A  U  E  F  E  V  K  M  V  S  K  N  I  U  K  J  F  Y  F  N  X  A  F  Y  E  S  T  F  N  R  E  U  L  P  D  N  A  S  X  H  Q  O  W  F  K  F  Q  Y  D  K  I  U  E  X  D  J  S  V  W  F  N</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Jack Welch that ends with the word</div>
+        <div class="ciphertext">H  C  L  I  N  I  K  S  R  V  L  K  Q  N  I  W  N  L  I  V  A  Q  C  Q  V  V  L  W  N  I  Q  C  L  L  C  L  I  F  A  G  Q  A  Y  L  R  M  A  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Augustus Saint-Gaudens that ends with the word</div>
+        <div class="ciphertext">B  S  D  C  R  K  T  T  E  H  S  V  J  S  S  G  P  N  S  E  O  H  T  V  G  D  J  Q  T  V  S  X  I  R  D  Q  Z  W  R  C  A  X</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Bill Budge that ends with the word</div>
+        <div class="ciphertext">K  C  S  Q  A  F  Q  K  Q  T  F  N  A  W  C  G  Z  Y  V  L  K  B  N  L  S  Y  X  G  P  N  H  Q  Q  H  N  U  V  T  L  J  N  G  B  Q  G  Q  U  T</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Aristotle that ends with the word</div>
+        <div class="ciphertext">J  P  J  A  Y  Q  J  B  L  E  A  U  P  K  Q  H  R  U  X  U  N  E  G  N  O  S  F  Y  M  T  T  J  W  K  Y  A  S  R  U  J  A  N  Y  V  P  T  T  S  A  W  E  J  H  R  Y  Q  J  K  Q  O  H  A  T  X  L  J  M  A  V  M  E  P  E  G  T  A  S  C  T  Q  U  V  B  J  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Plautus that ends with the word</div>
+        <div class="ciphertext">H  V  L  J  D  Z  E  V  K  S  E  R  V  A  Y  B  C  S  U  M  S  D  Y  K  E  Q  G  S  M  E  Y  A  M  Q  M  S  E  A  E  Z  J  O  C  K  W  T  T  W  K  A  D  Z  J  W  K  R  B  E  V  L  K</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Twain, Mark that ends with the word</div>
+        <div class="ciphertext">F  B  K  L  R  C  N  G  D  A  P  Y  G  C  A  A  P  X  I  G  F  C  Z  W  O  L  C  R  R  D  K  I  P  X  C  G  F  O  J  Q  G  Q  G  C  M  G  V  W  N  Y  N  P  Q  C  V  V  G  D  J  Q  G  Q  G  C  M  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Shelley Berman that ends with the word</div>
+        <div class="ciphertext">E  P  T  X  B  C  L  V  Q  T  P  O  B  Q  W  Y  K  I  C  E  A  G  J  O  G  A  E  V  O  T  M  A  L  D  X  K  W  O  U  E  G  H  X  H  P  B  K  H  P  A  M  N  L  P  S  G  V  A  B  B  G  O  E  I  T  T  L  G  P  L  G  E  L  B  B  G  P  E  E  L  P  A  L  G  F  N  R  G  D  Y  E  W  P  T  P  U  E  F  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Mary Lou Retton that ends with the word</div>
+        <div class="ciphertext">L  A  I  H  O  L  C  E  A  S  F  S  P  U  U  T  S  P  F  G  Q  B  Q  V  Y  L  R  F  H  C  L  L  S  B  W  E  I  J  X  C  F  A  P  B  J  V  M  I  O  K  W  D  B  Q  F  M  D  Q  U  Y  P  E  F  K  U  T  W  D  B  U  L  S  T  P  I  A  L  K  P  M  E  P  I  K  Q  F</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Jamie Moyer that ends with the word</div>
+        <div class="ciphertext">A  D  T  T  E  D  E  E  I  R  N  K  T  Q  P  L  T  P  L  A  V  Q  C  I  G  Y  G  U  C  A  V  R  V  W  F  S  E  L  B  Z  W  Q  O  D  M  D  G  Y  D  N  R  W  T  I  K  T  E  T  V  X</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Le Corbusier that ends with the word</div>
+        <div class="ciphertext">B  S  C  M  S  P  C  F  C  L  Y  R  N  B  H  D  L  S  V  U  S  I  M  T  F  K  D  D  O  S  V  W  F  C  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by J. K. Rowling that ends with the word</div>
+        <div class="ciphertext">A  T  L  L  T  I  I  C  K  A  E  K  P  C  T  N  P  Q  J  E  P  M  M  O  T  N  O  B  T  H  O  A  T  L  L  O  N  A  P  R  L  U  C  E  Q  H  N  K  T  I  C  C  M  A  G  P  S  I  O  G  A  M  L  G  I  N  L  L  I  N  N  C  D  S  F  E  L  T  N  P  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Chaz Bono that ends with the word</div>
+        <div class="ciphertext">I  M  P  C  K  G  F  V  Y  L  Q  Q  A  M  I  C  O  T  G  E  W  V  V  H  P  K  P  R  Y  M  P  C  K  P  G  M  P  C  I  A  D  U  G  M  P  A  H  O  W  R  T  I  X  J  T  P  S  B  I  J  G  N  H  T  T  B  V  U  G  Q  P  P  E  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Gabrielle Reece that ends with the word</div>
+        <div class="ciphertext">T  E  Z  F  F  D  N  U  A  J  I  X  M  J  J  U  X  L  P  R  X  Q  L  E  C  X  I  S  K  Z  P  K  U  P  V  V  H  X  I  H  X  A  J  S  P  V  K  P  B  U  A  J  I  X  J  L  A  I  S  K  F  R  I  I  G  X  I  S  K  Z  P  P  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by LL Cool J that ends with the word</div>
+        <div class="ciphertext">O  R  V  X  L  E  A  N  X  D  S  L  Q  V  Y  O  J  Q  U  V  D  E  M  R  C  K  X  L  A  F  R  O  Q  U  Y  N  K  X  F  Q  Q  H  D  S  H  F  X  C  P  M  E  R  U  U  M  O  Q  M  F  Y  V  P  I  V  N  O  Q  H  J  R  D  M  E  R  W</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Arnold Bennett that ends with the word</div>
+        <div class="ciphertext">A  F  E  M  E  N  P  S  V  W  N  Y  Q  A  D  B  A  V  F  P  N  K  D  F  B  O  D  I  T  Z  Q  R  B  C  N  X  J  S  B  R  P  Y  J  C  S  J  K  L  Q  B  A  E  D  T  W  K  J  G  S  V  Q  U  C  Z  P  V  I  V  N  F  A  L  V  R  A  E  D  A  P  Y  K  D  R  V  N  N  R  E  D  I  I  O  D  I  T  X  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by John F. Kennedy that ends with the word</div>
+        <div class="ciphertext">H  S  R  V  S  R  S  T  M  S  S  I  Y  N  A  T  R  T  S  L  G  G  T  G  I  Y  L  G  B  T  G  C  Q  Q  S  I  U  G  M  R  V  T  H  S  Z  W  P  S  N  H  Q  T  W  N  Q  T  S  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Jeff Miller that ends with the word</div>
+        <div class="ciphertext">D  S  K  J  U  G  E  Q  W  L  X  L  Q  P  A  B  G  J  X  N  G  Y  Y  T  A  U  V  O  R  C  D  Q  U  X  E  V  M  G  W  L  C  X  E  P  N  P  M  G  B  A  G  D  Z  Y  K  P  C  U  P  C  Z  K  I  B  E  C  Q  U  C  Q  C  T  L  C  C  H</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Mahatma Gandhi that ends with the word</div>
+        <div class="ciphertext">L  U  R  S  H  P  B  D  Y  I  R  U  Y  R  U  N  Y  J  I  T  C  P  I  T  B  V  N  G  Q  C  D  S  R  N  B  V  P  B  D  N  S  Q  U  U  E  M  M  S  N  O  B  R  S  F  A  D  N  E  Q  S  Q  U  Y  J  L  U  F  C  J  G  X  B  R  Q  F  A  D  R  R  F  L  Q  J  V  E  M  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Dolly Parton that ends with the word</div>
+        <div class="ciphertext">L  G  Q  O  U  R  G  V  U  A  S  B  S  E  A  B  M  N  U  T  T  C  O  T  V  L  A  Z  A  U  D  E  N  D  L  K  V  E  R  I  F  Z  M  V  C  I  X  A  B  P  Z  L  H  V  B  T  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Charles Dickens that ends with the word</div>
+        <div class="ciphertext">M  F  U  W  N  S  Z  I  H  U  R  O  E  S  I  T  I  G  S  S  J  Q  T  C  K  P  I  U  I  J  Q  T  T  F  P  T  Q  T  R  E  Y  S  T  X  K  Z  M  N  R  C  D  S  R  F  P  V  U  F  P  C  A  B  L  H  Y  B  P  S  Q  T  A  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Harvey S. Firestone that ends with the word</div>
+        <div class="ciphertext">O  S  U  R  C  V  J  M  U  Q  L  R  J  W  V  N  R  C  B  I  D  M  U  S  R  F  A  S  Y  Q  O  N  L  Y  N  L  T  D  A  T  V  R  C  N  C  J  V  P  D  N  E  Y  K  U  L  T  J  M  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Monica Edwards that ends with the word</div>
+        <div class="ciphertext">C  R  Q  Q  A  W  L  S  I  E  R  I  A  T  E  K  E  H  T  P  T  E  V  L  I  P  F  E  H  Q  F  H  U  L  C  W  M  E  S  E  H  Q  N  I  E  B  W  L  P  S  I  B  L  J  F  V  V  F  J  S  C  R  Q  E  F  V  Q  Q  K  M  C  X  P  F  S  H  Q  F  B  W  F  K  I  F  A  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Adam Smith that ends with the word</div>
+        <div class="ciphertext">D  E  A  G  W  N  L  I  B  E  V  A  C  Q  W  M  N  U  A  I  T  M  E  W  E  R  E  A  A  P  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Bo Bennett that ends with the word</div>
+        <div class="ciphertext">O  D  K  S  Y  Q  B  C  H  G  P  I  W  N  K  F  Y  H  C  M  T  J  V  Z  Q  T  C  H  E  T  L  Z  W  P  S  C  C  Z  Q  T  C  H  E  T  L  Y  P  F  C  X  M  R  E  S  U  B  L  W  N  E  N  K  X  C  F  R  T  X  L  C  Z  R  C  B  M  L</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by John Milius that ends with the word</div>
+        <div class="ciphertext">C  A  T  L  U  N  H  D  N  H  U  N  E  X  Q  A  C  C  H  V  V  S  U  O  S  F  P  N  H  S  U  N</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Marco Rubio that ends with the word</div>
+        <div class="ciphertext">C  A  I  O  S  X  K  A  S  R  F  C  S  K  A  F  B  C  S  J  S  R  S  A  T  V  K  J  Y  S  S  C  J  A  S  B  M  F  D  Y  T  V  K  A  E  N  J  P  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by John Keats that ends with the word</div>
+        <div class="ciphertext">S  T  W  Z  A  U  A  X  C  S  I  W  N  A  Z  E  L  N  M  Q  V  W  F  G  D  C  P  N  M  U  Q  S  K  T  S  S  I  D  S  M  Z  L  R  F  N  M  U  Q  S  D  N  I  N  S  T  Q  I  R  D  V  I  N  E  L  I  M  Y  O  E  S  X  M  D  Z  T  D  C  N  M  Z  L  R  F  S  L  C  J  Q  V  T  X  S  K  V</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Miguel de Cervantes that ends with the word</div>
+        <div class="ciphertext">C  E  J  L  Q  D  E  J  H  E  A  S  S  E  Y  A  R  F  M  B  X  Q  E  V  X  F  F  B  T  R  Z  A  B  S  S  O  G  U  E  J  L  W  Y  H  W  O  F  J  T  H  N  K  T  B  Q  T  J  I  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Portia de Rossi that ends with the word</div>
+        <div class="ciphertext">I  Q  K  L  S  Y  V  M  S  R  O  L  I  A  P  W  N  T  F  G  W  P  A  E  F  B  X  S  S  T  N  S  B  O  V  S  U  U  F  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Doug Coupland that ends with the word</div>
+        <div class="ciphertext">F  W  Q  P  X  A  O  E  A  S  K  D  A  B  E  D  B  U  S  S  G  G  Y  Q  H  N  T  K  C  G  O  B  X  M  V  S  X  J  R  A  K  V  E  E  A  L  S  P  E  A  H  A  P  A  T  O  M  S  G  Z  C  W  P  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Thomas Traherne that ends with the word</div>
+        <div class="ciphertext">K  J  Q  I  Y  A  V  N  M  G  Q  U  U  K  P  U  U  F  A  R  L  E  R  E  X  E  Q  Q  F  B  I  S  I  P  I  T  U  T  S  W  U  S  K  I  T  U  V  N  X  C  P  V  I  E  W  S  H  J  Q  H  C  P  V  P  U  P  P  I  E  Y  M  I  T  I  F  D  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Khalil Gibran that ends with the word</div>
+        <div class="ciphertext">H  N  R  E  U  A  V  D  O  B  Y  D  S  V  S  P  X  X  L  V  D  O  B  R  F  M  E  O  M  A  V  M  T  V  V  F  O  M  M  L  T  D  J  L  T  Q  S  I  Z  W  O  S  C  H  N  S  V  D  J  D  O  Q</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Muhammad Ali that ends with the word</div>
+        <div class="ciphertext">L  S  E  F  Y  O  J  D  E  T  Y  L  Q  N  E  P  A  S  B  V  J  L  S  C  E  W  N  I  Z  M  J  B  E  S  N  T  W  N  F  U  S  E  E  H  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Charles Pierce that ends with the word</div>
+        <div class="ciphertext">Q  A  H  J  P  N  A  Y  S  D  E  K  V  Q  G  B  W  P  O  Y  R  N  M  X  F  E  T  H  J  E  P  H  Q  S  Q  D  F  O  Z  N  K  H  M  S  K  X  F  E  Y  L  S  O  L  T  K  Q  E  Q</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by E. Joseph Cossman that ends with the word</div>
+        <div class="ciphertext">G  L  I  D  P  N  E  L  E  S  E  L  E  N  L  P  X  B  L  L  D  A  N  V  Y  S  H  K  J  H  Q  E  W  M  L  N  E  J  N  Q  I  T  Y  H  I  V  O  T  L  A  B  E  R  K  J  H  Q  E  W  M  L  N  E  J  N  Q  I  T  Y  H  E  M  E  N  E  B  L  R  E  N</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Karl Marx that ends with the word</div>
+        <div class="ciphertext">F  U  J  R  N  F  R  E  F  Q  U  N  M  N  N  G  P  M  M  N  F  I  D  T  C  U  M  I  E  R  I  F  R  E  C  H  W  S  K  F  P  G  I  I  I  L  N  U  A  I  H  C  P  G  K  A  U  O  P  F  V  N  D  M  H  Q  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Berenson, Bernard that ends with the word</div>
+        <div class=A  N  G  L  D  M  M  N  P  L  A  N  E  V  L  N  A  M  H  E  L  E  F  Q  G  C  M  K  J  G  Q  F  T  R  D  V  N  L  L  C  O  E  J  N  W  S  J  F  R  A  K  R  D  W  E  S  H  R  O  H  O  E  V  K  A  H  O  O  T  R  B  S  K</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by William Blake that ends with the word</div>
+        <div class="ciphertext">S  N  S  V  W  P  O  A  A  P  C  M  J  O  G  I  P  B  G  S  V  K  W  M  C  B  A  T  R  J  U  V  A  M  C  M  J  O  G  I  P  B  G  S  V  K  W  N  E  A  G  S  B  B  S</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Marian Wright Edelman that ends with the word</div>
+        <div class="ciphertext">J  M  Y  K  T  B  R  F  N  J  R  A  D  U  Z  R  A  G  B  R  W  E  U  X  X  M  Y  J  D  A  J  W  P  G  I  P  N  L  S  G  H  S  E  S  W  R  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Oscar Levant that ends with the word</div>
+        <div class="ciphertext">E  O  C  R  T  R  K  K  T  Q  N  H  R  J  G  R  A  K  R  H  J  E  G  E  L  M  R  E  T  G  E  R  B  J  H  E  J  R  R  G  H  B  N  T  S  K  T  M  J  M  N  K  M  M  E  S  O  F  G  B  J</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Holbrook Jackson that ends with the word</div>
+        <div class="ciphertext">F  H  W  J  K  A  C  R  U  M  E  R  F  S  J  B  Q  A  Y  Y  I  E  S  R  R  W  S  L  D  Q  S  J  I  Q  C  Y  T  R  F</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Sophocles that ends with the word</div>
+        <div class="ciphertext">M  K  T  D  C  E  U  L  B  B  G  U  B  K  J  T  C  E  R  B  D  I  W  S  D  U  Q  T  P  C  K  J  P  B  X  G  I  B  K  I  P  U  L  N  I  X  Q  P  B  N</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Samuel L. Jackson that ends with the word</div>
+        <div class="ciphertext">T  S  V  H  L  A  A  R  B  F  V  K  X  N  B  C  C  A  Q  Y  N  S  Q  A  D  A  H  S  Q  M  T  T  C  C  R  U  W  U  K  F  B  S  B  T  Q  B  V  Q  B  C  N  Q  S  T  T  M  E  Y  M  N  W  L  A  P  I  W  L  C  C  H  X  J  Z  Q  T  D  K  J  Q  A  T  B  T</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Dalai Lama that ends with the word</div>
+        <div class="ciphertext">K  F  N  A  R  L  E  O  R  O  R  R  C  P  G  H  X  L  X  K  H  L  P  E  D  T  M  L  V  R  A  S  G  H  B  G  E  G  A  L  R  A  Q  Q  K  J  U  R  J  S  O  B  A  G  C  V  D  O  S  S  B  K  F  N  E  F  O  L  R  C  O  S  R  D  O  O  M  N</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Benjamin Franklin that ends with the word</div>
+        <div class="ciphertext">A  R  V  U  R  R  E  J  D  N  K  G  X  B  K  Q  A  C  K  M  W  O  T  Z  R  F  B  Q  L  W  P  F  S  F  M  R  B  C  F  R  O  F  S  V  V  E  T  D  N  G  O  R  E  P  N  R  C  U  R  O  F  R  F  B  A  C  L  V  N</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Norah Jones that ends with the word</div>
+        <div class="ciphertext">U  Q  U  J  P  A  D  K  F  N  E  Q  V  D  A  G  E  Y  K  D  H  B  L  O  T  Q  Y  O  T  R  V  K  W  C  K  J  V  D  R  T  R  B  M  P  W  M  B  U  H  B  B  I  Z  C  K  S</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Joel Osteen that ends with the word</div>
+        <div class="ciphertext">C  R  T  A  B  G  P  L  O  Y  I  W  P  I  R  M  T  W  P  B  F  D  R  V  W  B  E  V  T  I  D  R  D  T  T  H  J  Z  H  K  V  B  L  E  G  U  N  Y  T  O  S  D  Z  R  T  E  Q  G  P  L  O  Y  M  H  B  E  I  D  L  E  G  M  T  V  T  I  D  R  D  T  A  T  R  V  Y  P  N  R  P  A  T  E  H  G  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Woody Allen that ends with the word</div>
+        <div class="ciphertext">B  U  B  P  V  X  K  R  D  F  T  H  C  U  L  R  N  S  L  S  F  E  K  H  C  U  B  S  I  A  L  T  A  A  G  F  Y  F  A  S  F  B  W  P  O  A  L  M  Y  E  D  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by John Ruskin that ends with the word</div>
+        <div class="ciphertext">C  E  X  S  S  G  J  N  X  T  Y  K  P  C  H  V  O  W  P  E  Y  M  W  P  K  K  P  D  A  U  T  D  T  T  K  K  Q  B  Y  F  Y  D  K  X  L  D  Y  K  D  V  P  F  F  J  S  J  N  T  G  K  H  U  C  E  G  P  J  A  X  L  G</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Joel Osteen that ends with the word</div>
+        <div class="ciphertext">N  E  L  B  Q  Y  R  U  G  L  E  N  R  W  E  Y  V  B  K  D  N  E  R  R  C  M  F  B  Q  Q  M  M  L  Q  C  L  A  S  S  G  B  O  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Michael Symon that ends with the word</div>
+        <div class="ciphertext">H  B  L  F  V  J  J  A  X  E  S  T  I  I  E  P  W  G  Y  T  V  K  H  B  X  I  N  W  G  Y  J  K  R  S  F  O  I  O  W  M  D  G  V  K  N  V  V  J  D  S  R  U  I  F  O  E  H  R  B  I  C  O  Q  N  T  I  X  T  V  J  D  M  N  G  V  P  Q  D  G  V  K  R  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Seth Rogen that ends with the word</div>
+        <div class="ciphertext">S  V  X  N  I  T  L  C  S  V  X  C  U  Q  S  U  A  B  D  Q  D  Y  E  T  K  S  R  G  I  O  K  D  R  C  D  A  X  U  O  L  B  B  E  X  K  N  P  X  I  T  L  V  Y  O  N  S  M  E  P  O  C  K  V  Q  P  J  I  R  N  O  X  J  S  G  K  R  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Roy Barnes that ends with the word</div>
+        <div class="ciphertext">T  C  C  Q  U  U  D  N  D  E  X  D  C  O  R  D  O  R  C  X  H  N  F  C  A  X  C  R  F  C  E  X  I  C  X  T  J  E  Q  T  H  C  J  X  U  C  I  B  C  K  P  V  K  S  I  D  A  X  N  G  Q  N  C  J  Y  H  O  Q  S  N  D  O  C  D  I  C  W  F  P  K  F  W  O  Q  C  X  E  Q  T  H  A  C  A  R  H  C</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Brigham Young that ends with the word</div>
+        <div class="ciphertext">M  G  F  P  F  N  J  E  T  U  B  J  M  G  R  K  W  U  P  L  W  X  M  G  J  M  C  R  E  E  T  B  M  P  K  W  S  R  U  E  Y  J  E  B  K  J  A  A  T  J  U  N  E  X  E  L  R  Y  K  T  R  T  G  B  N  J  V  W  E  Y  C  U  N  N  K  M  G  L  N  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Mignon McLaughlin that ends with the word</div>
+        <div class="ciphertext">B  P  C  B  G  D  R  S  H  P  C  R  P  M  F  X  M  M  I  R  P  Q  U  C  W  I  D  G  P  M  C  I  C  R  P  I  B  R  C  F  P  T  U  E  R  I  Q  R  K  P  B  E  L  B  I  G  O  M  D  M  P  E  B  R  C  L  B  G  M  R  Q  M  D  P  R  V  H  C  W  R  B  L  E  Y  C  Q  C  R  K  T</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Billy Graham that ends with the word</div>
+        <div class="ciphertext">M  W  Q  A  S  S  H  O  N  T  E  Y  G  G  U  B  U  F  X  G  A  S  V  Z  C  W  P  D  B  Y  B  S  Q  S  P  L  H  D  L  J  Z  C  W  P  D  B  Y  L  E  J  T  X  A  N  V  S  E  F  S  T  L  F  Z  S  A  D  L  V  O  N  S  R  D  B  U</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Socrates that ends with the word</div>
+        <div class="ciphertext">G  B  X  B  N  R  Y  M  O  D  K  Q  I  U  I  K  Q  M  I  A  J  T  R  M  G  V  P  F  V  M  Q  D  I  K  W  R  B  A  I  R  R  M  O  S  Y  G  Q  O  X  I  C  M  M  C  B  N  R  W  Q  N  N  G  X  J  V  M  N  P  A  I  F  X  E  Q  V  B  G  W  G  X  O  I  A  N  I  G  W  W  G  B  X  U  T  L  H  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Ivanka Trump that ends with the word</div>
+        <div class="ciphertext">R  W  S  S  A  A  G  V  U  J  V  V  L  M  K  S  Q  S  Q  W  A  S  U  B  L  J  Q  E  P  W  V  T  O  K  F  X  I  V  K  E  Q  U  A  J  N  A  O  V  L  B  G  O  E  S  J  W  R  J  S  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Patrick Wilson that ends with the word</div>
+        <div class="ciphertext">N  P  N  G  M  T  N  H  T  B  M  R  S  N  H  G  M  T  N  I  N  R  N  O  U  U  C  I  P  I  M  N  E  G  U  C  I  O  O  E  P  N  N  B  Q  R  N  I  O  O  E  M  R  V  D  P  O  H  E  L  G  M  E  P  R  V  J  T  A  M  Q  E  B  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Henry A. Kissinger that ends with the word</div>
+        <div class="ciphertext">M  G  S  V  E  G  T  O  K  P  I  V  G  A  W  F  S  E  F  S  E  W  A  E  V  K  X  I  B  W  G  P  P  D  C  A  U  M  J  Q  E  D  R  A  I  K  U  W  L  G  A  Q  A  X  P  E  B  C  W  M  I  D  N  L  Q  M  G  S  E  S  V  G  A  T  L  P  E  E  G  M  X  B  L  O  F  A  S  I</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Frank Bruno that ends with the word</div>
+        <div class="ciphertext">D  N  A  N  P  D  E  B  C  D  P  D  D  D  R  Q  N  S  W  K  K  G  E  N  P  T  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Ted Nugent that ends with the word</div>
+        <div class="ciphertext">Y  N  K  R  Z  Q  D  A  F  Y  V  E  U  W  Q  F  G  K  D  R  N  O  X  R  S  Q  N  X  R  V  M  K  B  X  E  D  S  X  F  Y  U  U  Q  U  V  A  H  E  S  N  H  Q  Q  G  J  S  E</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Richard Cobden that ends with the word</div>
+        <div class="ciphertext">O  E  M  N  Z  S  A  F  B  D  I  L  W  D  I  D  A  J  Z  M  O  F  J  V  I  A  E  E  S  S  I  A  H  F  H  V  W  P  M  N  D  V  E  I  F  B  S  T  A  N  F  N  D  T  V  F  Q  M  T  Z  N  W  Q  D  A  P  Q  E  Y  E  E  N  T  D  T  S  D  Z  M  O  F  E  O  T  I  E  E  A  A  P  C  N  U</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Sonia Johnson that ends with the word</div>
+        <div class="ciphertext">E  O  T  N  M  E  R  O  T  N  P  K  Y  L  J  P  W  W  H  X  I  R  N  I  X  T  T  O  F  N  T  I  T  N  I  R  V  K  I  Y  O  T  B  P  T  Q  Q  S</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Benjamin Franklin that ends with the word</div>
+        <div class="ciphertext">C  S  P  H  B  H  S  C  C  A  Q  R  L  Q  Y  B  S  P  W  S  B  L  H  O  C  A  O  S  J  T  L  F  W  E  O  M  V  A  T  M  K  A  B  S  P  L  B  F  P  S  P  S  B  L  H  H  O  R  W  C  K  T  M  O  S  B  H</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Guy Lafleur that ends with the word</div>
+        <div class="ciphertext">N  Q  W  B  C  M  H  K  Q  O  S  R  W  C  F  B  L  L  A  W  Q  X  S  Z  N  V  M  G  I  Y  I  R  V  Q  R  W  F  P  M  S  R  X  Q  A  G  N  A  J  V  M  H  M  W  U  L  K  Q  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by A. Whitney Brown that ends with the word</div>
+        <div class="ciphertext">A  R  V  Y  F  M  P  D  Q  D  F  J  F  R  R  E  E  O  G  H  E  U  J  D  T  Q  E  X  G  B  F  M  A  N  X  O  E  F  N  N  H  Q  G  A  R  V  X  P  A  N  V  E  W  D  B  Q  R  U  Y  A  S  I  E  N  D  A  S  Q  X  A  R  W  G  C  E  H  R  U  W  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Seneca that ends with the word</div>
+        <div class="ciphertext">A  N  F  T  G  G  T  W  Q  T  T  H  B  I  C  N  L  I  E  M  T  U  T  G  N  Q  F  T  M  T  R  T  K  Q  I  B  W  V  O  M  X  T  L  N  T  Q  U  R  L  A  R  N  Q  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Gail Simmons that ends with the word</div>
+        <div class="ciphertext">B  D  O  Q  T  I  H  D  X  D  K  W  A  D  X  K  E  S  R  D  W  W  L  Y  I  L  V  O  K  Q  I  L  V  O  K</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Levon Helm that ends with the word</div>
+        <div class="ciphertext">B  T  S  S  G  A  F  A  E  N  M  O  Z  O  C  M  R  V  J  C  A  F  C  A  V  J  M  D  E  T  I  E  R  O  J  F  O  M  T  A  T  M  Z  E  N  V  E  N  U  V  G  Q  C  H  E  N  U  X  X  M  D  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Ursula K. Le Guin that ends with the word</div>
+        <div class="ciphertext">C  H  L  N  T  W  C  J  T  Q  E  L  B  N  U  S  R  C  J  T  V  E  L  Q  T  T  H  E  K  S  A  G  B  L  S  F  Z  Q  C  B  B  H  R  C  C  M  C  P  A  H  F  X  E  L  S  E  H  J  X  L  V  N  I  S  Q  H  J  R  E  U  B  A  K  W  L  B  R  E  F  S  L  N  R  C  J  R  H  M  D  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by David Seabury that ends with the word</div>
+        <div class="ciphertext">J  W  N  L  F  Y  Q  P  N  N  L  E  Y  B  I  H  O  A  X  E  R  P  X  W  M  E  Z  E  P  I  A  E  R  V  H  M  R  D  I  O  I  Q  Y  N  D  A  E  X  R  M  Q  P  V  H  Q  D  E  S  J  M  A  I  E  S  Q  Y  J  R  B  N  E  X  I  G  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Mark Twain that ends with the word</div>
+        <div class="ciphertext">R  Q  W  Y  N  D  K  Q  R  E  Z  M  N  D  T  G  E  Y  C  Q  P  T  D  F  V  W  M  L  G  Q  Z  G  I  U  T  O  L  T  G  F  O  M  G  K  P  N  C  Q  R  A  R  V  R  H  X  W  W  M  R  O  K  P  G  X  C  A  W  Z  A  P  T  A  G  P  R  T  S  A  J  U  G  B  R</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Oscar Niemeyer that ends with the word</div>
+        <div class="ciphertext">B  N  V  J  G  C  D  U  H  D  R  O  J  E  I  G  Y  D  C  A  U  J  O  D  M  J</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Mark Twain that ends with the word</div>
+        <div class="ciphertext">C  L  B  F  O  B  A  L  N  T  C  W  L  R  O  X  B  F  S  K  R  O  R  R  B  U  F  N  B  Q  R  G  N  L  T  L  N  L  R  Q  R  G  V  N  V  N  N  U  G  L  U  I  L  R  X  H  G  U  I  N  N  T  U  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Will Rogers that ends with the word</div>
+        <div class="ciphertext">G  V  K  I  C  X  H  N  K  A  G  V  Q  F  M  D  S  I  I  R  A  N  F  L  V  K  M  S  E  P  F  R  F  A  S  S  L  Q  P  U  U  B  O  P  A  H  W  V  J  L  Y  N  A  O  M  D  S  I  I  R  A  N  F  L  V  K  M  C  R  K  A  P  I  E  U  S  F  I  S  S</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Maya Angelou that ends with the word</div>
+        <div class="ciphertext">M  S  T  W  T  Q  Q  E  B  Q  B  C  H  G  P  L  C  D  C  Y  F  Q  U  T  U  O  D  R  M  T  H  R  O  J  Q  B  O  H  I  Y  F  Q  Q  H  E  B  H  F  Z  S  T  O  H  I  Z  H  W  T  D  O  G  P  L  D  K  W  Y  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Alyson Hannigan that ends with the word</div>
+        <div class="ciphertext">J  E  P  J  H  V  X  V  Q  S  M  M  C  I  A  A  J  I  E  K  M  W  I  O  V  A  R  W  V  T  W  H  Y  Q  M  M  F  E  X  R  S  S  B  M  S  U  M  H  Q  L  Y  K  K  F  A  Q  S  V  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Seth Rogen that ends with the word</div>
+        <div class="ciphertext">S  B  S  G  C  S  A  S  C  E  X  D  M  P  Q  U  U  O  A  U  T  P  M  R  D  S  T  S  S  B  F  U  L  R  M  N  C  T  F  Y  V  O  F  B  X  S  R  V  V  M  S  P  X  D  E  M  S  P  W  R  M  N  C  T  F  Y  V  O  L  S  G  T  V  V  M  H  Q  T  P</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Tori Spelling that ends with the word</div>
+        <div class="ciphertext">L  P  J  K  A  W  T  N  C  I  V  N  D  A  H  G  P  L  T  T  K  N</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by St. Vincent that ends with the word</div>
+        <div class="ciphertext">L  W  E  J  E  N  S  P  K  Y  F  G  P  V  B  B  C  Y  Q  F  L  T  P  Y  B  C  U  H  Z  W  R  K  W  R  Q  N  T  J  B  H  T  E  Y  E  L  D  E  Q  F  L  U  L  K  S  L  R  C  F  N  O  T  E  L  S  V  Z  S  L  G  I  E  P  J  V  F  N  A  V  Z  W  R  P  C  U  V  L  E  Q  D  S  L</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Norman Vincent Peale that ends with the word</div>
+        <div class="ciphertext">P  K  I  H  Q  V  R  X  P  J  V  Y  T  P  X  D  T  Z  R  T  I  B  K  I  H  Q  V  G  V  G  I  O  R  G  A</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Joseph Jackson that ends with the word</div>
+        <div class="ciphertext">W  H  W  M  M  W  F  L  U  A  D  G  E  S  S  N  N  V  I  G  D  D  O</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Langston Hughes that ends with the word</div>
+        <div class="ciphertext">R  R  A  K  J  Q  C  G  R  X  D  Q  P  N  H  R  R  B  B  H  Q  W  Q  M  R  Q  W  T  K  J  P  O  R  R  M  E  S  H  O  I  V  N  X  K  R  R  T  Y  L  V  M  A  V  M  A  I  P  G  O  N  K  P  G  A  R  M  X  B</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Charles Hodge that ends with the word</div>
+        <div class="ciphertext">K  G  R  P  K  D  V  A  J  O  K  Y  F  S  U  K  O  F  D  Y  J  L  C  L  W  K  B  P  A  Q  T  T  C  E  T  U  K  J  S  W  T  B  F  C  A  G  Y  S  U  M  W  S  P  T  W  T  T  F  C  A  F  U  B  J  D</div>
+        
+        
+        <div class="question">Solve this Fractionated Morse cipher by Sydney Pollack that ends with the word</div>
+        <div class="ciphertext">C  S  A  G  H  J  P  N  D  Z  O  P  E  H  E  S  K  A  B  G  Q  J  P  N  D  Y  E  R  S  O  O  I  T  A  J  Q  N  E  J  U  T  Y  B  S  T  A  N  T  V  A  M  S  P  Y  P  H  A  I  U  E</div>
+        
+        
+        
+        
+    </div>
+
+    <!-- <script src="code.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

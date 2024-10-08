@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill 3x3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="./">WSO Code</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="../">woodsonscioly.org</a></li>
+                <li class="nav-item"><a class="nav-link" href="columnar">Columnar</a></li>
+                <li class="nav-item"><a class="nav-link" href="fmc">FMC</a></li>
+                <li class="nav-item"><a class="nav-link" href="hill2">Hill 2x2</a></li>
+                <li class="nav-item"><a class="nav-link" href="hill3">Hill 3x3</a></li>
+                <li class="nav-item"><a class="nav-link" href="nihilist">Nihilist</a></li>
+                <li class="nav-item"><a class="nav-link" href="porta">Porta</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div id="title">3x3 Hill Cipher</div>
+        <hr>
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key EBTFNSIGR.</div>
+<div class="ciphertext">YBRLACFYUZGOSEBJDXJFSTKCGFD</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZPVMNPVBG.</div>
+<div class="ciphertext">TWKQAHEYSTSGQSYSGR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key RCGGTFEAL.</div>
+<div class="ciphertext">GHNWUWEMMOSBPCCRPGQVENUH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YDUTKYFXJ.</div>
+<div class="ciphertext">GMQMDKZMFAORGGJMSNAPKXYV</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key PJGQZGDSN.</div>
+<div class="ciphertext">ILSZWMHBZWRIUUNGSCZEVJGV</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key DWNHECYPC.</div>
+<div class="ciphertext">CLRECWHOIJMRPIYUPHNMBWCBGLFFFT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key VBKWDESZP.</div>
+<div class="ciphertext">RILDZCRMWULDDAQXGX</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key MOFJXNEDZ.</div>
+<div class="ciphertext">HLWQBDIYIJESXHMLMIHBKJGE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HFWOPLHFX.</div>
+<div class="ciphertext">LKCPXJXZNQOCNCPASEISTEMV</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZIZPGSUPL.</div>
+<div class="ciphertext">RMXSBZALYAPNXUUIZYPFG</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LNBIRHTDI.</div>
+<div class="ciphertext">QDVIBVRAOAJVXZIFYOGKQBOP</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YQLTBQLGZ.</div>
+<div class="ciphertext">KETJGYYZAQERUCHKOUCAJFSI</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YAPDACDBL.</div>
+<div class="ciphertext">XANIOKQBROFSTXKWDJTOK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key OANCVVDQO.</div>
+<div class="ciphertext">ENTBTARBARTLEAWNVWENINCT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key FTXCSXSVC.</div>
+<div class="ciphertext">ATOUNCWGMWFMVNWTYVLWIKVK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HICKFMDVF.</div>
+<div class="ciphertext">PZYEHHEPLPSCAOBPWWNBT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HBOXXBOZP.</div>
+<div class="ciphertext">JDRDMXKQTDZXZHGPCN</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key VUTYDQWYD.</div>
+<div class="ciphertext">VRSIHEOPSNLQYCAEFR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key AHKDRRMTP.</div>
+<div class="ciphertext">DBSNUNJYYMSAAVI</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key AJLPSRYCX.</div>
+<div class="ciphertext">TUYFIHLIYECACVD</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key VTWZASARV.</div>
+<div class="ciphertext">XQIPVQASJSGNHGEMET</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YLJXKKUTA.</div>
+<div class="ciphertext">YLHWMUBGJMIZOVUYLVSXODMYUJR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key GMHVEVDFO.</div>
+<div class="ciphertext">PNHZXTUOULCPNQCKNMZOX</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HSBKTVIOB.</div>
+<div class="ciphertext">PBNQVHYNWTGBIEKKNBRLKELAOPYWLH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key PLTAROGNL.</div>
+<div class="ciphertext">HONWQIRMSGMTYSYLKB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key IQJXLXGHT.</div>
+<div class="ciphertext">PWUVNXSBBLVETFMRPSLEYQML</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ERICGRXIB.</div>
+<div class="ciphertext">RIRAUYRGVWHMQYYOGXRCJQVOQJB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LNETCBVSA.</div>
+<div class="ciphertext">VSPLHPTTFLYRTPR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key UMZMZAZGX.</div>
+<div class="ciphertext">VOUXMTXQZIBQMLIMVU</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key KJKDBCLZF.</div>
+<div class="ciphertext">BZDFZVIIHCWSHEH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key DRGOJGEHF.</div>
+<div class="ciphertext">HAMDJEUYSIDZVVIJRA</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key SJYGDDNUT.</div>
+<div class="ciphertext">KINJGUXMRMOTLWBHRBWTE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key RBNKLGDFM.</div>
+<div class="ciphertext">QFBLVGEOAZRRPQCUSVVYP</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key NZPROPYJB.</div>
+<div class="ciphertext">HUESOSSERRKPHGFGQMQTQ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HGLOERRDJ.</div>
+<div class="ciphertext">GTEROEYEOGJPNNKFQHMFQ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JWRDQAAFC.</div>
+<div class="ciphertext">NDQGDYHTBIYWBDF</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QJHDNPFIX.</div>
+<div class="ciphertext">WDNASBRZHSAGUXYWTH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QNHBQHFRD.</div>
+<div class="ciphertext">GJNUVPAGYIMOTRMTAANIILWC</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key OXZYQTRYT.</div>
+<div class="ciphertext">DTLNYNQENHKQUNDCPJRZCWQX</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key CYXXIGYJY.</div>
+<div class="ciphertext">SLVRUODYHKCLDRW</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key EFSZYRPGS.</div>
+<div class="ciphertext">DVXMOUTIKRFA</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key FEOCGHQXA.</div>
+<div class="ciphertext">BZQGTYSJVOSSKEYIVOYHN</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JEDQZBZTP.</div>
+<div class="ciphertext">ONKYVOFRXZKOIFLFCAIVXQGJ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZFLXSUEHY.</div>
+<div class="ciphertext">EENLWRYJSJSJRTDKGYWNK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key XHFUCFZQO.</div>
+<div class="ciphertext">VQEDWGJMSMNXXQCKFWWVLUAPJQZ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key KTOFDGPZV.</div>
+<div class="ciphertext">ZYEXZBWAIFORBYQRGDLLZXFFHYLCFA</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key VKWLMVJBV.</div>
+<div class="ciphertext">HMBZONYNJWKRXBPAUQDNLQMJGVJ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key AHFIGDJOV.</div>
+<div class="ciphertext">JZAEYUGHLUDUCSUPYAUVR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JPXBGLMFL.</div>
+<div class="ciphertext">PMWOKWBILZXVWJSMKGUGZ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZINOXPOGZ.</div>
+<div class="ciphertext">WTLEIANEKTREDWMSIQFCYQYF</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key SXPROVBZH.</div>
+<div class="ciphertext">XKXSZBYUVSPXZARHEVRHGVAT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key BYPQZWYVN.</div>
+<div class="ciphertext">EVJOGIHMEEVTFFOHMPCUBZTN</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key DLRUGRWZG.</div>
+<div class="ciphertext">MZOJYKGWRWGTJCSTQLYPE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key WDWGTTVVG.</div>
+<div class="ciphertext">NMOYWZGSHVCPYSJYYE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JUGWPVGGF.</div>
+<div class="ciphertext">FIOITQZQWDFTXRQMKTIRK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QUPRZNJIZ.</div>
+<div class="ciphertext">VZOJSRULELXPEFQQAP</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key FYTIFHVCQ.</div>
+<div class="ciphertext">TOALGMNDLMTDGWAOTZOMIVPUXMR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key FBEFOUJWH.</div>
+<div class="ciphertext">IKFRWDDPNSTXIWR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key MBZLQGAMB.</div>
+<div class="ciphertext">KQBKNRUVXFQQQOFIPJJOS</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key UAXVBOUDD.</div>
+<div class="ciphertext">LFMZDEAUGTGRYEHGCUJDERXYGVI</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key WDNDTEITC.</div>
+<div class="ciphertext">KJZBHCYQZWOJGADBEOVHRUCCOMTIPU</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZKWWUJATD.</div>
+<div class="ciphertext">ORSIFDJJWICCMNVGLPMEH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key KIZYPOJON.</div>
+<div class="ciphertext">LNNXFVJCJUGWOKIKAL</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key GTHDMMIEP.</div>
+<div class="ciphertext">WCZXVYVSKVBZYIUPRD</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key WJIROJGLJ.</div>
+<div class="ciphertext">WWWYRVTNFTCNOAOKCQFGLIOP</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key DTSOHYPHF.</div>
+<div class="ciphertext">COLNCSJDMDBSOAXVCURXF</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key CLWUVDHTG.</div>
+<div class="ciphertext">CURSRPJAKQKLPMIDCSAWRVVADLI</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key RNNCLJACT.</div>
+<div class="ciphertext">QJXAASBCIRWGPLOSPX</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key UTVLZRVER.</div>
+<div class="ciphertext">UDLSYQGQUQTVTREPDG</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key SYNWXPZNC.</div>
+<div class="ciphertext">NDNCKFXZBEWRPBDPHQIOSQZLZAM</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key GZULUHEIB.</div>
+<div class="ciphertext">PWCLHHFQBLKIQNCSRADJL</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key KRZPBGGXE.</div>
+<div class="ciphertext">UGBVDRDRFHTLTGCYORCCPFKXHXB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LHWJSRACP.</div>
+<div class="ciphertext">PFNVXPVDWVGJDPBZXDLKFQHGIHZ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZYUCBRVZA.</div>
+<div class="ciphertext">ITOQQIHYKAJSYHLXFXSPA</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YJLHCDHAW.</div>
+<div class="ciphertext">LCJJGYSJBSVWCTVOIUQFQVWY</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key FSJTNOXEO.</div>
+<div class="ciphertext">KLDIYXJENGSLUAZTRVPWDZET</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LHVPOWHWB.</div>
+<div class="ciphertext">MAFRWZIMFFHEGGARHM</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YZIDVDCUF.</div>
+<div class="ciphertext">HAPMURBISXYESNBMNXLGRRKN</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key EDBISHXAM.</div>
+<div class="ciphertext">AASLFMHLZLMCUZBDYXOCEDOF</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key AVOVMXKDJ.</div>
+<div class="ciphertext">KVEVIFAHUCXSFEULSEOIIXEL</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key NEOFDSOJP.</div>
+<div class="ciphertext">CRCSFAOVPKFTQIB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key CQVLICMLW.</div>
+<div class="ciphertext">ANPRMILKOHFSXQYOCCXVK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key MRBNLENKK.</div>
+<div class="ciphertext">SXGHPOZBZXRHVRMINDSGXLSR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HMRMMHMNW.</div>
+<div class="ciphertext">ZUCWKVMSKXZADYCLRG</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key EFSWXZXPW.</div>
+<div class="ciphertext">WJVMGZOSUOBPIAFWTLRSQ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JXTYYVLEP.</div>
+<div class="ciphertext">URCGMYLWTVHUEWOLPUEDKWZR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key XVVAALIVO.</div>
+<div class="ciphertext">IWANOTVGXJGGYBH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YIFLIHDDF.</div>
+<div class="ciphertext">HOWUJEGMSVNBHEO</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key PEZZEYRFU.</div>
+<div class="ciphertext">BBFDPHOHATFFXHJKPK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key SDFTIBYVM.</div>
+<div class="ciphertext">RMFWSEWEAQZIYKCROYRHOXZM</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LUFFNTXOO.</div>
+<div class="ciphertext">REBRJGOKGUHPZFQZJQIJU</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QLZRBYUFG.</div>
+<div class="ciphertext">LRWTQIHBEICOSQJTCXLYWGVX</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JTYXBHQTX.</div>
+<div class="ciphertext">ZJQXBFFGIXGMNGCUYK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key OTDLBDDUR.</div>
+<div class="ciphertext">QBPSJNTKBKYWTEY</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QDYZTSKQJ.</div>
+<div class="ciphertext">UCYLBFOUDZHTDIUVODTFDIBV</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YVAIOJDVE.</div>
+<div class="ciphertext">CJOWYSLXEHZQPITHMD</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key TNKHPPPCV.</div>
+<div class="ciphertext">DHEHGJLGZQTJ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key NFJZEWKER.</div>
+<div class="ciphertext">MNXYAFKWLYPQVDAYQX</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key NFQRHTMLO.</div>
+<div class="ciphertext">TWDBOJKGNXVICILPGBGTE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key FIHZXZXCQ.</div>
+<div class="ciphertext">CYQPMHOBQAMYNHFLDGOTGDXT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QRFDNBDRO.</div>
+<div class="ciphertext">VLCTJGYGZLRYNXEYMUJAY</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key NCSBZCCWF.</div>
+<div class="ciphertext">CTENOXIYMZCYLEJ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key BKQGAXULK.</div>
+<div class="ciphertext">SAMSMZRXCZWQAOIRCNRNIYPM</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key SYHOXXHZW.</div>
+<div class="ciphertext">ZYWDVLFGNIMC</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key WVONZAREX.</div>
+<div class="ciphertext">BAIZUALKUYATXTURGJUWN</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key XKKLKDRZL.</div>
+<div class="ciphertext">OUMOCAUBFFVEUEP</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LNGKNAKHV.</div>
+<div class="ciphertext">NZKUGDYMSTQQHWLEICMLRJRQ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JZNQNRAKF.</div>
+<div class="ciphertext">TXZEHYQWCDOH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key DNWKPUTBJ.</div>
+<div class="ciphertext">ZNUZIOTASSGVZRGFVZDDZ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LIXONAJPU.</div>
+<div class="ciphertext">NUTRQPNTXTWNBYYNTXMND</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZUWZRVMGV.</div>
+<div class="ciphertext">JGVYTKCASMXUDQHWAB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key XFMBDXYRD.</div>
+<div class="ciphertext">DNZSVREPLXXZRRTXSR</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZNXRMOIHQ.</div>
+<div class="ciphertext">BURJUATZOKORVDEQEZTNO</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YBKHZICTP.</div>
+<div class="ciphertext">HTLRJVFZFTMGRKV</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZSUGBJFSZ.</div>
+<div class="ciphertext">DWKUKINSKLDNMCZQTYAEBTJVJOU</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LQYGJBKCB.</div>
+<div class="ciphertext">KFCZZDANEQGKRJBTMAUHHMSZ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key IUXWRZRPT.</div>
+<div class="ciphertext">GESTTUHXRCNUOFE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key CTMZHPOJR.</div>
+<div class="ciphertext">PLMOWCVFFLOCPKIOJNOQJ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LWRUYDBJY.</div>
+<div class="ciphertext">UGOIGFRYDPSDHMJQSCNNLBBJ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZAOYUXVFG.</div>
+<div class="ciphertext">IHZCJGKSCCCXHRUJJADUQQXH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LJBBVAOFH.</div>
+<div class="ciphertext">BNYCKVWHPJUPQFROZDPSOBMDMXHQQL</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key AYFHKFODS.</div>
+<div class="ciphertext">SRCQGSFTVUCK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key MBTGWHHZB.</div>
+<div class="ciphertext">PYOEDQPDQYBGQBOPCSKBRHHJ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key MBBFFHTZO.</div>
+<div class="ciphertext">NZSVUOPGLQPBZGGFTCQNU</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ITBMZWPBR.</div>
+<div class="ciphertext">FIMSKGJKRYQQXIOQRRMMH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key IZTHBFLFA.</div>
+<div class="ciphertext">BQRMDTURTSLTBOM</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key IRBLQJESB.</div>
+<div class="ciphertext">RBFDHGRMTVPLQXVRSEHYVDSB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key CHZNEPNKQ.</div>
+<div class="ciphertext">XXXXXXDIXHZZONEQPZNKPEUE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JBXEVFGCX.</div>
+<div class="ciphertext">AVBVFPMJVNWGCURPXIFPK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key THWLFTLSU.</div>
+<div class="ciphertext">TTNRFEQQZYOFQUXPETPXMIZHIGT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZITHYOXHB.</div>
+<div class="ciphertext">PGLCXBIGDVNPSWWRYLCSDNAM</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key RCQWFZJXO.</div>
+<div class="ciphertext">NXDWGHGFNWXQCIOVRTBICCPLMUYDUCQBB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key KWPRJATAO.</div>
+<div class="ciphertext">XXYSFCDJMNZASXERYB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QNKSKPHFS.</div>
+<div class="ciphertext">CJGVPANTATGWOQFLTSWGJOSF</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ABAFEYXUL.</div>
+<div class="ciphertext">GFPHCZPOHILAIRNKELNOCRESXSQ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YIJRHCMHU.</div>
+<div class="ciphertext">KQRPCSNOCXVDUALEQCTAW</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key VHIKWZDYB.</div>
+<div class="ciphertext">RWKHOKGUQFZRKHWBBD</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HHUGZGHFR.</div>
+<div class="ciphertext">VIZLCJUGQQHZPKQAKSBEOJABRDHKCE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key KTLHEOHWZ.</div>
+<div class="ciphertext">XYWKTBAYVUIEWGIRWFEFWFEU</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YZNHFNKOH.</div>
+<div class="ciphertext">BJEYRWLRGLOVGBBXPZCIEQPZ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key DHLCIJWTE.</div>
+<div class="ciphertext">SHZCOWZOPYPQAZOJLUJAX</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key SRHPGOHBI.</div>
+<div class="ciphertext">YTISPRUIPNRTUAHCCDMPU</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key IPLIZUNVX.</div>
+<div class="ciphertext">NLEIRXBJTSZRJSS</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JATXXPKBH.</div>
+<div class="ciphertext">TQHRDRMIFVZT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key WHCXZHZSS.</div>
+<div class="ciphertext">WKFLJOWGOATUODLSAGLOO</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZCUBDOBIB.</div>
+<div class="ciphertext">TIMCXNYJORBOGIB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZWKKPFZDO.</div>
+<div class="ciphertext">UMCFSURHLUUXDRSEVS</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key XEGNVXUSB.</div>
+<div class="ciphertext">VYZDYRWCZQUEYGYTRBACI</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key GPGDVBADR.</div>
+<div class="ciphertext">SFRGLTXSGRZU</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key MUZFPBQNH.</div>
+<div class="ciphertext">IRUOBGOGCGSYCRNJFW</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QJSFYWKLV.</div>
+<div class="ciphertext">IVFPLPMDWJCQAKOGHZEPP</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZZYZWJGBO.</div>
+<div class="ciphertext">QEEZYGTJHCMDBXIFXF</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key RSLVJHBVE.</div>
+<div class="ciphertext">ZVKSUOKGTZFCBEAKZOKZW</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HXNVSUOHI.</div>
+<div class="ciphertext">SSVHRDXYZSOEYCPHGHIATBFK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YWLEDUDCR.</div>
+<div class="ciphertext">TQHCPKCUJVAPYICHMGXWWIRG</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key RRNECPYTO.</div>
+<div class="ciphertext">QOVKFQMECGIIPJCPGUHZT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key AULXAUXZS.</div>
+<div class="ciphertext">IOWYNESQOQMAGNXPTY</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key XWTAXYDYK.</div>
+<div class="ciphertext">HKJMRSQSVICBOOFERMRLX</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key KHXPKVTLJ.</div>
+<div class="ciphertext">OVAZTJKRZGMGTJLVWY</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key UPQNUIUGX.</div>
+<div class="ciphertext">UJKISHDAKXAWNETKLCKRX</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key XSBNBNBFY.</div>
+<div class="ciphertext">UNLFNANRKEHSBCXAAEGZO</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key IYTLOOPND.</div>
+<div class="ciphertext">EYBDTIPQZWAAECBANRHHYVZD</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HWRDSOWPA.</div>
+<div class="ciphertext">IRVOPRLMLXTXUKCNCH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key VWMKJSXLV.</div>
+<div class="ciphertext">LAQYXFEXXGSPGAC</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key WXCXTEFBN.</div>
+<div class="ciphertext">XGZKUZQQIMAWXPNKWEMJVWTE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key MXDUCTZOV.</div>
+<div class="ciphertext">RLIRBGJXCUTZZFDHVQ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key TETNBWVAO.</div>
+<div class="ciphertext">QRGKPPILPUTDWRXJGS</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key UXKFDWJLR.</div>
+<div class="ciphertext">TOETGLJZWNGYVBZVCXHVIGGWRFD</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HFNPWZAMP.</div>
+<div class="ciphertext">DWSWDDSZVDWBHSDZFYMKL</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key LZYAYFYPG.</div>
+<div class="ciphertext">NQCBOCOUVMQTAPMXJWPQPJGYCLZ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key PNCNAWFCN.</div>
+<div class="ciphertext">QYNAPZSQMKXLYTYDPUWXMAPZZPK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QAZGZSXOV.</div>
+<div class="ciphertext">TUGLYBIPUVUYAGJBENYQIAWIRBY</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ULGELTNRQ.</div>
+<div class="ciphertext">DGAFWOSQUFMKWOXNZUAXRVFPEVC</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key OVJNIAELC.</div>
+<div class="ciphertext">CNCZHRTUZZEAIUXPQTMHLRVT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key OEVSZOBDY.</div>
+<div class="ciphertext">JREAAEPGKNUPLUIGCMBYL</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YAVRHYKXA.</div>
+<div class="ciphertext">BQWPERFDLYHCXUAOMWJNT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key BYAWJLUJM.</div>
+<div class="ciphertext">MNPWTHIIRCAAXSHUWSBQQ</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HTKMCFVIX.</div>
+<div class="ciphertext">JFFRMGZASYMSVIQLUIRXSCQF</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key QDAPWODAN.</div>
+<div class="ciphertext">CVPAUDFIHVODPSDAJOXITRCM</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key ZEMUTBPMR.</div>
+<div class="ciphertext">JVTVYZCDKFSEAVCXTOYFIAQH</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key XCVMORPRL.</div>
+<div class="ciphertext">EEGNXRAPAFXVVIVLBGNGG</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key KXGFNPIDP.</div>
+<div class="ciphertext">NCKKLREKXSGMUQODRO</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key OBDZENFGG.</div>
+<div class="ciphertext">YHZYCSTGQSNDLJM</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key YEBULPPIU.</div>
+<div class="ciphertext">JFNEJYWJZQITYVSIMXOINNLE</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key SJNNUXEJC.</div>
+<div class="ciphertext">ZDHWPMITEGRIDZY</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key UPEJSYRJP.</div>
+<div class="ciphertext">REOCAAIJJBRGAIQUZRAPNEZSNYC</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key NOYWPRIVG.</div>
+<div class="ciphertext">JDBWWLSOFDQICWRWFIQQVMTDABD</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HYJAIFOLP.</div>
+<div class="ciphertext">CHIOHNGZNGGUVRRHNW</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key RFPBTODIX.</div>
+<div class="ciphertext">MFNFZQMQOLRW</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key FDMVQKYUL.</div>
+<div class="ciphertext">KAWCDCYBTQUTIZT</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key TZXRENGRT.</div>
+<div class="ciphertext">LRLCRPRKDMLSRROJELGVI</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key PMMHLXGNW.</div>
+<div class="ciphertext">PUTFZIRCVCDJTPIPLA</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key NFVBRWCFK.</div>
+<div class="ciphertext">KOXASZTJORWJLZDIQKRPP</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key XLCADBAWN.</div>
+<div class="ciphertext">GLKEFFVNORGPFRSXFY</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key TKFFRDOBR.</div>
+<div class="ciphertext">DQCSUKJKQGWOHXOBRV</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key JGVHDDNHU.</div>
+<div class="ciphertext">YIQSCIZLXYISAUBXWC</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key HTTOKVCVI.</div>
+<div class="ciphertext">OIMQNQRWNEPNHCFSJB</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key PCTHFGLHL.</div>
+<div class="ciphertext">LXSJQBXCRLMBEWBCUKWJK</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key SADHOPGJO.</div>
+<div class="ciphertext">LIHBYEGMASMJNWSNVWXJO</div>
+
+
+<div class="question">Decode these three words encoded with the Hill Cipher using the decryption key MKJNAVNZV.</div>
+<div class="ciphertext">GDUQIAFNHFJUIOAXAE</div>
+
+
+
+        
+    </div>
+
+    <!-- <script src="code.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
