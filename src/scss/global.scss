@@ -1,0 +1,20 @@
+/**
+Author: Andrew Kim
+Version: 3.0.0
+Since: 15 March 2025
+ */
+
+
+// general
+@import './variables.scss';
+@import './style.scss';
+
+
+// pages
+@import './index.scss';
+
+
+// components
+@import './components/Footer.scss';
+@import './components/Navbar.scss';
+@import './components/Title.scss';

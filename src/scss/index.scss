@@ -1,0 +1,170 @@
+/**
+Author: Andrew Kim
+Version: 3.0.0
+Since: 15 March 2025
+ */
+
+
+
+@import './variables.scss';
+
+
+
+#subtitle {
+    margin-bottom: 50px;
+}
+
+.heading {
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.subheading {
+    color: $text-light;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 70px auto;
+}
+
+.index-section {
+    margin: 0 0 200px 0 !important;
+}
+
+.side-text {
+    text-align: left !important;
+    padding-right: 40px;
+}
+
+
+
+
+/* ******************************** ABOUT ******************************** */
+.about {
+    max-width: 800px;
+    margin: auto;
+
+    .about-row {
+        margin-bottom: 40px;
+        background-color: $box-dark;
+        padding: 40px 20px;
+        border-radius: 24px;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.03) !important;
+        }
+
+        .about-icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .about-icon {
+                width: 60px;
+            }
+        }
+
+        .about-content {
+            text-align: left;
+
+            .about-name {
+                color: white;
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
+            .about-children {
+                color: $text-light;
+            }
+        }
+    }
+}
+
+
+
+/* ******************************** VALUES ******************************** */
+.value-container {
+    .value-icon-container {
+        background-color: $box-light;
+        aspect-ratio: 1;
+        width: 90px;
+        margin: auto;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > img {
+            width: 50px;
+        }
+    }
+
+    .value-name {
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 20px 0 10px 0;
+    }
+
+    .value-description {
+        color: $text-light;
+        padding: 0 10px;
+    }
+}
+
+
+
+/* ******************************** QUOTES ******************************** */
+
+.quote-box {
+    background-color: $box-dark;
+    max-width: 800px;
+    border-radius: 24px;
+    text-align: left;
+    padding: 36px;
+    margin-bottom: 24px;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.03) !important;
+    }
+
+    .quote-text {
+        color: $text-light;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+
+    .quote-info {
+        display: flex;
+
+        .quote-icon-container {
+            margin-right: 16px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            border-radius: 50vh;
+            width: 50px;
+            aspect-ratio: 1;
+            background-color: $box-light;
+
+            & > img {
+                width: 50%;
+            }
+        }
+
+        .quote-author {
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .quote-position {
+            color: $text-light;
+            font-size: 14px;
+        }
+    }
+}

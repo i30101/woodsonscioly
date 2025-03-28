@@ -1,0 +1,75 @@
+/**
+Author: Andrew Kim
+Version: 3.0.0
+Since: 20 March 2025
+ */
+
+
+@import './variables.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: #050c1a !important;
+}
+
+
+.link {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
+.link:hover, .link:active, .link:focus {
+    color: $primary-blue;
+}
+
+.primary-section {
+    margin-bottom: 100px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.heading-1 {
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#body {
+    min-height: calc(100vh - 94px);
+    max-width: $max-body-width;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-blue;
+}
+
+b {
+    color: white;
+}
+
+/* **************** MEDIA QUERIES **************** */
+@media (min-width: 992px) {
+
+}
+
+@media (max-width: 991px) {
+    body {
+        padding: 0 10px;
+    }
+}

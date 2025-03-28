@@ -1,0 +1,67 @@
+/*
+Author: Andrew Kim
+Version: 3.0.0
+Since: 26 March 2025
+*/
+
+
+@import '../variables.scss';
+
+
+#footer {
+    max-width: 1200px;
+    padding: 40px 0 0 0;
+    color: $text-light;
+}
+
+.footer-col {
+    padding: 0;
+}
+
+#footer-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    margin-bottom: 5px;
+}
+
+.footer-title {
+    font-weight: 600;
+}
+
+.footer-link {
+    display: block;
+    margin-bottom: 7px;
+}
+
+
+/* ******************************** MEDIA QUERIES ******************************** */
+@media (min-width: 992px) {
+    #footer {
+        margin: 200px auto 150px auto;
+    }
+
+    .footer-title {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    #footer {
+        margin: 200px auto 50px auto;
+    }
+
+    #footer-first-col {
+        margin-bottom: 40px;
+    }
+
+    .footer-title {
+        margin-bottom: 10px;
+    }
+
+    .col-xs-6, .col-sm-6 {
+        width: 50% !important;
+    }
+}
