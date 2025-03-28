@@ -25,7 +25,7 @@ import './scss/global.scss';
 
 
 // local
-import PageRegistry from "./page/PageRegistry";
+import PageRegistry from './page/PageRegistry';
 
 
 
@@ -39,6 +39,7 @@ const useAos = () => {
         })
     })
 }
+
 
 
 /**

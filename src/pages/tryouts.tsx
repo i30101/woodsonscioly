@@ -8,9 +8,9 @@
 import React from "react";
 
 
-const page404: React.FC = () => (
+const tryouts: React.FC = () => (
     <>page404</>
 );
 
 
-export default page404;
+export default tryouts;

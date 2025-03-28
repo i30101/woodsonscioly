@@ -65,12 +65,12 @@ Since: 20 March 2025
 }
 
 .navbar-toggler-icon {
-    background-image: url('../../assets/icons/menu.svg') !important;
+    //background-image: url('/icons/menu.svg') !important;
     border: none;
 }
 
 .navbar-toggler-icon::selection {
-    background-image: url('../../assets/icons/menu.svg') !important;
+    //background-image: url('/icons/menu.svg') !important;
 }
 
 
