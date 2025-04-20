@@ -36,4 +36,6 @@ To add a new blog post, follow these steps:
 [!NOTE]
 The first time you push changes, you may have to run:
 
-```git push --set-upstream origin master```
+```
+git push --set-upstream origin master
+```
