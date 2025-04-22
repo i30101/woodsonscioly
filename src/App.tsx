@@ -26,6 +26,7 @@ import './scss/global.scss';
 
 // local
 import PageRegistry from './page/PageRegistry';
+import BlogPost from './pages/blogpost';
 
 
 
@@ -51,6 +52,7 @@ const App: React.FC = () => {
 
     return <Router>
         <Routes>
+            <Route path="/blog/:slug" element={<BlogPost />} />
             {PageRegistry.getPages().map((page, index) => (
                 <Route key={index} path={page.path} element={<page.components />} />
             ))}
