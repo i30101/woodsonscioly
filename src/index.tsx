@@ -91,40 +91,6 @@ const pages = [
 ];
 
 
-const blogs = [
-    {
-        title: "2023-2024: Season in Review | Woodson Science Olympiad",
-        path: "/blog/season-2024",
-        components: Season2024
-    },
-    {
-        title: "September 2024 Newsletter | Woodson Science Olympiad",
-        path: "/blog/september-2024",
-        components: September2024
-    },
-    {
-        title: "2025 Georgia Scrimmage Results | Woodson Science Olympiad",
-        path: "/blog/georgia-2025",
-        components: Georgia2025
-    },
-    {
-        title: "2025 Monta Vista Invitational Results | Woodson Science Olympiad",
-        path: "/blog/mvso-2025",
-        components: Mvso2025
-    },
-    {
-        title: "2025 Flint Hill Invitational Results | Woodson Science Olympiad",
-        path: "/blog/fh-2025",
-        components: FlintHill2025
-    },
-    {
-        title: "Log In | Woodson Science Olympiad",
-        path: "/login",
-        components: login
-    }
-]
-
-
 new Page({title: "Woodson Science Olympiad", path: "/", components: home})
 
 // render pages
@@ -141,15 +107,6 @@ if (pages.length > 0) {
             components: item.components
         });
     }
-}
-
-
-for (const blog of blogs) {
-    new Page({
-        title: blog.title,
-        path: blog.path,
-        components: blog.components
-    })
 }
 
 
