@@ -27,4 +27,8 @@ You will also see any lint errors in the console.
 
 ## Managing this site
 
-Contact me if you need help with technical things. To learn how to run the blog, go to [BLOD.md](BLOD.md).
+Contact me if you need help with technical things. To save a local copy and edit the site, clone this repository with 
+
+`git clone https://github.com/i30101/woodsonscioly.git`
+
+To learn how to maintain the blog, go to [BLOG.md](BLOG.md).
