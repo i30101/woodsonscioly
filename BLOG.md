@@ -33,9 +33,9 @@ To add a new blog post, follow these steps:
 6. Commit your changes with `git commit -m "your commit message"`
 7. Push your changes with `git push`
 
-[!NOTE]
-The first time you push changes, you may have to run:
+> [!NOTE]
+> The first time you push changes, you may have to run:
 
 ```
 git push --set-upstream origin master
-```
+> ```
