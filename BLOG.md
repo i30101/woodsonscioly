@@ -41,7 +41,17 @@ To add a new blog post, follow these steps:
 7. Push your changes with `git push`
 
 
+
 > [!NOTE]
+> Use this command to update the blog page after adding your md file:
+> 
+> ```
+> node scripts/generateBlogIndex.js
+> ```
+
+
+
+> [!IMPORTANT]
 > The first time you push changes, you may have to run:
 > 
 > ```
