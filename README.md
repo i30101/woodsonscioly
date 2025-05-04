@@ -16,7 +16,9 @@ This is the official website for the Woodson Science Olympiad team, built using 
 
 In the project directory, you can run:
 
-### `npm start`
+```
+npm start build
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -29,6 +31,8 @@ You will also see any lint errors in the console.
 
 Contact me if you need help with technical things. To save a local copy and edit the site, clone this repository with 
 
-`git clone https://github.com/i30101/woodsonscioly.git`
+```
+git clone https://github.com/i30101/woodsonscioly.git
+```
 
 To learn how to maintain the blog, go to [BLOG.md](BLOG.md).
