@@ -46,6 +46,30 @@ Since: 28 May 2025
     color: $text-light;
     font-size: 18px;
     line-height: 180%;
+
+    & * {
+        margin-bottom: 30px;
+    }
+
+    & h1 {
+        font-weight: 700;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    & q {
+        color: white;
+        font-style: italic;
+        font-size: 20px;
+        border-left: 2px solid $text-dark;
+        display: block;
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+
+    & strong {
+        color: white;
+    }
 }
 
 .detail-label {
@@ -59,26 +83,3 @@ Since: 28 May 2025
     margin-bottom: 20px;
 }
 
-.blog-main > * {
-    margin-bottom: 30px;
-}
-
-.blog-main > h1 {
-    font-weight: 700;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.blog-main > q {
-    color: white;
-    font-style: italic;
-    font-size: 20px;
-    border-left: 2px solid $text-dark;
-    display: block;
-    padding-left: 20px;
-    margin-left: 20px;
-}
-
-b {
-    color: white;
-}
