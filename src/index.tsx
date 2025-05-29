@@ -27,20 +27,13 @@ import blog from "./pages/blog";
 import tryouts from "./pages/tryouts";
 import contribute from "./pages/contribute";
 import Page from "./page/Page";
+import {FlintHill2025, Georgia2025, Mvso2025, Season2024, September2024} from "./components/Blogs";
+import login from "./pages/login";
 
 
 
 // pages and paths
 const pages = [
-    {
-        title: "Woodson Science Olympiad",
-        start: "C. G. Woodson",
-        highlight: "Science Olympiad",
-        after: "",
-        subtitle: "Pioneers in science, engineering, and inter-disciplinary exploration",
-        path: "/",
-        components: home
-    },
     {
         title: "Page Not Found | Woodson Science Olympiad",
         start: "Error",
@@ -94,21 +87,50 @@ const pages = [
         subtitle: "",
         path: "/contribute",
         components: contribute
-    }
+    },
 ];
 
 
+const blogs = [
+    {
+        title: "2023-2024: Season in Review | Woodson Science Olympiad",
+        path: "/blog/season-2024",
+        components: Season2024
+    },
+    {
+        title: "September 2024 Newsletter | Woodson Science Olympiad",
+        path: "/blog/september-2024",
+        components: September2024
+    },
+    {
+        title: "2025 Georgia Scrimmage Results | Woodson Science Olympiad",
+        path: "/blog/georgia-2025",
+        components: Georgia2025
+    },
+    {
+        title: "2025 Monta Vista Invitational Results | Woodson Science Olympiad",
+        path: "/blog/mvso-2025",
+        components: Mvso2025
+    },
+    {
+        title: "2025 Flint Hill Invitational Results | Woodson Science Olympiad",
+        path: "/blog/fh-2025",
+        components: FlintHill2025
+    },
+    {
+        title: "Log In | Woodson Science Olympiad",
+        path: "/login",
+        components: login
+    }
+]
+
+
+new Page({title: "Woodson Science Olympiad", path: "/", components: home})
+
 // render pages
 if (pages.length > 0) {
-    // Render the first entry as a page
-    new Page({
-        title: pages[0].title,
-        path: pages[0].path,
-        components: pages[0].components
-    });
     // Render the rest as DefaultPage
-    for (let i = 1; i < pages.length; i++) {
-        const item = pages[i];
+    for (const item of pages) {
         new DefaultPage({
             title: item.title,
             start: item.start,
@@ -119,6 +141,15 @@ if (pages.length > 0) {
             components: item.components
         });
     }
+}
+
+
+for (const blog of blogs) {
+    new Page({
+        title: blog.title,
+        path: blog.path,
+        components: blog.components
+    })
 }
 
 

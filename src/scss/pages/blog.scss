@@ -1,0 +1,50 @@
+/**
+Author: Andrew Kim
+Version: 3.0.0
+Since: 29 May 2025
+*/
+
+
+@import '../variables.scss';
+
+.blog-preview-category {
+    color: $primary-blue;
+    background-color: $primary-backdrop ;
+    padding: 4px 12px 4px 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin: auto;
+    font-weight: 500;
+}
+
+
+.blog-preview-container {
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.5s;
+    text-decoration: none;
+    margin-bottom: 40px;
+
+    &:hover {
+        transform: scale(1.03) !important;
+    }
+
+
+    .blog-preview-image {
+        width: 100%;
+        margin-bottom: 24px;
+        border-radius: 24px;
+    }
+
+
+    .blog-preview-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
+        margin: 10px auto 10px auto;
+    }
+
+    .blog-preview-date {
+        color: $text-light;
+    }
+}
