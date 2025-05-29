@@ -34,11 +34,11 @@ const blog: React.FC = () => (
         {/*<BlogContainer title={"2025 Mary Washington Regional Results"} date={"March 2nd, 2025"} image={`${process.env.PUBLIC_URL}/blog/fh2025.jpg`} category={"Competitions"} path={"./blog/fairfax2025"} />*/}
         {/*<BlogContainer title={"2025 Princeton Invitational Results"} date={"February 3rd, 2025"} image={`${process.env.PUBLIC_URL}/blog/fh2025.jpg`} category={"Competitions"} path={"./blog/fairfax2025"} />*/}
         {/*<BlogContainer title={"2025 Fairfax Invitational Results"} date={"January 12th, 2025"} image={`${process.env.PUBLIC_URL}/blog/fh2025.jpg`} category={"Competitions"} path={"./blog/fairfax2025"} />*/}
-        <BlogContainer title={"2025 Flint Hill Invitational Results"} date="December 17th, 2024" image={`${process.env.PUBLIC_URL}/blog/fh2025.jpg`} category="Competitions" path="./fh-2025" />
-        <BlogContainer title={"2025 Monta Vista Invitational Results"} date="November 25th, 2024" image={`${process.env.PUBLIC_URL}/blog/mvso2025.jpg`} category="Competitions" path="./mvso-2025"/>
-        <BlogContainer title={"2025 Georgia Scrimmage Results"} date="October 24th, 2024" image={`${process.env.PUBLIC_URL}/blog/georgia2025.jpg`} category="Competitions" path="./georgia-2025"/>
-        <BlogContainer title={"September 2024 Newsletter"} date="September 10, 2024" image={`${process.env.PUBLIC_URL}/blog/september2024.jpg`} category="Newsletter" path="./september-2024"/>
-        <BlogContainer title={"2023-2024: Season in Review"} date="June 12th, 2024" image={`${process.env.PUBLIC_URL}/blog/season2024.jpg`} category="Blog" path="./season-2024"/>
+        <BlogContainer title={"2025 Flint Hill Invitational Results"} date="December 17th, 2024" image={`${process.env.PUBLIC_URL}/blog/fh2025.jpg`} category="Competitions" path="/blog/fh-2025" />
+        <BlogContainer title={"2025 Monta Vista Invitational Results"} date="November 25th, 2024" image={`${process.env.PUBLIC_URL}/blog/mvso2025.jpg`} category="Competitions" path="/blog/mvso-2025"/>
+        <BlogContainer title={"2025 Georgia Scrimmage Results"} date="October 24th, 2024" image={`${process.env.PUBLIC_URL}/blog/georgia2025.jpg`} category="Competitions" path="/blog/georgia-2025"/>
+        <BlogContainer title={"September 2024 Newsletter"} date="September 10, 2024" image={`${process.env.PUBLIC_URL}/blog/september2024.jpg`} category="Newsletter" path="/blog/september-2024"/>
+        <BlogContainer title={"2023-2024: Season in Review"} date="June 12th, 2024" image={`${process.env.PUBLIC_URL}/blog/season2024.jpg`} category="Blog" path="/blog/season-2024"/>
     </div>
 );
 
