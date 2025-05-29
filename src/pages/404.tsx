@@ -9,7 +9,7 @@ import React from "react";
 
 
 const page404: React.FC = () => (
-    <>page404</>
+    <></>
 );
 
 
