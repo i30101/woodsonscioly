@@ -4,18 +4,16 @@
  * @since 14 March 2025
  */
 
+import React, { useEffect } from "react";
 
 // local
 import PageRegistry from "./PageRegistry";
-
-
 
 interface PageProps {
     title: string,
     path: string;
     components: React.FC;
 }
-
 
 /**
  * General page class
@@ -35,9 +33,17 @@ class Page {
 
         PageRegistry.registerPage(this);
 
-        document.title = this.title;
+        // Wrap the original component to set document.title on mount
+        const OriginalComponent = this.components;
+        const WithTitle: React.FC = (componentProps) => {
+            useEffect(() => {
+                document.title = this.title;
+            }, []);
+            return <OriginalComponent {...componentProps} />;
+        };
+        this.components = WithTitle;
     }
 }
 
-
 export default Page;
+

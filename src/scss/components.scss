@@ -1,0 +1,23 @@
+/*
+Author: Andrew Kim
+Version: 3.0.0
+Since: 20 May 2025
+*/
+
+
+/* ******************************** ACTION BUTTON ******************************** */
+
+.action-button {
+    padding: 20px 30px;
+    background-color: white;
+    font-weight: 600;
+    color: $background;
+    font-size: 18px;
+    border-radius: 50vh;
+    transition: background-color 0.5s;
+
+    &:hover, &:active {
+        color: white;
+        background-color: $primary-purple;
+    }
+}

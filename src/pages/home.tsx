@@ -8,6 +8,9 @@
 // external libraries
 import React from "react";
 import Body from "../page/Body";
+import ActionButton from "../components/ActionButton";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 interface QuoteProps {
@@ -43,20 +46,21 @@ function Quote({author, position, children}: QuoteProps) {
 
 const home: React.FC = () => (
         <>
-            <div id={"intro"}>
-                <h1 data-aos={"fade-up"} id={"title"}>
-                    C. G. Woodson <span className={"highlight"}>Science Olympiad</span>
-                </h1>
-                <h6 data-aos={"fade-up"} data-aos-delay={150} id={"subtitle"}>Pioneers in science, engineering, and
-                    inter-disciplinary exploration</h6>
-                <div data-aos={"fade-up"}>
-                    {/*    TODO add ActionButton*/}
-                </div>
-            </div>
+            <Navbar />
 
             <Body>
+                <div id="intro">
+                    <h1 data-aos="fade-up" id="title">
+                        C. G. Woodson <span className="highlight">Science Olympiad</span>
+                    </h1>
+                    <h6 data-aos="fade-up" data-aos-delay="150" id="subtitle">Pioneers in science, engineering, and inter-disciplinary exploration
+                    </h6>
+                    <div data-aos={"fade-up"}>
+                        <ActionButton text={"Learn More"} href={"/team"} />
+                    </div>
+                </div>
                 <div className={"primary-section index-section"} id={"main"} data-aos={"fade-up"}>
-                    <h1 className={"heading"}>What is Science Olympiad</h1>
+                    <h1 className={"heading"}>What is Science Olympiad?</h1>
                     <div className={"subheading"}>Learn about the program</div>
                     <div className={"about"}>
                         <div className={"about"}>
@@ -65,28 +69,19 @@ const home: React.FC = () => (
                                     {
                                         name: "Events",
                                         children: (
-                                            <>Science Olympiad consists of <b>23 events</b> that cover various topics
-                                                ranging from chemistry to earth science and electrical engineering to
-                                                anatomy. As a former Woodson Science Olympiad president once said, it's
-                                                like a <b>track meet</b> for nerds!</>
+                                            <>Science Olympiad consists of <b>23 events</b> that cover various topics ranging from chemistry to earth science and electrical engineering to anatomy. As a former Woodson Science Olympiad president once said, it's like a <b>track meet</b> for nerds!</>
                                         )
                                     },
                                     {
                                         name: "Preparation",
                                         children: (
-                                            <>There are different types of events. For <b>study events</b>, you make a
-                                                binder or a cheat sheet. For <b>builds</b>, you construct a physical
-                                                machine. For <b>labs</b> and <b>hybrids</b>, you study and prepare for a
-                                                hands-on examination.</>
+                                            <>There are different types of events. For <b>study events</b>, you make a binder or a cheat sheet. For <b>builds</b>, you construct a physical machine. For <b>labs</b> and <b>hybrids</b>, you study and prepare for a hands-on examination.</>
                                         )
                                     },
                                     {
                                         name: "Competition",
                                         children: (
-                                            <>Schools and universities around the country hold tournaments. We've been
-                                                to invitationals at the <b>National Cathedral</b>, <b>Princeton</b>,
-                                                and <b>Yale</b>. The States tournament we attend every year is held at
-                                                the <b>University of Virginia</b>.</>
+                                            <>Schools and universities around the country hold tournaments. We've been to invitationals at the <b>National Cathedral</b>, <b>Princeton</b>, and <b>Yale</b>. The States tournament we attend every year is held at the <b>University of Virginia</b>.</>
                                         )
                                     }
                                 ];
@@ -147,9 +142,8 @@ const home: React.FC = () => (
                     <div className={"row"}>
                         <div className={"side-text col-xs-12 col-sm-12 col-md-4 col-log-4"}>
                             <h1 className={"heading"}>What our <span className={"highlight"}>members</span> say</h1>
-                            <div className={"subheading"}>Hear from current Woodson science Olympiad members and
-                                alumni
-                            </div>
+                            <div className={"subheading"}>Hear from current Woodson science Olympiad members and alumni</div>
+                            <ActionButton text={"Meet Our Officers"} href={"/leadership"} />
                         </div>
 
                         <div className={"col-xs-12 col-sm-12 col-md-4 col-log-4"}>
@@ -178,6 +172,8 @@ const home: React.FC = () => (
                     </div>
                 </div>
             </Body>
+
+            <Footer />
         </>
 );
 

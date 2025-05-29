@@ -1,7 +1,7 @@
 /**
  * @author Andrew Kim
  * @version 3.0.0
- * @since 26 March 2025
+ * @since 28 May 2025
  */
 
 
@@ -60,7 +60,7 @@ const leadership: React.FC = () => (
                 aboutContents.map((officer, _) => (
                     <div className={"bio-container row"} data-aos={"fade-up"}>
                         <div className={"col-xs-12 col-sm-12 col-md-3 col-lg-3"}>
-                            <img src={`${process.env.PUBLIC_URL}/icons/${officer.image}.jpg`} alt={officer.image} />
+                            <img className="bio-image" src={`${process.env.PUBLIC_URL}/images/${officer.image}.jpg`} alt={officer.image} />
                         </div>
                         <div className={"col-xs-12 col-sm-12 col-md-9 col-lg-9"}>
                             <h2 className={"bio-name"}>{officer.name}</h2>

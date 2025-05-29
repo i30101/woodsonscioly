@@ -1,0 +1,84 @@
+/*
+Author: Andrew Kim
+Version: 3.0.0
+Since: 28 May 2025
+*/
+
+
+@import '../variables.scss';
+
+
+$accordion-border: 10px;
+
+
+.accordion-item {
+    margin: 0 auto 20px auto;
+    background-color: $box-dark;
+    border-radius: $accordion-border !important;
+    max-width: 1000px;
+    border: none !important;
+
+
+    .accordion-button, .accordion-collapse, .accordion-button:hover, .accordion-button:active, .accordion-button:focus {
+        background-color: $box-dark;
+        outline: none;
+        box-shadow: none;
+    }
+
+    // accordion toggle arrow button
+    .accordion-button {
+        border-radius: $accordion-border !important;
+        font-weight: 800;
+        color: white !important;
+        font-size: 18px;
+        padding: 20px 20px 20px 28px;
+        transition: none;
+        --bs-accordion-btn-icon-transform: rotate(90deg);
+
+
+        &:not(.collapsed) {
+            outline: none;
+            box-shadow: none;
+            background-color: $box-dark !important;
+        }
+
+        &::after, &:not(.collapsed)::after {
+            background-image: url('#=(/woodsonscioly)/icons/chevron-right.svg');
+        }
+    }
+
+    .accordion-collapse {
+        background-color: $box-dark !important;
+        border-bottom-left-radius: $accordion-border;
+        border-bottom-right-radius: $accordion-border;
+        padding: 8px 28px 20px 28px;
+    }
+}
+
+table {
+    max-width: 600px;
+    text-align: center;
+    margin: auto auto 80px auto;
+
+    .team-head, .team-data {
+        background-color: transparent !important;
+        color: white !important;
+        border-bottom: none;
+    }
+
+    .team-head {
+        font-size: 22px;
+    }
+
+
+    .team-data {
+        padding: 4px !important;
+        font-size: 14px;
+        color: $text-light !important;
+    }
+}
+
+
+.season-text {
+    margin-bottom: 10px;
+}

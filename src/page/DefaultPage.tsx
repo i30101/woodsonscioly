@@ -12,7 +12,8 @@ import Page from "./Page";
 import Navbar from "../components/Navbar";
 import Body from "./Body";
 import Footer from "../components/Footer";
-
+import Title from "../components/Title";
+import React, { useEffect } from "react";
 
 
 /**
@@ -23,12 +24,17 @@ class DefaultPage extends Page {
         console.log("DefaultPage constructor called");
 
         const PageWithNav: React.FC = () => {
+            useEffect(() => {
+                document.title = props.title;
+            }, []);
+
             console.log("Page with nav rendered");
 
             return (
                 <>
                     <Navbar />
                     <Body>
+                        <Title start={props.start} highlight={props.highlight} after={props.after} subtitle={props.subtitle} />
                         <props.components />
                     </Body>
                     <Footer />

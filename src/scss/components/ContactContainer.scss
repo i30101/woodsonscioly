@@ -1,0 +1,117 @@
+/**
+Author: Andrew Kim
+Version: 3.0.0
+Since: 28 May 2025
+ */
+
+
+@import '../variables.scss';
+
+
+#contact-box {
+    text-align: left;
+}
+
+
+.contact-heading {
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.contact-text {
+    font-size: 18px;
+    color: $text-light;
+    margin-bottom: 40px;
+}
+
+.service {
+    text-decoration: none;
+    margin: 0 0 30px 0;
+}
+
+
+.contact-icon {
+    background-color: $box-light;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    max-width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 40px;
+}
+
+.contact-details {
+    color: white;
+    padding-left: 16px;
+}
+
+.contact-name {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.contact {
+    margin-top: -4px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.message-container {
+    background-color: $box-dark;
+    border-radius: 24px;
+    min-height: 400px;
+    padding: 40px;
+    text-align: center;
+}
+
+.message-heading {
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.message-text {
+    font-size: 18px;
+    color: $text-light;
+}
+
+.form-section {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-input {
+    width: 100%;
+    background-color: $box-light;
+    border-radius: 27px;
+    height: 54px;
+    padding: 20px;
+    border: none;
+    color: white;
+}
+
+.form-input:active, .form-input:focus {
+    border: none;
+}
+
+.form-input::placeholder {
+    color: white;
+}
+
+.form-input:focus {
+    border: none;
+}
+
+.message {
+    height: 140px;
+}

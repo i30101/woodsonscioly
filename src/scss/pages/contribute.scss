@@ -1,0 +1,110 @@
+/**
+Author: Andrew Kim
+Version: 3.0.0
+Since: 28 May 2025
+*/
+
+@import '../variables.scss';
+
+
+.donate-tier-container {
+    padding: 20px;
+
+    .donate-tier {
+        background-color: $box-dark;
+        border-radius: 16px;
+        padding: 40px 30px 30px 30px;
+        transition: transform 0.5s;
+        text-align: center;
+    }
+
+    .donate-element {
+        font-size: 80px;
+    }
+
+    .donate-tier:hover {
+        transform: scale(1.03);
+    }
+
+    .tier-name {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .price-range {
+        color: $text-light;
+        margin-bottom: 20px;
+    }
+
+    .donate-button {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .benefits {
+        text-align: left;
+
+        .benefit {
+            font-size: 18px;
+            margin-bottom: 8px;
+
+            .benefit-icon {
+                margin-top: -4px;
+                margin-right: 8px;
+            }
+        }
+
+        .included {
+            color: $text-light;
+        }
+
+        .excluded {
+            color: $text-dark;
+        }
+    }
+}
+
+
+.current-sponsor-category {
+    margin: 100px auto auto auto;
+    max-width: 1000px;
+
+    .csc-name {
+        text-align: left;
+        font-size: 40px;
+        line-height: 100%;
+    }
+
+    .csc-logo {
+        max-width: 400px;
+        margin-bottom: 60px;
+    }
+}
+
+
+
+.Gold {
+    background: -webkit-linear-gradient(135deg, #ffff72, #464610);
+    background: linear-gradient(135deg, #ffff72, #464610);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Silver {
+    background: -webkit-linear-gradient(135deg, white, black);
+    background: linear-gradient(135deg, white, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Bronze {
+    background: -webkit-linear-gradient(135deg, #ce8957, #24150c);
+    background: linear-gradient(135deg, #ce8957, #24150c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

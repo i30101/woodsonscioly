@@ -1,0 +1,90 @@
+/*
+Author: Andrew Kim
+Version: 3.0.0
+Since: 28 May 2025
+*/
+
+
+@import '../variables.scss';
+
+
+.rank {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.rank-events {
+    color: $text-light;
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 100% !important;
+}
+
+.rank-icon {
+    padding: 2px;
+    border-radius: 14px;
+    color: black;
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+@for $i from 1 through length($duo-colors) {
+    .rank-#{$i} {
+        background-color: nth($duo-colors, $i);
+    }
+}
+
+
+
+/* ******************************** PLACING LIST ******************************** */
+
+.placing-container {
+    width: 100%;
+    text-align: center;
+}
+
+.placing-list {
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+    line-height: 150%;
+}
+
+.nav-tabs {
+    padding-bottom: 1px;
+    border-bottom: 2px solid $primary-blue;
+    text-align: center;
+    margin: auto;
+}
+
+.nav-tabs .nav-link.active {
+    color: $primary-blue;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-item {
+    margin: auto;
+}
+
+.tablist-link {
+    text-align: center;
+    margin: auto;
+    border: none !important;
+    transition: border, 0.5s;
+}
+
+.tab-pane {
+    padding: 20px;
+    color: white;
+}
+
+
+.overall {
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: white;
+}

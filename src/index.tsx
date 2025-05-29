@@ -26,6 +26,7 @@ import leadership from "./pages/leadership";
 import blog from "./pages/blog";
 import tryouts from "./pages/tryouts";
 import contribute from "./pages/contribute";
+import Page from "./page/Page";
 
 
 
@@ -33,36 +34,64 @@ import contribute from "./pages/contribute";
 const pages = [
     {
         title: "Woodson Science Olympiad",
+        start: "C. G. Woodson",
+        highlight: "Science Olympiad",
+        after: "",
+        subtitle: "Pioneers in science, engineering, and inter-disciplinary exploration",
         path: "/",
         components: home
     },
     {
         title: "Page Not Found | Woodson Science Olympiad",
+        start: "Error",
+        highlight: "404",
+        after: "",
+        subtitle: "Page not found",
         path: "/404",
         components: page404
     },
     {
         title: "Our Team | Woodson Science Olympiad",
+        start: "Our",
+        highlight: "Team",
+        after: "",
+        subtitle: "Learn about the coolest Science Olympiad team in VA",
         path: "/team",
         components: team
     },
     {
         title: "Leadership | Woodson Science Olympiad",
+        start: "Our",
+        highlight: "Leadership",
+        after: "",
+        subtitle: "Meet our amazing officers!",
         path: "/leadership",
         components: leadership
     },
     {
         title: "Blog | Woodson Science Olympiad",
+        start: "Our",
+        highlight: "Blog",
+        after: "",
+        subtitle: "Learn about the club and what we do.",
         path: "/blog",
         components: blog
     },
     {
         title: "Tryouts | Woodson Science Olympiad",
+        start: "WSO",
+        highlight: "Tryouts",
+        after: "",
+        subtitle: "Learn about WSO's tryouts system.",
         path: "/tryouts",
         components: tryouts
     },
     {
         title: "Contribute | Woodson Science Olympiad",
+        start: "",
+        highlight: "Contribute",
+        after: "to WSO",
+        subtitle: "",
         path: "/contribute",
         components: contribute
     }
@@ -70,17 +99,27 @@ const pages = [
 
 
 // render pages
-for (const item of pages) {
-    new DefaultPage({
-        title: item.title,
-        path: item.path,
-        components: item.components
-    })
+if (pages.length > 0) {
+    // Render the first entry as a page
+    new Page({
+        title: pages[0].title,
+        path: pages[0].path,
+        components: pages[0].components
+    });
+    // Render the rest as DefaultPage
+    for (let i = 1; i < pages.length; i++) {
+        const item = pages[i];
+        new DefaultPage({
+            title: item.title,
+            start: item.start,
+            highlight: item.highlight,
+            after: item.after,
+            subtitle: item.subtitle,
+            path: item.path,
+            components: item.components
+        });
+    }
 }
-
-
-
-
 
 
 const root = ReactDOM.createRoot(
@@ -90,7 +129,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <App />
-    </React.StrictMode>,
+    </React.StrictMode>
 );
 
 export {}

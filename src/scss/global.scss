@@ -2,19 +2,27 @@
 Author: Andrew Kim
 Version: 3.0.0
 Since: 15 March 2025
- */
+*/
 
 
 // general
 @import './variables.scss';
 @import './style.scss';
+@import './components.scss';
 
 
 // pages
+@import 'pages/contribute.scss';
 @import 'pages/home';
+@import 'pages/leadership';
+@import 'pages/team';
 
 
 // components
+@import 'components/BlogPage';
+@import 'components/ContactContainer';
 @import './components/Footer.scss';
 @import './components/Navbar.scss';
+@import './components/Rankings.scss';
 @import './components/Title.scss';
+
