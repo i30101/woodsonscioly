@@ -37,7 +37,7 @@ function ContactContainer() {
             <div className="contact-text">Want to sponsor us? Have any questions? Fill out the form or reach out to us through one of the following platforms.</div>
             <ContactService name="Mail" contact="woodsonscioly@gmail.com" url="mailto:woodsonscioly@gmail.com" image={`${process.env.PUBLIC_URL}/icons/envelope.svg`} />
             <ContactService name="Instagram" contact="@woodsonscioly" url="https://www.instagram.com/woodsonscioly/" image={`${process.env.PUBLIC_URL}/icons/instagram.svg`} />
-            <ContactService name="GitHub" contact="woodsonscioly" url="https://github.com/woodsonscioly/" image={`${process.env.PUBLIC_URL}/icons/github`} />
+            <ContactService name="GitHub" contact="woodsonscioly" url="https://github.com/woodsonscioly/" image={`${process.env.PUBLIC_URL}/icons/github.svg`} />
         </div>
         <div className="message-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div className="message-heading">Send us a message</div>
