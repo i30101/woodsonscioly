@@ -1,10 +1,34 @@
 [
   {
-    "title": "2025 Fairfax Invitational Results",
-    "date": "January 11, 2025",
+    "title": "2025 Georgia Scrimmage Results",
+    "date": "23 October 2024",
     "author": "Andrew Kim",
-    "image": "/blog-images/fh2025.jpg",
+    "image": "/blog-images/georgia2025.jpg",
     "category": "Competitions",
-    "slug": "fh-2025"
+    "slug": "georgia-2025"
+  },
+  {
+    "title": "2025 Monta Vista Invitational Results",
+    "date": "25 November 2024",
+    "author": "Andrew Kim",
+    "image": "/blog-images/mvso2025.jpg",
+    "category": "Competition",
+    "slug": "mvso-2025"
+  },
+  {
+    "title": "2023-2024: Season in Review",
+    "date": "12 June 2024",
+    "author": "Andrew Kim",
+    "image": "/blog-images/season2024.jpg",
+    "category": "Blog",
+    "slug": "season-2024"
+  },
+  {
+    "title": "September 2024 Newsletter",
+    "date": "10 September 2024",
+    "author": "James Kim",
+    "image": "/blog-images/september2024.jpg",
+    "category": "Newsletter",
+    "slug": "september-2024"
   }
 ]

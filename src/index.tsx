@@ -27,7 +27,6 @@ import blog from "./pages/blog";
 import tryouts from "./pages/tryouts";
 import contribute from "./pages/contribute";
 import Page from "./page/Page";
-import {FlintHill2025, Georgia2025, Mvso2025, Season2024, September2024} from "./components/Blogs";
 import login from "./pages/login";
 
 
@@ -92,6 +91,7 @@ const pages = [
 
 
 new Page({title: "Woodson Science Olympiad", path: "/", components: home})
+new Page({title: "Login | Woodson Science Olympiad", path: "/login", components: login});
 
 // render pages
 if (pages.length > 0) {

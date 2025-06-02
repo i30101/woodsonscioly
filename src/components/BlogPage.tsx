@@ -1,5 +1,4 @@
-
-
+import React, { useEffect } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Body from "../page/Body";
@@ -13,8 +12,11 @@ interface BlogProps {
     category: string;
 }
 
-
 const BlogPage: React.FC<BlogProps> = ({children, title, date, author, image, category}) => {
+    useEffect(() => {
+        document.title = title + " | Woodson Science Olympiad";
+    }, [title]);
+
     return <>
         <Navbar />
         <Body>
@@ -44,5 +46,5 @@ const BlogPage: React.FC<BlogProps> = ({children, title, date, author, image, ca
     </>
 }
 
-
 export default BlogPage;
+
