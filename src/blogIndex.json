@@ -1,19 +1,19 @@
 [
   {
-    "title": "2025 Georgia Scrimmage Results",
-    "date": "23 October 2024",
-    "author": "Andrew Kim",
-    "image": "/blog-images/georgia2025.jpg",
-    "category": "Competitions",
-    "slug": "georgia-2025"
-  },
-  {
     "title": "2025 Monta Vista Invitational Results",
     "date": "25 November 2024",
     "author": "Andrew Kim",
     "image": "/blog-images/mvso2025.jpg",
     "category": "Competition",
     "slug": "mvso-2025"
+  },
+  {
+    "title": "2025 Georgia Scrimmage Results",
+    "date": "23 October 2024",
+    "author": "Andrew Kim",
+    "image": "/blog-images/georgia2025.jpg",
+    "category": "Competitions",
+    "slug": "georgia-2025"
   },
   {
     "title": "2023-2024: Season in Review",
