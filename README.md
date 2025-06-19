@@ -36,3 +36,4 @@ git clone https://github.com/i30101/woodsonscioly.git
 ```
 
 To learn how to maintain the blog, go to [BLOG.md](BLOG.md).
+
